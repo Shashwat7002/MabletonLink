@@ -25,3 +25,19 @@ Verified October 28, 2026, against the local HTTP preview.
 This is a functional static prototype. The assistant uses deterministic directory matching, not a live LLM. Agency logins, applications, payment transactions, and external service availability were not exercised. This is not a formal accessibility conformance audit. Hosted access is independent of the application's lack of SSO.
 
 Preview screenshots are saved locally in the ignored `artifacts/` directory.
+
+## Apple-inspired redesign verification — October 28, 2026
+
+- Desktop 1440×1050, tablet 768×1024, phone 390×844, and narrow 320×720 checked through browser UI; no horizontal overflow at these widths.
+- Search “water bill” returned one precise match. An unmatched query showed recovery controls.
+- Favorites were saved, retained after reload, and removed into the empty state. Existing storage key and IDs are unchanged.
+- Utility results retain exact provider names, including Georgia Power, Cobb EMC, Austell Gas System, and Atlanta Gas Light.
+- Service details show applicability and official source links. Escape closes the detail and assistant dialogs and restores the opening control’s focus.
+- Assistant prompt returned approved private-hauler and bulky-item resources. Its limitations are visible before entering a question.
+- At 320×568, assistant Send remained inside the viewport (bottom 515.5px); the conversation has a small scrollable area. A physical phone and on-screen keyboard were not tested.
+- A temporary QA server returned HTTP 503 for the first directory request. The error state showed Try again and the official resident guide; retry restored the service links and re-enabled Help.
+- Measured narrow-screen targets: Clear search 44×44px; Search 70×46px; Save 87×44px; More information 130×44px.
+- Key contrast ratios: ink on canvas 15.46:1; provider text on white 7.91:1; secondary text on canvas 5.40:1; blue actions on white 5.57:1; input border on white 3.62:1.
+- No console errors or warnings in the normal preview. The separate failure test deliberately generated a 503.
+- UI Designer and UI Finish-Gate Reviewer reviewed actual screenshots and source. Prototype gate passed. Their category-discovery, wrapping, and favorites-search-scope refinements were incorporated.
+- No formal screen-reader audit, real-device testing, or full accessibility conformance claim. Narrow reflow was checked; 200% browser zoom was not separately exercised.

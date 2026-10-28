@@ -12,7 +12,7 @@ Use the judge package and `docs/JUDGE-START-HERE.md` to reproduce this without a
 
 **2:45–3:20 — Works without AI.** In the standalone copy (no backend/key), ask No recogieron mi basura. Show Orientación del directorio: la IA no está disponible and the trash journey link. Guided choices, Spanish text, saved plans and printing work without model access. Do not imply a fresh visit to the hosted URL works offline.
 
-**3:20–4:00 — Evidence, access and limits.** Show docs/DEADLINE-READINESS.md: separate the live model benchmark, hosted availability checks, 35 backend tests and five AI walkthroughs. Report failed/unrun model cases rather than calling connectivity accuracy. Actual human participants/reviewers remain zero. Present the ZIP's tested no-account route if the hosting platform asks judges to sign in. State the Google free-tier quota, not unlimited access.
+**3:20–4:00 — Evidence, access and limits.** Show docs/DEADLINE-READINESS.md: separate the live model benchmark, hosted availability checks, 35 backend tests and five AI walkthroughs. Report failed/unrun model cases rather than calling connectivity accuracy. Actual human participants/reviewers remain zero. Present the public link, then the ZIP's tested no-account route as an additional reproduction option. State the Google free-tier quota, not unlimited access.
 
 ## Before presenting
 

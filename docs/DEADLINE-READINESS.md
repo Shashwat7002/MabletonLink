@@ -4,7 +4,7 @@
 
 The prototype and downloadable reproduction route are ready for a technical demonstration. This is not a completed resident study or broad resident launch approval. Human participants: **0**; human Spanish reviewers: **0**. Three specialist AI subagents supplied usability, Spanish-language and clean-reproduction reviews.
 
-The owner explicitly authorized public judge sharing. The Sites access policy was changed from owner-private to public (revision 2), but an unauthenticated request still received **HTTP 401, “Sign in required.”** Therefore the hosted URL must not be described as anonymously accessible based on the public setting. Final publication/access metadata is recorded in GATES.md and tests/evidence/judge-access.json. The downloadable judge package supplies the tested no-account/no-payment alternative. The user-supplied guide accepts a runnable repository with instructions as a submission path; organizer acceptance is not independently confirmed.
+The owner explicitly authorized public judge sharing. After changing the Sites access policy to public (revision 2) and republishing, unauthenticated requests to the homepage, guidance data and Spanish directory all returned **HTTP 200** with the expected content, without cookies or authorization. The initial access-setting change alone still returned401; republication resolved the sign-in barrier. No independent human judge session is claimed. Final publication/access metadata is recorded in GATES.md and tests/evidence/judge-access.json. The downloadable judge package also supplies a tested no-account/no-payment reproduction path. The user-supplied guide accepts a runnable repository with instructions as a submission path; organizer acceptance is not independently confirmed.
 
 ## 1. Gemini: meaningful live tests
 
@@ -28,7 +28,7 @@ Implemented findings: new guided questions receive focus; transport cards now de
 
 ## 3. Free reproduction
 
-A separate developer-tooling subagent extracted a clean source snapshot, installed 223 packages, ran 34 tests at that snapshot, built, initialized local D1 and served the homepage without a login, card or API key. English/Spanish no-key API checks returned the expected unavailable response; Spanish emergency handling worked locally. The final integrated backend suite contains **35 passing tests**, including specific bilingual clarification behavior.
+A separate developer-tooling subagent extracted a clean source snapshot, installed 223 packages, ran 34 tests at that snapshot, built, initialized local D1 and served the homepage without a login, card or API key. English/Spanish no-key API checks returned the expected unavailable response; Spanish emergency handling worked locally. The final integrated backend suite contains **35 passing tests**, including specific bilingual clarification behavior. The published Spanish assistant was also verified to ask the service-type clarification, with focus on the answer heading.
 
 The final standalone export embeds 89 English records, 89 Spanish records, all five journeys, CSS and application code. It was browser-tested from a loopback HTTP server without any AI backend or authentication. Direct file:// double-click behavior remains unverified; use the explicit Python local-server command in JUDGE-START-HERE.md. Initial source dependency installation needs Internet access. Optional live Gemini requires the judge's own free-tier key and available quota.
 

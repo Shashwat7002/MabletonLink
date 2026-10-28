@@ -43,6 +43,6 @@ To reproduce live AI, follow `GEMINI-SETUP.md` using your own private Google AI 
 
 Hosted site: https://mabletonlink-launchpad.himanshu-k-cd.chatgpt.site
 
-The owner authorized public sharing on October 28, 2026. The platform's public access setting alone does not establish logged-out access; see `docs/DEADLINE-READINESS.md` and `tests/evidence/judge-access.json` for the latest actual check. The local package is the no-account reproduction route.
+The owner authorized public sharing on October 28, 2026. After republication, the homepage and directory assets returned HTTP200 without cookies or authorization. See `docs/DEADLINE-READINESS.md` and `tests/evidence/judge-access.json` for evidence. The local package is an additional no-account reproduction route; live Gemini remains subject to quota and availability.
 
 Read `docs/DEADLINE-READINESS.md` for current model, browser and review results. Five specialist AI walkthroughs are not five human sessions. Human resident/nonresident participants and human Spanish reviewers remain zero. No human completion-time or improvement claims are made. Source details and maintenance responsibilities are in `docs/SOURCES.md` and `docs/MAINTENANCE.md`. Organizer acceptance remains an external decision.

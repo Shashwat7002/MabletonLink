@@ -1,28 +1,63 @@
 {
-  "runAt": "2026-10-28T21:45:11.227Z",
-  "kind": "Unauthenticated HTTP access check; no owner session or bearer token",
+  "runAt": "2026-10-28T21:58:14.591Z",
+  "kind": "Unauthenticated HTTP access check after publication; no owner session or bearer token",
+  "accessPolicy": "public",
+  "accessRevision": 2,
+  "sourceCommit": "064765168aae3d40399b3ca6f2ffff22280e5617",
   "url": "https://mabletonlink-launchpad.himanshu-k-cd.chatgpt.site",
+  "anonymousAccess": true,
   "results": [
     {
       "path": "/",
-      "http": 401,
-      "expectedContent": false,
+      "http": 200,
+      "expectedContent": true,
       "cookiesSent": false,
       "authorizationSent": false
     },
     {
       "path": "/guidance.json",
-      "http": 401,
-      "expectedContent": false,
+      "http": 200,
+      "expectedContent": true,
       "cookiesSent": false,
       "authorizationSent": false
     },
     {
       "path": "/services.es.json",
-      "http": 401,
-      "expectedContent": false,
+      "http": 200,
+      "expectedContent": true,
       "cookiesSent": false,
       "authorizationSent": false
     }
-  ]
+  ],
+  "previousChecks": [
+    {
+      "runAt": "2026-10-28T21:45:11.227Z",
+      "kind": "Unauthenticated HTTP access check; no owner session or bearer token",
+      "url": "https://mabletonlink-launchpad.himanshu-k-cd.chatgpt.site",
+      "results": [
+        {
+          "path": "/",
+          "http": 401,
+          "expectedContent": false,
+          "cookiesSent": false,
+          "authorizationSent": false
+        },
+        {
+          "path": "/guidance.json",
+          "http": 401,
+          "expectedContent": false,
+          "cookiesSent": false,
+          "authorizationSent": false
+        },
+        {
+          "path": "/services.es.json",
+          "http": 401,
+          "expectedContent": false,
+          "cookiesSent": false,
+          "authorizationSent": false
+        }
+      ]
+    }
+  ],
+  "verificationNote": "Match static HTML markers and parsed directory schema. The previous post-deployment probe returned200 but checked text only inserted by JavaScript; that false negative is not an access failure."
 }

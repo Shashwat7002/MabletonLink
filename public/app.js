@@ -155,19 +155,57 @@ function toggleFavorite(id){
 }
 function showDialog(dialog){dialogOpeners.set(dialog,{element:document.activeElement,details:document.activeElement?.dataset.details});const status=$('[role="status"]',dialog);if(status)status.textContent='';dialog.showModal();updateFocusClearance();dialog.scrollTop=0;}
 function openDetails(id){const e=entryMap.get(id);if(!e)return;const m=categoryMeta[e.category_id];$('#detail-content').innerHTML=`<div class="service-icon detail-icon">${icon(m.icon)}</div><p class="detail-category">${escape(m.name)}</p><h2 id="detail-title">${escape(e.title)}</h2><p class="detail-provider">${escape(e.agency)}</p><p class="detail-body">${escape(e.description)}</p><div class="detail-applicability"><strong>Good to know</strong>${escape(e.applicability)}</div><p class="detail-url">Official website<br><a href="${escape(e.official_url)}" target="_blank" rel="noopener noreferrer">${escape(new URL(e.official_url).hostname)} ${icon('external')}<span class="sr-only"> (opens in a new tab)</span></a></p><div class="detail-actions"><a class="primary-button" href="${escape(e.official_url)}" target="_blank" rel="noopener noreferrer">Open website ${icon('external')}<span class="sr-only"> (new tab)</span></a>${favoriteButton(e)}</div><p class="detail-source">Reviewed October 28, 2026. ${e.verification_status==='official_link_verified'?'Destination confirmed through an official agency link; the full service was not tested.':'Public information reviewed; account and payment steps were not tested.'}<br><a href="${escape(e.source_url)}" target="_blank" rel="noopener noreferrer">View source ${icon('external')}<span class="sr-only"> (opens in a new tab)</span></a></p>`;showDialog($('#detail-dialog'));}
-function about(){$('#detail-content').innerHTML=`<div class="service-icon detail-icon">${icon('grid')}</div><p class="detail-category">A local starting point</p><h2 id="detail-title">Made for life in Mableton.</h2><p class="detail-body">MabletonLink brings together 89 researched service links from the city, Cobb County, schools, the state, and utility providers. It’s an independent prototype, not an official City of Mableton website.</p><div class="detail-applicability"><strong>Your favorites, your browser</strong>Favorites are saved on this device in this browser. There’s no MabletonLink account or single sign-on. Official services may have their own sign-in.</div><p class="detail-body">The assistant is a directory demo. It matches your question to local links; it does not connect to an AI model or take action on your behalf. Questions stay in memory during this visit.</p><p class="detail-source">Sources reviewed October 28, 2026: 79 public pages reviewed and 10 destinations confirmed through official agency links. Service details and availability can change.</p>`;showDialog($('#detail-dialog'));}
-function assistantResponse(question){const q=normalize(question);let text='',ids=[];if(/\bemergency\b|can t breathe|gas leak|immediate danger/.test(q)){text='If this is an emergency or someone is in immediate danger, call 911. This demo cannot contact emergency services.';ids=['emergency-and-non-emergency-assistance'];}else if(/trash|garbage|hauler|rubbish/.test(q)){text='Mableton residents use approved private trash haulers. Start with the city’s list, then check pickup days and service with your hauler or HOA.';ids=['find-an-approved-trash-hauler','dispose-of-furniture-and-bulky-items'];}else if(/water/.test(q)){text='If Cobb County Water System is your provider, these are the official places to start. Your bill can help you confirm the provider.';ids=/leak|outage|broken/.test(q)?['water-and-sewer-customer-support','water-outage-map']:['pay-a-water-bill','start-stop-or-transfer-water-service'];}else if(/tax|ssd/.test(q)){text='City district bills and county property taxes use different systems. Check who issued your bill, then choose the matching service.';ids=['county-property-taxes','public-safety-special-service-district-bill','homestead-and-property-tax-exemptions'];}else if(/school|child|student/.test(q)){text='Your home address determines school assignment. Use the district’s resources to confirm the school and regular bus route; special-education transportation follows separate instructions.';ids=['school-attendance-zones','school-bus-route-finder','enroll-a-student'];}else if(/pothole|road|street/.test(q)){text='For a routine road or neighborhood issue, the city’s resident guide points to Cobb County’s reporting service. The responsible team depends on the location and issue.';ids=['report-a-road-or-neighborhood-problem'];}else if(/district|city limits|in mableton/.test(q)){text='Use the city’s map to check your address and council district. A Mableton mailing address alone does not confirm that you’re inside city limits.';ids=['check-city-limits-and-council-district','mayor-and-city-council'];}else {const matches=matchServices(question).slice(0,3);ids=matches.map(e=>e.id);text=matches.length?'These official resources look relevant. Check the provider’s current instructions and whether the service applies to you.':'I couldn’t find a clear match in this directory. Try a short topic such as “permits,” “jobs,” or “food assistance,” or start with the city’s contact directory.';if(!ids.length)ids=['contact-city-departments'];}return{text,entries:ids.map(id=>entryMap.get(id)).filter(Boolean)};}
-function askAssistant(question){
- question=question.trim().slice(0,500);
- const input=$('#assistant-input');
- if(!question){input.setAttribute('aria-invalid','true');$('#assistant-error').textContent='Please write a question, such as “How do I pay my water bill?”';input.focus();return;}
- input.removeAttribute('aria-invalid');$('#assistant-error').textContent='';$('#assistant-status').textContent='';
- $('#assistant-welcome').hidden=true;const conversation=$('#conversation');conversation.hidden=false;$('#reset-chat').hidden=false;
- const answer=assistantResponse(question),number=++replyNumber;
- conversation.insertAdjacentHTML('beforeend',`<p class="chat-message user"><span class="sr-only">You asked: </span>${escape(question)}</p><section class="chat-message assistant" aria-labelledby="reply-title-${number}"><h3 id="reply-title-${number}" tabindex="-1" aria-describedby="reply-text-${number}">Suggested services</h3><p id="reply-text-${number}">${escape(answer.text)}</p>${answer.entries.map(e=>`<a class="chat-link" href="${escape(e.official_url)}" target="_blank" rel="noopener noreferrer">${icon(categoryMeta[e.category_id].icon)}<span>${escape(shortTitles[e.id]||e.title)}<small>${escape(e.agency)}</small><span class="sr-only"> (opens in a new tab)</span></span>${icon('arrow-up-right')}</a>`).join('')}<p class="chat-source-note">From the service directory · reviewed Oct 28, 2026</p></section>`);
- while(conversation.children.length>12){conversation.firstElementChild.remove();conversation.firstElementChild.remove();}
- input.value='';focusHeading(`#reply-title-${number}`);
+function about(){$('#detail-content').innerHTML=`<div class="service-icon detail-icon">${icon('grid')}</div><p class="detail-category">A local starting point</p><h2 id="detail-title">Made for life in Mableton.</h2><p class="detail-body">MabletonLink brings together 89 researched service links from the city, Cobb County, schools, the state, and utility providers. It’s an independent prototype, not an official City of Mableton website.</p><div class="detail-applicability"><strong>Your favorites, your browser</strong>Favorites are saved on this device in this browser. There’s no MabletonLink account or single sign-on. Official services may have their own sign-in.</div><p class="detail-body">The assistant uses Google Gemini to suggest records from our approved Mableton service directory. It cannot act on your behalf or access accounts. When you send a question, your question and limited follow-up context go to Google for processing. MabletonLink does not store your questions; this conversation stays in page memory. Favorites stay in your browser. Do not send personal or sensitive details. The assistant is for adults age 18 and older.</p><p class="detail-source">Sources reviewed October 28, 2026: 79 public pages reviewed and 10 destinations confirmed through official agency links. Service details and availability can change.</p>`;showDialog($('#detail-dialog'));}
+let assistantRequest = null;
+let assistantTurn = 0;
+let assistantContext = {previous_question: '', previous_service_ids: []};
+function assistantBusy(busy) {
+ $('#assistant-form button').disabled=busy;
+ $$('.prompt-list button').forEach(button=>button.disabled=busy);
+ $('#assistant-input').readOnly=busy;
+ $('#assistant-form').setAttribute('aria-busy',String(busy));
 }
+function renderAssistantAnswer(answer, number) {
+ const titles={match:'Suggested services',clarify:'One more detail',out_of_scope:'Help with Mableton services',not_found:'No clear match',emergency:'Emergency help',unavailable:'Use the service directory'};
+ const services=answer.services.map(service=>entryMap.get(service.id)).filter(Boolean);
+ $('#conversation').insertAdjacentHTML('beforeend',`<section class="chat-message assistant" aria-labelledby="reply-title-${number}"><h3 id="reply-title-${number}" tabindex="-1" aria-describedby="reply-text-${number}">${escape(titles[answer.status]||titles.unavailable)}</h3><p id="reply-text-${number}">${escape(answer.message)}</p>${services.map(e=>`<div class="assistant-service"><a class="chat-link" href="${escape(e.official_url)}" target="_blank" rel="noopener noreferrer">${icon(categoryMeta[e.category_id].icon)}<span>${escape(shortTitles[e.id]||e.title)}<small>${escape(e.agency)}</small><span class="sr-only"> (opens in a new tab)</span></span>${icon('arrow-up-right')}</a><p>${escape(e.description)}</p><p>${escape(e.applicability)}</p></div>`).join('')}${services.length?'<p class="chat-source-note">From the approved service directory · reviewed Oct 28, 2026</p>':''}${['unavailable','not_found','out_of_scope'].includes(answer.status)?'<button type="button" class="secondary-button" data-assistant-browse>Browse all services</button>':''}</section>`);
+ const conversation=$('#conversation');
+ while(conversation.children.length>12){conversation.firstElementChild.remove();conversation.firstElementChild.remove();}
+ if($('#assistant-dialog').open)focusHeading(`#reply-title-${number}`);
+}
+async function askAssistant(question){
+ if(assistantRequest)return;
+ question=question.trim();
+ const input=$('#assistant-input');
+ if(!question||question.length>500){input.setAttribute('aria-invalid','true');$('#assistant-error').textContent='Please write a question of up to 500 characters, such as “How do I pay my water bill?”';input.focus();return;}
+ input.removeAttribute('aria-invalid');$('#assistant-error').textContent='';
+ $('#assistant-welcome').hidden=true;const conversation=$('#conversation');conversation.hidden=false;$('#reset-chat').hidden=false;
+ const number=++replyNumber,turn=++assistantTurn;
+ conversation.insertAdjacentHTML('beforeend',`<p class="chat-message user"><span class="sr-only">You asked: </span>${escape(question)}</p>`);
+ input.value=question;
+ const controller=new AbortController();assistantRequest=controller;assistantBusy(true);
+ $('#assistant-status').textContent='Finding local services…';input.focus();
+ const timer=setTimeout(()=>controller.abort(),16000);
+ let answer;
+ try {
+  if(!['http:','https:'].includes(location.protocol))throw new Error('offline');
+  const response=await fetch('/api/assistant',{method:'POST',credentials:'same-origin',headers:{'Content-Type':'application/json'},signal:controller.signal,body:JSON.stringify({question,...assistantContext})});
+  answer=await response.json();
+  const statuses=['match','clarify','out_of_scope','not_found','emergency','unavailable'];
+  if(!statuses.includes(answer.status)||typeof answer.message!=='string'||answer.message.length>1000||!Array.isArray(answer.services)||answer.services.length>3||answer.services.some(e=>!entryMap.has(e.id)))throw new Error('invalid_response');
+  if(!response.ok&&answer.status!=='unavailable')throw new Error('failed_request');
+ } catch {
+  answer={status:'unavailable',message:'The assistant is unavailable right now. You can still use Search services or browse All services.',services:[]};
+ } finally {clearTimeout(timer);}
+ if(turn!==assistantTurn)return;
+ assistantRequest=null;assistantBusy(false);$('#assistant-status').textContent='';
+ if(answer.status!=='unavailable'){
+  assistantContext=['match','clarify'].includes(answer.status)?{previous_question:question,previous_service_ids:answer.services.map(e=>e.id)}:{previous_question:'',previous_service_ids:[]};
+  input.value='';
+ }
+ renderAssistantAnswer(answer,number);
+}
+
 
 
 $('#detail-dialog .dialog-close').addEventListener('click',()=>$('#detail-dialog').close());
@@ -179,7 +217,7 @@ $$('dialog').forEach(dialog=>{
  dialog.addEventListener('close',()=>{const opener=dialogOpeners.get(dialog);const original=opener?.element?.isConnected?opener.element:opener?.details?$(`[data-details="${opener.details}"]`):null;const target=original||$('#results-title')||$('#page-title')||$('#main');target?.focus({preventScroll:true});if(!original)target?.scrollIntoView({block:'start',behavior:'instant'});});
  dialog.addEventListener('click',event=>{if(event.target!==dialog)return;const r=dialog.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)dialog.close();});
 });
-$('#reset-chat').addEventListener('click',()=>{$('#conversation').innerHTML='';$('#conversation').hidden=true;$('#assistant-welcome').hidden=false;$('#reset-chat').hidden=true;$('#assistant-input').removeAttribute('aria-invalid');$('#assistant-error').textContent='';$('#assistant-status').textContent='Previous questions cleared. Write a new question below.';$('#assistant-input').focus();});
+$('#reset-chat').addEventListener('click',()=>{assistantTurn++;assistantRequest?.abort();assistantRequest=null;assistantContext={previous_question:'',previous_service_ids:[]};assistantBusy(false);$('#assistant-input').value='';$('#conversation').innerHTML='';$('#conversation').hidden=true;$('#assistant-welcome').hidden=false;$('#reset-chat').hidden=true;$('#assistant-input').removeAttribute('aria-invalid');$('#assistant-error').textContent='';$('#assistant-status').textContent='Previous questions cleared. Write a new question below.';$('#assistant-input').focus();});
 $('#assistant-form').addEventListener('submit',event=>{event.preventDefault();if(catalog)askAssistant($('#assistant-input').value);});
 $('#assistant-input').addEventListener('input',()=>{$('#assistant-input').removeAttribute('aria-invalid');$('#assistant-error').textContent='';});
 $('#search-form').addEventListener('submit',event=>{event.preventDefault();if(!catalog)return;navigate({view:state.view==='favorites'?'favorites':'all',query:$('#service-search').value.trim()},{replace:true});clearTimeout(resultsTimer);$('#results-announcement').textContent='';focusHeading('#results-title');});
@@ -192,6 +230,7 @@ document.addEventListener('click',event=>{
  if(button.dataset.favorite){toggleFavorite(button.dataset.favorite);return;}
  if(button.dataset.details){openDetails(button.dataset.details);return;}
  if(button.dataset.category){event.preventDefault();navigate({view:'all',category:button.dataset.category,query:''},{scroll:true});focusHeading();return;}
+ if(button.hasAttribute('data-assistant-browse')){$('#assistant-dialog').close();navigate({view:'all',query:'',category:''},{scroll:true});setTimeout(()=>focusHeading(),0);return;}
  if(button.dataset.prompt){askAssistant(button.dataset.prompt);return;}
  if(button.dataset.search){navigate({view:'all',query:button.dataset.search,category:''});$('#service-search').focus();return;}
  if(button.hasAttribute('data-clear-filters')){navigate({query:'',category:''});$('#service-search').focus();return;}

@@ -58,3 +58,13 @@ Preview screenshots are saved locally in the ignored `artifacts/` directory.
 ## Accessibility follow-up — October 28, 2026
 
 See [ACCESSIBILITY-REVIEW.md](ACCESSIBILITY-REVIEW.md) for the current scope, findings, fixes, and evidence. This follow-up adds 19 axe-core scan states, native Safari 200% zoom, keyboard focus and modal checks, 320px reflow, text-spacing checks, storage and network recovery tests. All automated scans have zero violations; explicitly listed contrast incompletes received visual review. Actual VoiceOver speech/caption verification remains incomplete because the automation tools could not access its caption window. Browser accessibility trees are not represented as a full screen-reader pass. The earlier limitation about untested 200% zoom is superseded by this follow-up.
+
+
+## Gemini integration — October 28, 2026
+
+- Added a server-only Gemini 2.5 Flash adapter, approved-record response contract, deterministic prose/links, request limits, same-origin checks, persistent session/network/global quotas and safe failure handling.
+- 27 deterministic backend tests passed, including adversarial provider payloads, invalid IDs/extra fields, truncated/blocked replies, quota persistence and concurrent global reservations. These use mock provider responses; they do not measure Gemini routing accuracy.
+- TypeScript check and production build passed. Local Cloudflare D1 schema migration applied successfully. The approved 89-record directory is byte-identical to the researched source.
+- Browser checks cover missing-key fallback, readable response headings/descriptions, keyboard link access, Browse all services focus, pending/duplicate-send state and 320px reflow. Pending focus was repaired after testing.
+- No Gemini key is configured. A live Gemini request, model eligibility, real-model scope evaluation and provider billing are unverified. Setup and evaluation steps are in GEMINI-SETUP.md.
+- Existing owner-private Site audience preserved; no application SSO added. Native VoiceOver speech verification is not newly claimed by this work.

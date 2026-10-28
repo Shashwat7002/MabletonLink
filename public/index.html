@@ -42,7 +42,7 @@
     <div id="directory-content"><div class="loading-state" role="status">Loading local services…</div></div>
     <section class="help-banner" aria-labelledby="help-title">
 
-      <div><h2 id="help-title">Need help finding a service?</h2><p>Tell us what you need. This demo suggests official service links.</p></div>
+      <div><h2 id="help-title">Need help finding a service?</h2><p>Tell us what you need. Find official services for Mableton residents.</p></div>
       <button type="button" class="primary-button" data-open-assistant>Ask MabletonLink <span data-icon="arrow-right"></span></button>
     </section>
     <footer class="site-footer">
@@ -51,11 +51,11 @@
     </footer>
   </main>
   <dialog id="assistant-dialog" class="assistant-sheet" aria-labelledby="assistant-title">
-    <div class="sheet-header"><div><h2 id="assistant-title">Ask MabletonLink</h2><p>Resident assistant preview</p></div><button class="icon-button close-button" id="close-assistant" type="button" aria-label="Close assistant"><span>Close</span><span data-icon="x"></span></button></div>
-    <div class="assistant-disclosure"><span data-icon="info"></span><p><strong>A demo to help you find services.</strong> Suggestions come from our directory. This preview cannot contact an agency, complete a request, or access your accounts.</p></div>
+    <div class="sheet-header"><div><h2 id="assistant-title">Ask MabletonLink</h2><p>Find local services</p></div><button class="icon-button close-button" id="close-assistant" type="button" aria-label="Close assistant"><span>Close</span><span data-icon="x"></span></button></div>
+    <div class="assistant-disclosure"><span data-icon="info"></span><p><strong>Help finding Mableton services.</strong> AI selects suggestions from our approved directory. It cannot contact an agency, complete a request, or access your accounts.</p></div>
     <div id="assistant-welcome" class="assistant-intro"><h3>What can we help you find?</h3><p>Choose a question, or write your own below.</p><div class="prompt-list"><button type="button" data-prompt="Who collects my trash?">Who collects my trash? <span data-icon="arrow-right"></span></button><button type="button" data-prompt="How do I pay my water bill?">How do I pay my water bill? <span data-icon="arrow-right"></span></button><button type="button" data-prompt="Find my child's school">Find my child’s school <span data-icon="arrow-right"></span></button></div></div>
     <div id="conversation" class="conversation" role="region" aria-label="Questions and suggested services" hidden></div>
-    <div class="assistant-composer"><button id="reset-chat" type="button" hidden><span data-icon="refresh"></span>Start a new question</button><form id="assistant-form" novalidate><label for="assistant-input">Your question</label><div><textarea id="assistant-input" rows="2" maxlength="500" aria-describedby="assistant-input-help assistant-error" placeholder="For example, how do I report a pothole?" required></textarea><button class="primary-button" type="submit" aria-label="Send question">Send <span data-icon="arrow-up"></span></button></div><p id="assistant-input-help" class="input-help">Up to 500 characters. No personal information is needed.</p><p id="assistant-error" class="field-error" role="alert" aria-atomic="true"></p></form><p id="assistant-status" role="status" aria-atomic="true"></p></div>
+    <div class="assistant-composer"><button id="reset-chat" type="button" hidden><span data-icon="refresh"></span>Start a new question</button><form id="assistant-form" novalidate><label for="assistant-input">Your question</label><div><textarea id="assistant-input" rows="2" maxlength="500" aria-describedby="assistant-input-help assistant-error" placeholder="For example, how do I report a pothole?" required></textarea><button class="primary-button" type="submit" aria-label="Send question">Send <span data-icon="arrow-up"></span></button></div><p id="assistant-input-help" class="input-help">Up to 500 characters. For adults 18 and older. Sending shares your question and limited follow-up context with Google Gemini. Please leave out personal or sensitive details.</p><p id="assistant-error" class="field-error" role="alert" aria-atomic="true"></p></form><p id="assistant-status" role="status" aria-atomic="true"></p></div>
   </dialog>
   <dialog id="detail-dialog" aria-labelledby="detail-title"><button class="dialog-close icon-button close-button" type="button" aria-label="Close information"><span>Close</span><span data-icon="x"></span></button><div id="detail-content"></div><p id="detail-status" role="status" aria-atomic="true"></p></dialog>
   <p id="action-announcement" class="sr-only" role="status" aria-atomic="true"></p>

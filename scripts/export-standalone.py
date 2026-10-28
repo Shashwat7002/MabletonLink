@@ -3,7 +3,7 @@ from pathlib import Path
 import base64
 import json
 root=Path(__file__).resolve().parents[1]
-assets=root/'dist'
+assets=root/'public'
 html=(assets/'index.html').read_text()
 css=(assets/'styles.css').read_text()
 js=(assets/'app.js').read_text()

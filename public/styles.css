@@ -343,3 +343,5 @@ h2.results-count { font-weight: 600; line-height: 1.6; letter-spacing: normal; }
 
 html { scroll-padding-top: var(--focus-top, 100px); scroll-padding-bottom: var(--focus-bottom, 16px); }
 .assistant-sheet, #detail-dialog { scroll-padding-top: var(--dialog-focus-top, 110px); }
+
+.assistant-service{margin-top:20px}.assistant-service>p{margin:8px 0;font-size:16px;line-height:1.5}.assistant-service .chat-link{margin-bottom:8px}button:disabled{cursor:wait}textarea[readonly]{cursor:wait}

@@ -1,47 +1,30 @@
-# MabletonLink LaunchPad prototype
+# MabletonLink LaunchPad
 
-A buildless, responsive resident service directory with 89 official links in 15 categories. No application sign-in, SSO, database, or third-party JavaScript dependencies.
+An accessible black-and-white resident directory with 89 approved links in 15 categories, search, browser-local favorites and a server-side Gemini service-routing assistant. No application sign-in or SSO was added. The hosted prototype retains its existing owner-private access.
 
-## Run locally
+The interface remains plain HTML/CSS/JavaScript. Vinext/Cloudflare Workers supplies `/api/assistant`; D1 stores only usage counters. The assistant defaults to Gemini 2.5 Flash and stays unavailable until the runtime key is configured. See [GEMINI-SETUP.md](GEMINI-SETUP.md) for key creation, secret configuration, quotas and limitations.
 
-From this directory:
+## Source
 
-```sh
-python3 -m http.server 4173 --bind 127.0.0.1 --directory dist
-```
+- `public/index.html`, `public/styles.css`, `public/app.js`: accessible interface and browser behavior.
+- `public/services.json`: canonical approved knowledge used by both browser and server.
+- `server/policy.mjs`: Mableton-only system instructions and output schema.
+- `server/assistant.mjs`: request/output validation, provider call, fixed replies, cookies and shared usage limits.
+- `app/api/assistant/route.ts`: backend route; `app/route.ts`: HTML response.
+- `db/schema.ts` and `drizzle/`: usage counter schema/migrations.
+- `tests/assistant.test.mjs`: deterministic security and failure-path tests.
+- `tests/gemini-evaluation.json`: real-model checks to run after adding a key.
+- `.openai/hosting.json`: Site identity and runtime bindings. Secrets belong in runtime settings.
+- `dist/`: generated deployment output. Do not edit it.
 
-Open http://127.0.0.1:4173. Serve over HTTP; opening index.html directly will not load the JSON directory reliably.
+## Development
 
-## Implemented
+Use the Sites install/build workflow, or `npm run install:ci`, `npm test`, `npm run build`, and `npm run start`. See setup instructions for local D1 initialization and ignored `.dev.vars` secrets. `npm run dev` is available for development.
 
-- Home LaunchPad with everyday services and all 15 category tiles.
-- Search across all 89 services, with common synonyms and category filters.
-- All-services browsing, additional-results loading, and shareable hash URLs.
-- Browser-local favorites, saved using `mabletonlink.favorites.v1` in localStorage.
-- Service details with applicability, official destinations, source URLs, and review dates.
-- Resident assistant preview with contextual directory recommendations and source links.
-- On-demand assistant sheet, labeled mobile bottom navigation, keyboard navigation, visible focus, and reduced-motion support.
+To update knowledge, revise the researched `../mableton-service-directory.json`, copy it to `public/services.json`, review the changes, test and deploy. Keep IDs stable for favorites. Current research date: October 28, 2026. No account/transaction flows on external providers have been tested.
 
-The assistant is **a deterministic directory demo, not an LLM integration**. It does not submit reports, make payments, determine eligibility, or retrieve personal information. Chat history is held only in page memory. Favorites persist only in this browser; if storage is unavailable they last for the current visit. External agency websites may require their own accounts.
+Run `python3 scripts/export-standalone.py` for the offline directory export. Offline browsing/favorites work; the Gemini assistant needs the hosted backend and provides a directory fallback offline.
 
-The app identifies itself as an independent resident prototype, not an official City of Mableton website. Hosted preview access is separate from the application's lack of sign-in.
+The assistant selects approved records; it does not answer arbitrary questions, invent policy details, access accounts or take actions. Model relevance is probabilistic and needs real-key evaluation. User questions are not persisted by the application.
 
-## Files
-
-- `dist/index.html` — accessible application structure.
-- `dist/styles.css` — responsive visual design.
-- `dist/app.js` — browsing, search, favorites, dialogs, and assistant demo.
-- `dist/services.json` — copy of the researched source directory in the parent workspace.
-- `.openai/hosting.json` — private Sites deployment configuration.
-
-To refresh the directory, update the canonical `../mableton-service-directory.json`, then copy it to `dist/services.json`. Keep entry IDs stable to preserve saved favorites. The current copy was researched October 28, 2026. Provider coverage, pilot services, and public-safety transitions must be rechecked before a public launch.
-
-The interface uses local system fonts. There are no external font requests, analytics, tracking scripts, or UI dependencies.
-
-## UI redesign
-
-Black-and-white system typography, plain outlined controls, and explicit labels support residents with little technical experience and older residents. Home prioritizes everyday services and direct category access; results use readable rows with exact provider names. Each service has explicit Open website, Save/Saved, and More information controls. Body copy is 18px and provider labels are 16px. Primary controls are at least 48px high. Search has a persistent visible label, and dialogs use visible Close and Send labels. Colors, gradients, shadows, and decorative motion have been removed. `DESIGN-CONTRACT.md` records the design decisions.
-
-## Standalone export
-
-Run `python3 scripts/export-standalone.py` to regenerate `../mabletonlink-prototype.html` with the directory and application assets embedded. The served version remains the primary browser-tested artifact.
+`ACCESSIBILITY-REVIEW.md` records prior keyboard/AX/zoom checks and the limits of native VoiceOver verification. `DESIGN-CONTRACT.md` records the simple monochrome design.

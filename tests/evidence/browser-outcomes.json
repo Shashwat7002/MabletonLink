@@ -1,0 +1,398 @@
+[
+  {
+    "focus": "page-title",
+    "heading": "Contact your trash company",
+    "journey": "trash",
+    "lang": "en",
+    "outcome": "missed",
+    "overflow": false,
+    "violations": []
+  },
+  {
+    "focus": "page-title",
+    "heading": "Ask your HOA or property manager",
+    "journey": "trash",
+    "lang": "en",
+    "outcome": "hoa",
+    "overflow": false,
+    "violations": []
+  },
+  {
+    "focus": "page-title",
+    "heading": "Identify your existing provider first",
+    "journey": "trash",
+    "lang": "en",
+    "outcome": "unknown",
+    "overflow": false,
+    "violations": []
+  },
+  {
+    "focus": "page-title",
+    "heading": "Choose an approved provider",
+    "journey": "trash",
+    "lang": "en",
+    "outcome": "new",
+    "overflow": false,
+    "violations": []
+  },
+  {
+    "focus": "page-title",
+    "heading": "Arrange large-item disposal",
+    "journey": "trash",
+    "lang": "en",
+    "outcome": "bulky",
+    "overflow": false,
+    "violations": []
+  },
+  {
+    "focus": "page-title",
+    "heading": "Call 911 for immediate danger",
+    "journey": "dumping",
+    "lang": "en",
+    "outcome": "emergency",
+    "overflow": false,
+    "violations": []
+  },
+  {
+    "focus": "page-title",
+    "heading": "Report a routine road concern",
+    "journey": "dumping",
+    "lang": "en",
+    "outcome": "road",
+    "overflow": false,
+    "violations": []
+  },
+  {
+    "focus": "page-title",
+    "heading": "Contact city Code Enforcement",
+    "journey": "dumping",
+    "lang": "en",
+    "outcome": "property",
+    "overflow": false,
+    "violations": []
+  },
+  {
+    "focus": "page-title",
+    "heading": "Check the city boundary first",
+    "journey": "dumping",
+    "lang": "en",
+    "outcome": "boundary",
+    "overflow": false,
+    "violations": []
+  },
+  {
+    "focus": "page-title",
+    "heading": "Find an assistance organization",
+    "journey": "housing",
+    "lang": "en",
+    "outcome": "assistance",
+    "overflow": false,
+    "violations": []
+  },
+  {
+    "focus": "page-title",
+    "heading": "Check energy assistance options",
+    "journey": "housing",
+    "lang": "en",
+    "outcome": "energy",
+    "overflow": false,
+    "violations": []
+  },
+  {
+    "focus": "page-title",
+    "heading": "Search rental listings",
+    "journey": "housing",
+    "lang": "en",
+    "outcome": "rental",
+    "overflow": false,
+    "violations": []
+  },
+  {
+    "focus": "page-title",
+    "heading": "Check jurisdiction and report the concern",
+    "journey": "housing",
+    "lang": "en",
+    "outcome": "condition",
+    "overflow": false,
+    "violations": []
+  },
+  {
+    "focus": "page-title",
+    "heading": "Call 911 for immediate danger",
+    "journey": "housing",
+    "lang": "en",
+    "outcome": "emergency",
+    "overflow": false,
+    "violations": []
+  },
+  {
+    "focus": "page-title",
+    "heading": "Check a route for your trip",
+    "journey": "transport",
+    "lang": "en",
+    "outcome": "bus",
+    "overflow": false,
+    "violations": []
+  },
+  {
+    "focus": "page-title",
+    "heading": "Confirm Go covers both trip endpoints",
+    "journey": "transport",
+    "lang": "en",
+    "outcome": "go",
+    "overflow": false,
+    "violations": []
+  },
+  {
+    "focus": "page-title",
+    "heading": "Check certification and service area",
+    "journey": "transport",
+    "lang": "en",
+    "outcome": "paratransit",
+    "overflow": false,
+    "violations": []
+  },
+  {
+    "focus": "page-title",
+    "heading": "Ask CobbLinc about your trip",
+    "journey": "transport",
+    "lang": "en",
+    "outcome": "advice",
+    "overflow": false,
+    "violations": []
+  },
+  {
+    "focus": "page-title",
+    "heading": "Ask the library about computer access",
+    "journey": "access",
+    "lang": "en",
+    "outcome": "computer",
+    "overflow": false,
+    "violations": []
+  },
+  {
+    "focus": "page-title",
+    "heading": "Ask about printing and scanning",
+    "journey": "access",
+    "lang": "en",
+    "outcome": "print",
+    "overflow": false,
+    "violations": []
+  },
+  {
+    "focus": "page-title",
+    "heading": "Find the right person to call",
+    "journey": "access",
+    "lang": "en",
+    "outcome": "phone",
+    "overflow": false,
+    "violations": []
+  },
+  {
+    "focus": "page-title",
+    "heading": "Ask the provider about language assistance",
+    "journey": "access",
+    "lang": "en",
+    "outcome": "language",
+    "overflow": false,
+    "violations": []
+  },
+  {
+    "focus": "page-title",
+    "heading": "Contacte a su empresa de basura",
+    "journey": "trash",
+    "lang": "es",
+    "outcome": "missed",
+    "overflow": false,
+    "violations": []
+  },
+  {
+    "focus": "page-title",
+    "heading": "Consulte a su asociación o administrador",
+    "journey": "trash",
+    "lang": "es",
+    "outcome": "hoa",
+    "overflow": false,
+    "violations": []
+  },
+  {
+    "focus": "page-title",
+    "heading": "Identifique primero a su empresa",
+    "journey": "trash",
+    "lang": "es",
+    "outcome": "unknown",
+    "overflow": false,
+    "violations": []
+  },
+  {
+    "focus": "page-title",
+    "heading": "Elija una empresa aprobada",
+    "journey": "trash",
+    "lang": "es",
+    "outcome": "new",
+    "overflow": false,
+    "violations": []
+  },
+  {
+    "focus": "page-title",
+    "heading": "Organice la eliminación de objetos grandes",
+    "journey": "trash",
+    "lang": "es",
+    "outcome": "bulky",
+    "overflow": false,
+    "violations": []
+  },
+  {
+    "focus": "page-title",
+    "heading": "Llame al 911 si hay peligro inmediato",
+    "journey": "dumping",
+    "lang": "es",
+    "outcome": "emergency",
+    "overflow": false,
+    "violations": []
+  },
+  {
+    "focus": "page-title",
+    "heading": "Reporte un problema no urgente de la vía",
+    "journey": "dumping",
+    "lang": "es",
+    "outcome": "road",
+    "overflow": false,
+    "violations": []
+  },
+  {
+    "focus": "page-title",
+    "heading": "Contacte al departamento de normas municipales",
+    "journey": "dumping",
+    "lang": "es",
+    "outcome": "property",
+    "overflow": false,
+    "violations": []
+  },
+  {
+    "focus": "page-title",
+    "heading": "Compruebe primero el límite de la ciudad",
+    "journey": "dumping",
+    "lang": "es",
+    "outcome": "boundary",
+    "overflow": false,
+    "violations": []
+  },
+  {
+    "focus": "page-title",
+    "heading": "Busque una organización de ayuda",
+    "journey": "housing",
+    "lang": "es",
+    "outcome": "assistance",
+    "overflow": false,
+    "violations": []
+  },
+  {
+    "focus": "page-title",
+    "heading": "Consulte opciones de ayuda de energía",
+    "journey": "housing",
+    "lang": "es",
+    "outcome": "energy",
+    "overflow": false,
+    "violations": []
+  },
+  {
+    "focus": "page-title",
+    "heading": "Busque anuncios de alquiler",
+    "journey": "housing",
+    "lang": "es",
+    "outcome": "rental",
+    "overflow": false,
+    "violations": []
+  },
+  {
+    "focus": "page-title",
+    "heading": "Compruebe la jurisdicción y reporte el problema",
+    "journey": "housing",
+    "lang": "es",
+    "outcome": "condition",
+    "overflow": false,
+    "violations": []
+  },
+  {
+    "focus": "page-title",
+    "heading": "Llame al 911 si hay peligro inmediato",
+    "journey": "housing",
+    "lang": "es",
+    "outcome": "emergency",
+    "overflow": false,
+    "violations": []
+  },
+  {
+    "focus": "page-title",
+    "heading": "Consulte una ruta para su viaje",
+    "journey": "transport",
+    "lang": "es",
+    "outcome": "bus",
+    "overflow": false,
+    "violations": []
+  },
+  {
+    "focus": "page-title",
+    "heading": "Confirme que Go cubra origen y destino",
+    "journey": "transport",
+    "lang": "es",
+    "outcome": "go",
+    "overflow": false,
+    "violations": []
+  },
+  {
+    "focus": "page-title",
+    "heading": "Compruebe certificación y zona de servicio",
+    "journey": "transport",
+    "lang": "es",
+    "outcome": "paratransit",
+    "overflow": false,
+    "violations": []
+  },
+  {
+    "focus": "page-title",
+    "heading": "Consulte a CobbLinc sobre su viaje",
+    "journey": "transport",
+    "lang": "es",
+    "outcome": "advice",
+    "overflow": false,
+    "violations": []
+  },
+  {
+    "focus": "page-title",
+    "heading": "Pregunte a la biblioteca por computadoras",
+    "journey": "access",
+    "lang": "es",
+    "outcome": "computer",
+    "overflow": false,
+    "violations": []
+  },
+  {
+    "focus": "page-title",
+    "heading": "Pregunte por impresión y escaneo",
+    "journey": "access",
+    "lang": "es",
+    "outcome": "print",
+    "overflow": false,
+    "violations": []
+  },
+  {
+    "focus": "page-title",
+    "heading": "Encuentre a quién llamar",
+    "journey": "access",
+    "lang": "es",
+    "outcome": "phone",
+    "overflow": false,
+    "violations": []
+  },
+  {
+    "focus": "page-title",
+    "heading": "Pregunte a la entidad por ayuda de idioma",
+    "journey": "access",
+    "lang": "es",
+    "outcome": "language",
+    "overflow": false,
+    "violations": []
+  }
+]

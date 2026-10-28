@@ -148,3 +148,17 @@ test('database failure prevents provider calls', async () => {
   const {handle} = setup(async () => {called = true; return provider();}, {DB: {batch() {throw new Error('down');}, prepare() {throw new Error('down');}}});
   assert.equal((await handle(request())).status, 503); assert.equal(called, false);
 });
+
+test('Spanish emergency and sensitive data never reach Gemini', async () => {
+ let calls=0;const {handle}=setup(async()=>{calls++;return provider();});
+ const emergency=await (await handle(request({question:'No puedo respirar',locale:'es'}))).json();
+ assert.equal(emergency.status,'emergency');assert.match(emergency.message,/llame al 911/);
+ const sensitive=await (await handle(request({question:'My social security number is 123-45-6789',locale:'en'}))).json();
+ assert.equal(sensitive.status,'sensitive');assert.equal(calls,0);
+});
+test('only en and es locales accepted, fixed Spanish answer with approved records',async()=>{
+ const {handle}=setup();assert.equal((await handle(request({locale:'<script>'}))).status,400);
+ const body=await (await handle(request({question:'Pagar factura de agua',locale:'es'}))).json();
+ assert.equal(body.status,'match');assert.match(body.message,/Confirme/);assert.equal(body.services[0].id,'pay-a-water-bill');
+});
+test('sensitive previous context is not forwarded upstream',async()=>{let calls=0;const {handle}=setup(async()=>{calls++;return provider();});const body=await (await handle(request({previous_question:'My password is private'}))).json();assert.equal(body.status,'sensitive');assert.equal(calls,0);});

@@ -1,0 +1,2365 @@
+{
+  "reviewed_on": "2026-10-28",
+  "phones": {
+    "city": {
+      "number": "404-590-2511",
+      "label": {
+        "en": "City of Mableton — general and code questions",
+        "es": "Ciudad de Mableton: información general y normas municipales"
+      },
+      "source": "https://www.mableton.gov/1201/Code-Enforcement-Department",
+      "reviewed_on": "2026-10-28"
+    },
+    "library": {
+      "number": "678-398-5828",
+      "label": {
+        "en": "South Cobb Regional Library",
+        "es": "Biblioteca Regional de South Cobb"
+      },
+      "source": "https://www.cobbcounty.gov/library/library-locations/south-cobb-regional-library",
+      "reviewed_on": "2026-10-28"
+    },
+    "transit": {
+      "number": "770-427-4444",
+      "label": {
+        "en": "CobbLinc customer service",
+        "es": "Atención al cliente de CobbLinc"
+      },
+      "source": "https://www.cobbcounty.gov/transportation/cobb-transit-service-cobblinc",
+      "reviewed_on": "2026-10-28"
+    },
+    "certification": {
+      "number": "770-429-7855",
+      "label": {
+        "en": "CobbLinc paratransit certification",
+        "es": "Certificación de paratránsito de CobbLinc"
+      },
+      "source": "https://www.cobbcounty.gov/transportation/cobb-transit-service-cobblinc",
+      "reviewed_on": "2026-10-28"
+    },
+    "county": {
+      "number": "770-528-1000",
+      "label": {
+        "en": "Cobb County general information — ask for the responsible program",
+        "es": "Información general del Condado de Cobb: pregunte por el programa responsable"
+      },
+      "source": "https://www.cobbcounty.gov/",
+      "reviewed_on": "2026-10-28"
+    },
+    "water": {
+      "number": "770-419-6200",
+      "label": {
+        "en": "Cobb County Water System customer service",
+        "es": "Atención al cliente de Cobb County Water System"
+      },
+      "source": "https://www.cobbcounty.gov/water/customers/water-bill-pay",
+      "reviewed_on": "2026-10-28"
+    }
+  },
+  "services": {
+    "emergency-and-non-emergency-assistance": {
+      "operator": {
+        "en": "Cobb County E911",
+        "es": "Cobb County E911"
+      },
+      "authority": {
+        "en": "Cobb County E911",
+        "es": "Cobb County E911"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "police-services": {
+      "operator": {
+        "en": "Cobb County Police",
+        "es": "Cobb County Police"
+      },
+      "authority": {
+        "en": "Cobb County Police",
+        "es": "Cobb County Police"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "fire-and-rescue-services": {
+      "operator": {
+        "en": "Cobb County Fire & Emergency Services",
+        "es": "Cobb County Fire & Emergency Services"
+      },
+      "authority": {
+        "en": "Cobb County Fire & Emergency Services",
+        "es": "Cobb County Fire & Emergency Services"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "emergency-alerts-and-weather-warnings": {
+      "operator": {
+        "en": "Cobb County Emergency Management",
+        "es": "Cobb County Emergency Management"
+      },
+      "authority": {
+        "en": "Cobb County Emergency Management",
+        "es": "Cobb County Emergency Management"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "city-news-and-notifications": {
+      "operator": {
+        "en": "City of Mableton",
+        "es": "City of Mableton"
+      },
+      "authority": {
+        "en": "City of Mableton",
+        "es": "City of Mableton"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "mableton-public-safety-transition": {
+      "operator": {
+        "en": "City of Mableton",
+        "es": "City of Mableton"
+      },
+      "authority": {
+        "en": "City of Mableton",
+        "es": "City of Mableton"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "outdoor-burning-information": {
+      "operator": {
+        "en": "Cobb County Fire Marshal",
+        "es": "Cobb County Fire Marshal"
+      },
+      "authority": {
+        "en": "Cobb County Fire Marshal",
+        "es": "Cobb County Fire Marshal"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "report-a-code-violation": {
+      "operator": {
+        "en": "Mableton Code Enforcement",
+        "es": "Departamento de Cumplimiento de Normas de Mableton"
+      },
+      "authority": {
+        "en": "City of Mableton, for property concerns within city limits",
+        "es": "Ciudad de Mableton, para problemas de propiedades dentro de sus límites"
+      },
+      "next": {
+        "en": "Confirm the property is in the city. Read the code department page and use its complaint form, or call to explain the concern.",
+        "es": "Confirme que la propiedad esté en la ciudad. Lea la página del departamento y use su formulario de quejas, o llame para explicar el problema."
+      },
+      "prepare": {
+        "en": "Location and a short factual description. Photos may help if safely available; do not enter private property to take them.",
+        "es": "Ubicación y una descripción breve de los hechos. Las fotos pueden ayudar si se obtienen de forma segura; no entre en propiedad privada para tomarlas."
+      },
+      "phone": "city"
+    },
+    "report-a-road-or-neighborhood-problem": {
+      "operator": {
+        "en": "The agency responsible for the road, through Cobb / SeeClickFix",
+        "es": "La agencia responsable de la vía, mediante Cobb / SeeClickFix"
+      },
+      "authority": {
+        "en": "Road ownership determines responsibility; Mableton links this reporting tool",
+        "es": "La responsabilidad depende de quién administre la vía; Mableton enlaza esta herramienta"
+      },
+      "next": {
+        "en": "For a routine road issue, open the reporting tool linked by the city and select the location and issue type. Confirm the receiving agency before submitting.",
+        "es": "Para un problema rutinario de la vía, abra la herramienta enlazada por la ciudad y seleccione la ubicación y el tipo de problema. Confirme la agencia receptora antes de enviar."
+      },
+      "prepare": {
+        "en": "Road name, nearest intersection and what is blocking or damaged. Stay out of traffic.",
+        "es": "Nombre de la vía, intersección más cercana y qué está obstruido o dañado. No se exponga al tráfico."
+      },
+      "phone": null
+    },
+    "get-a-police-incident-or-accident-report": {
+      "operator": {
+        "en": "Cobb County Police",
+        "es": "Cobb County Police"
+      },
+      "authority": {
+        "en": "Cobb County Police",
+        "es": "Cobb County Police"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "animal-services-and-complaints": {
+      "operator": {
+        "en": "Cobb County Animal Services",
+        "es": "Cobb County Animal Services"
+      },
+      "authority": {
+        "en": "Cobb County Animal Services",
+        "es": "Cobb County Animal Services"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "lost-and-found-pets": {
+      "operator": {
+        "en": "Cobb County Animal Services",
+        "es": "Cobb County Animal Services"
+      },
+      "authority": {
+        "en": "Cobb County Animal Services",
+        "es": "Cobb County Animal Services"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "pay-a-water-bill": {
+      "operator": {
+        "en": "Cobb County Water System",
+        "es": "Cobb County Water System"
+      },
+      "authority": {
+        "en": "Cobb County Water System",
+        "es": "Cobb County Water System"
+      },
+      "next": {
+        "en": "Open the Water System payment page and choose the option that fits your needs. Quickpay can be used without a portal account. Contact Water System customer service if you need help or a payment plan.",
+        "es": "Abra la página de pagos de Water System y elija la opción que necesite. Quickpay permite pagar sin una cuenta del portal. Contacte a atención al cliente si necesita ayuda o un plan de pagos."
+      },
+      "prepare": {
+        "en": "Have your water bill ready. The official payment service may ask for your account number. Do not enter it in MabletonLink or its assistant.",
+        "es": "Tenga a mano la factura de agua. El servicio oficial de pagos puede pedir su número de cuenta. No lo escriba en MabletonLink ni en su asistente."
+      },
+      "phone": "water"
+    },
+    "start-stop-or-transfer-water-service": {
+      "operator": {
+        "en": "Cobb County Water System",
+        "es": "Cobb County Water System"
+      },
+      "authority": {
+        "en": "Cobb County Water System",
+        "es": "Cobb County Water System"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": "water"
+    },
+    "water-and-sewer-customer-support": {
+      "operator": {
+        "en": "Cobb County Water System",
+        "es": "Cobb County Water System"
+      },
+      "authority": {
+        "en": "Cobb County Water System",
+        "es": "Cobb County Water System"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "water-outage-map": {
+      "operator": {
+        "en": "Cobb County Water System",
+        "es": "Cobb County Water System"
+      },
+      "authority": {
+        "en": "Cobb County Water System",
+        "es": "Cobb County Water System"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "georgia-power-account-and-service": {
+      "operator": {
+        "en": "Georgia Power",
+        "es": "Georgia Power"
+      },
+      "authority": {
+        "en": "Georgia Power",
+        "es": "Georgia Power"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "georgia-power-outage-map": {
+      "operator": {
+        "en": "Georgia Power",
+        "es": "Georgia Power"
+      },
+      "authority": {
+        "en": "Georgia Power",
+        "es": "Georgia Power"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "cobb-emc-account-and-billing": {
+      "operator": {
+        "en": "Cobb EMC",
+        "es": "Cobb EMC"
+      },
+      "authority": {
+        "en": "Cobb EMC",
+        "es": "Cobb EMC"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "cobb-emc-outage-and-storm-center": {
+      "operator": {
+        "en": "Cobb EMC",
+        "es": "Cobb EMC"
+      },
+      "authority": {
+        "en": "Cobb EMC",
+        "es": "Cobb EMC"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "austell-gas-account-and-service": {
+      "operator": {
+        "en": "Austell Gas System",
+        "es": "Austell Gas System"
+      },
+      "authority": {
+        "en": "Austell Gas System",
+        "es": "Austell Gas System"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "atlanta-gas-light-service-information": {
+      "operator": {
+        "en": "Atlanta Gas Light",
+        "es": "Atlanta Gas Light"
+      },
+      "authority": {
+        "en": "Atlanta Gas Light",
+        "es": "Atlanta Gas Light"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "find-an-approved-trash-hauler": {
+      "operator": {
+        "en": "Your contracted private hauler or HOA-arranged provider",
+        "es": "Su empresa privada contratada o la elegida por su asociación de propietarios"
+      },
+      "authority": {
+        "en": "City of Mableton approves haulers; it does not collect trash",
+        "es": "La Ciudad de Mableton aprueba empresas; no recoge la basura"
+      },
+      "next": {
+        "en": "For a missed collection, contact the company on your bill. If your HOA arranges collection, ask its manager. Use the approved list to choose or identify a provider.",
+        "es": "Si no recogieron la basura, contacte a la empresa de su factura. Si su asociación de propietarios organiza el servicio, consulte a su administrador. Use la lista aprobada para elegir o identificar una empresa."
+      },
+      "prepare": {
+        "en": "Collection day, type of material and provider name. Keep your address and account details for the provider, not this assistant.",
+        "es": "Día de recolección, tipo de material y nombre de la empresa. Comparta su dirección y cuenta con la empresa, no con este asistente."
+      },
+      "phone": null
+    },
+    "dispose-of-furniture-and-bulky-items": {
+      "operator": {
+        "en": "Your hauler or a disposal/donation provider",
+        "es": "Su empresa de recolección o una entidad de eliminación o donación"
+      },
+      "authority": {
+        "en": "City of Mableton solid-waste guidance",
+        "es": "Orientación sobre residuos de la Ciudad de Mableton"
+      },
+      "next": {
+        "en": "Ask your current hauler whether the item is accepted, whether a booking is needed and what it costs before putting it out.",
+        "es": "Antes de sacar el objeto, pregunte a su empresa si lo acepta, si necesita reservar y cuánto cuesta."
+      },
+      "prepare": {
+        "en": "Item type, approximate size and preferred collection date.",
+        "es": "Tipo de objeto, tamaño aproximado y fecha deseada."
+      },
+      "phone": null
+    },
+    "waste-disposal-facilities": {
+      "operator": {
+        "en": "Cobb County Sustainability, Waste & Beautification",
+        "es": "Cobb County Sustainability, Waste & Beautification"
+      },
+      "authority": {
+        "en": "Cobb County Sustainability, Waste & Beautification",
+        "es": "Cobb County Sustainability, Waste & Beautification"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "recycling-drop-off-locations": {
+      "operator": {
+        "en": "Keep Cobb Beautiful",
+        "es": "Keep Cobb Beautiful"
+      },
+      "authority": {
+        "en": "Keep Cobb Beautiful",
+        "es": "Keep Cobb Beautiful"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "city-payments-and-fees": {
+      "operator": {
+        "en": "City of Mableton",
+        "es": "City of Mableton"
+      },
+      "authority": {
+        "en": "City of Mableton",
+        "es": "City of Mableton"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "public-safety-special-service-district-bill": {
+      "operator": {
+        "en": "City of Mableton",
+        "es": "City of Mableton"
+      },
+      "authority": {
+        "en": "City of Mableton",
+        "es": "City of Mableton"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "county-property-taxes": {
+      "operator": {
+        "en": "Cobb County Tax Commissioner",
+        "es": "Cobb County Tax Commissioner"
+      },
+      "authority": {
+        "en": "Cobb County Tax Commissioner",
+        "es": "Cobb County Tax Commissioner"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "homestead-and-property-tax-exemptions": {
+      "operator": {
+        "en": "Cobb County Tax Commissioner",
+        "es": "Cobb County Tax Commissioner"
+      },
+      "authority": {
+        "en": "Cobb County Tax Commissioner",
+        "es": "Cobb County Tax Commissioner"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "property-assessments-and-parcel-records": {
+      "operator": {
+        "en": "Cobb County Board of Tax Assessors",
+        "es": "Cobb County Board of Tax Assessors"
+      },
+      "authority": {
+        "en": "Cobb County Board of Tax Assessors",
+        "es": "Cobb County Board of Tax Assessors"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "permit-and-licensing-portal": {
+      "operator": {
+        "en": "City of Mableton / Cloudpermit",
+        "es": "City of Mableton / Cloudpermit"
+      },
+      "authority": {
+        "en": "City of Mableton / Cloudpermit",
+        "es": "City of Mableton / Cloudpermit"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "building-permits-and-requirements": {
+      "operator": {
+        "en": "City of Mableton Building Division",
+        "es": "City of Mableton Building Division"
+      },
+      "authority": {
+        "en": "City of Mableton Building Division",
+        "es": "City of Mableton Building Division"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "schedule-a-building-inspection": {
+      "operator": {
+        "en": "City of Mableton Building Division",
+        "es": "City of Mableton Building Division"
+      },
+      "authority": {
+        "en": "City of Mableton Building Division",
+        "es": "City of Mableton Building Division"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "planning-and-zoning": {
+      "operator": {
+        "en": "City of Mableton Planning & Zoning",
+        "es": "City of Mableton Planning & Zoning"
+      },
+      "authority": {
+        "en": "City of Mableton Planning & Zoning",
+        "es": "City of Mableton Planning & Zoning"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "site-development-and-land-disturbance": {
+      "operator": {
+        "en": "City of Mableton Site Development",
+        "es": "City of Mableton Site Development"
+      },
+      "authority": {
+        "en": "City of Mableton Site Development",
+        "es": "City of Mableton Site Development"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "business-licenses": {
+      "operator": {
+        "en": "City of Mableton Business License Division",
+        "es": "City of Mableton Business License Division"
+      },
+      "authority": {
+        "en": "City of Mableton Business License Division",
+        "es": "City of Mableton Business License Division"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "cobblinc-transit-services": {
+      "operator": {
+        "en": "CobbLinc",
+        "es": "CobbLinc"
+      },
+      "authority": {
+        "en": "Cobb County transit services",
+        "es": "Servicios de transporte del Condado de Cobb"
+      },
+      "next": {
+        "en": "Check your starting point, destination, travel day and accessibility needs with CobbLinc. Go coverage is zone-specific; paratransit requires certification and eligible endpoints.",
+        "es": "Confirme con CobbLinc el origen, destino, día del viaje y necesidades de accesibilidad. Go depende de zonas; el paratránsito requiere certificación y puntos de viaje elegibles."
+      },
+      "prepare": {
+        "en": "General starting area, destination and travel time. Ask about both trip endpoints before booking.",
+        "es": "Zona de origen, destino y hora del viaje. Pregunte por ambos puntos antes de reservar."
+      },
+      "phone": "transit"
+    },
+    "live-bus-tracking": {
+      "operator": {
+        "en": "CobbLinc / myStop",
+        "es": "CobbLinc / myStop"
+      },
+      "authority": {
+        "en": "CobbLinc / myStop",
+        "es": "CobbLinc / myStop"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "cobblinc-go-on-demand-rides": {
+      "operator": {
+        "en": "CobbLinc",
+        "es": "CobbLinc"
+      },
+      "authority": {
+        "en": "Cobb County transit services",
+        "es": "Servicios de transporte del Condado de Cobb"
+      },
+      "next": {
+        "en": "Check your starting point, destination, travel day and accessibility needs with CobbLinc. Go coverage is zone-specific; paratransit requires certification and eligible endpoints.",
+        "es": "Confirme con CobbLinc el origen, destino, día del viaje y necesidades de accesibilidad. Go depende de zonas; el paratránsito requiere certificación y puntos de viaje elegibles."
+      },
+      "prepare": {
+        "en": "General starting area, destination and travel time. Ask about both trip endpoints before booking.",
+        "es": "Zona de origen, destino y hora del viaje. Pregunte por ambos puntos antes de reservar."
+      },
+      "phone": "transit"
+    },
+    "paratransit": {
+      "operator": {
+        "en": "CobbLinc",
+        "es": "CobbLinc"
+      },
+      "authority": {
+        "en": "Cobb County transit services",
+        "es": "Servicios de transporte del Condado de Cobb"
+      },
+      "next": {
+        "en": "Check your starting point, destination, travel day and accessibility needs with CobbLinc. Go coverage is zone-specific; paratransit requires certification and eligible endpoints.",
+        "es": "Confirme con CobbLinc el origen, destino, día del viaje y necesidades de accesibilidad. Go depende de zonas; el paratránsito requiere certificación y puntos de viaje elegibles."
+      },
+      "prepare": {
+        "en": "General starting area, destination and travel time. Ask about both trip endpoints before booking.",
+        "es": "Zona de origen, destino y hora del viaje. Pregunte por ambos puntos antes de reservar."
+      },
+      "phone": "certification"
+    },
+    "georgia-traffic-and-road-conditions": {
+      "operator": {
+        "en": "Georgia Department of Transportation / 511GA",
+        "es": "Georgia Department of Transportation / 511GA"
+      },
+      "authority": {
+        "en": "Georgia Department of Transportation / 511GA",
+        "es": "Georgia Department of Transportation / 511GA"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "driver-s-license-and-state-id": {
+      "operator": {
+        "en": "Georgia Department of Driver Services",
+        "es": "Georgia Department of Driver Services"
+      },
+      "authority": {
+        "en": "Georgia Department of Driver Services",
+        "es": "Georgia Department of Driver Services"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "vehicle-registration-and-tags": {
+      "operator": {
+        "en": "Cobb County Tax Commissioner",
+        "es": "Cobb County Tax Commissioner"
+      },
+      "authority": {
+        "en": "Cobb County Tax Commissioner",
+        "es": "Cobb County Tax Commissioner"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "enroll-a-student": {
+      "operator": {
+        "en": "Cobb County School District",
+        "es": "Cobb County School District"
+      },
+      "authority": {
+        "en": "Cobb County School District",
+        "es": "Cobb County School District"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "school-attendance-zones": {
+      "operator": {
+        "en": "Cobb County School District",
+        "es": "Cobb County School District"
+      },
+      "authority": {
+        "en": "Cobb County School District",
+        "es": "Cobb County School District"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "school-bus-route-finder": {
+      "operator": {
+        "en": "Cobb County School District",
+        "es": "Cobb County School District"
+      },
+      "authority": {
+        "en": "Cobb County School District",
+        "es": "Cobb County School District"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "parentvue-grades-and-attendance": {
+      "operator": {
+        "en": "Cobb County School District",
+        "es": "Cobb County School District"
+      },
+      "authority": {
+        "en": "Cobb County School District",
+        "es": "Cobb County School District"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "ctls-parent-communications": {
+      "operator": {
+        "en": "Cobb County School District",
+        "es": "Cobb County School District"
+      },
+      "authority": {
+        "en": "Cobb County School District",
+        "es": "Cobb County School District"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "school-calendar": {
+      "operator": {
+        "en": "Cobb County School District",
+        "es": "Cobb County School District"
+      },
+      "authority": {
+        "en": "Cobb County School District",
+        "es": "Cobb County School District"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "school-menus-and-meal-assistance": {
+      "operator": {
+        "en": "Cobb County School District Food & Nutrition Services",
+        "es": "Cobb County School District Food & Nutrition Services"
+      },
+      "authority": {
+        "en": "Cobb County School District Food & Nutrition Services",
+        "es": "Cobb County School District Food & Nutrition Services"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "pay-for-school-meals": {
+      "operator": {
+        "en": "Cobb County School District Food & Nutrition Services",
+        "es": "Cobb County School District Food & Nutrition Services"
+      },
+      "authority": {
+        "en": "Cobb County School District Food & Nutrition Services",
+        "es": "Cobb County School District Food & Nutrition Services"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "after-school-program-registration": {
+      "operator": {
+        "en": "Cobb County School District / Eleyo",
+        "es": "Cobb County School District / Eleyo"
+      },
+      "authority": {
+        "en": "Cobb County School District / Eleyo",
+        "es": "Cobb County School District / Eleyo"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "childcare-financial-assistance": {
+      "operator": {
+        "en": "Georgia DECAL / CAPS",
+        "es": "Georgia DECAL / CAPS"
+      },
+      "authority": {
+        "en": "Georgia DECAL / CAPS",
+        "es": "Georgia DECAL / CAPS"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "public-health-services": {
+      "operator": {
+        "en": "Cobb & Douglas Public Health",
+        "es": "Cobb & Douglas Public Health"
+      },
+      "authority": {
+        "en": "Cobb & Douglas Public Health",
+        "es": "Cobb & Douglas Public Health"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "find-a-public-health-location": {
+      "operator": {
+        "en": "Cobb & Douglas Public Health",
+        "es": "Cobb & Douglas Public Health"
+      },
+      "authority": {
+        "en": "Cobb & Douglas Public Health",
+        "es": "Cobb & Douglas Public Health"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "birth-and-death-certificates": {
+      "operator": {
+        "en": "Cobb & Douglas Public Health",
+        "es": "Cobb & Douglas Public Health"
+      },
+      "authority": {
+        "en": "Cobb & Douglas Public Health",
+        "es": "Cobb & Douglas Public Health"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "wic-nutrition-support": {
+      "operator": {
+        "en": "Cobb & Douglas Public Health",
+        "es": "Cobb & Douglas Public Health"
+      },
+      "authority": {
+        "en": "Cobb & Douglas Public Health",
+        "es": "Cobb & Douglas Public Health"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "find-food-housing-and-other-help": {
+      "operator": {
+        "en": "The individual organization listed in the directory",
+        "es": "La organización que figure en el directorio"
+      },
+      "authority": {
+        "en": "Each organization sets its own service area and requirements",
+        "es": "Cada organización establece su zona y requisitos"
+      },
+      "next": {
+        "en": "Search by the kind of help and your area. Contact the listed organization to confirm current openings, eligibility and application steps.",
+        "es": "Busque el tipo de ayuda y su zona. Contacte a la organización para confirmar disponibilidad, requisitos y cómo solicitarla."
+      },
+      "prepare": {
+        "en": "The kind of help, general location and timing. Ask the organization which documents it needs before sharing them.",
+        "es": "Tipo de ayuda, zona general y urgencia. Pregunte qué documentos necesita la organización antes de compartirlos."
+      },
+      "phone": "county"
+    },
+    "apply-for-or-manage-state-benefits": {
+      "operator": {
+        "en": "Georgia DHS / Georgia Gateway",
+        "es": "Georgia DHS / Georgia Gateway"
+      },
+      "authority": {
+        "en": "Georgia DHS / Georgia Gateway",
+        "es": "Georgia DHS / Georgia Gateway"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "help-with-energy-bills": {
+      "operator": {
+        "en": "Your local LIHEAP administering agency",
+        "es": "La agencia local que administra LIHEAP"
+      },
+      "authority": {
+        "en": "Georgia DFCS program guidance; local agency handles applications",
+        "es": "DFCS de Georgia orienta sobre el programa; la agencia local tramita solicitudes"
+      },
+      "next": {
+        "en": "Use DFCS instructions to find your local agency. Ask about the current application period, funds and required documents.",
+        "es": "Siga las instrucciones de DFCS para encontrar su agencia local. Pregunte por el período de solicitud, fondos y documentos necesarios."
+      },
+      "prepare": {
+        "en": "Energy provider name and the type of help needed. Ask the agency which bill or income documents to bring.",
+        "es": "Nombre de la empresa de energía y tipo de ayuda. Pregunte qué facturas o documentos de ingresos debe llevar."
+      },
+      "phone": null
+    },
+    "senior-services": {
+      "operator": {
+        "en": "Cobb County Senior Services",
+        "es": "Cobb County Senior Services"
+      },
+      "authority": {
+        "en": "Cobb County Senior Services",
+        "es": "Cobb County Senior Services"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "find-rental-housing": {
+      "operator": {
+        "en": "Property managers listed in the state-linked housing search",
+        "es": "Administradores de las viviendas que aparezcan en el buscador estatal"
+      },
+      "authority": {
+        "en": "Georgia Department of Community Affairs links the search resource",
+        "es": "El Departamento de Asuntos Comunitarios de Georgia enlaza el buscador"
+      },
+      "next": {
+        "en": "Search available rentals by location and contact the listing provider. Ask about current availability, costs and accessibility.",
+        "es": "Busque alquileres por ubicación y contacte al proveedor del anuncio. Pregunte por disponibilidad actual, costos y accesibilidad."
+      },
+      "prepare": {
+        "en": "Preferred area, size, budget and accessibility needs. A search is not an application for financial aid.",
+        "es": "Zona, tamaño, presupuesto y necesidades de accesibilidad. Buscar vivienda no equivale a solicitar ayuda económica."
+      },
+      "phone": null
+    },
+    "veterans-benefits-assistance": {
+      "operator": {
+        "en": "Georgia Department of Veterans Service",
+        "es": "Georgia Department of Veterans Service"
+      },
+      "authority": {
+        "en": "Georgia Department of Veterans Service",
+        "es": "Georgia Department of Veterans Service"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "cobb-parks-and-recreation": {
+      "operator": {
+        "en": "Cobb County PARKS",
+        "es": "Cobb County PARKS"
+      },
+      "authority": {
+        "en": "Cobb County PARKS",
+        "es": "Cobb County PARKS"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "register-for-recreation-programs": {
+      "operator": {
+        "en": "Cobb County PARKS / CivicRec",
+        "es": "Cobb County PARKS / CivicRec"
+      },
+      "authority": {
+        "en": "Cobb County PARKS / CivicRec",
+        "es": "Cobb County PARKS / CivicRec"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "mableton-parks-department": {
+      "operator": {
+        "en": "City of Mableton",
+        "es": "City of Mableton"
+      },
+      "authority": {
+        "en": "City of Mableton",
+        "es": "City of Mableton"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "library-card-and-account-help": {
+      "operator": {
+        "en": "Cobb County Public Library",
+        "es": "Cobb County Public Library"
+      },
+      "authority": {
+        "en": "Cobb County Public Library",
+        "es": "Cobb County Public Library"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "south-cobb-regional-library": {
+      "operator": {
+        "en": "South Cobb Regional Library",
+        "es": "Biblioteca Regional de South Cobb"
+      },
+      "authority": {
+        "en": "Cobb County Public Library",
+        "es": "Biblioteca Pública del Condado de Cobb"
+      },
+      "next": {
+        "en": "Call or visit 805 Clay Road, Mableton, GA 30126. Ask about computers, Wi-Fi, printing or scanning, current hours, fees and what staff help is available.",
+        "es": "Llame o visite 805 Clay Road, Mableton, GA 30126. Pregunte por computadoras, Wi-Fi, impresión o escaneo, horarios, cargos y la ayuda que puede ofrecer el personal."
+      },
+      "prepare": {
+        "en": "What you want to do online and which documents you need to print or scan. Ask about card or identification requirements. Keep passwords private.",
+        "es": "Qué desea hacer en línea y qué documentos necesita imprimir o escanear. Pregunte por requisitos de tarjeta o identificación. No comparta contraseñas."
+      },
+      "phone": "library"
+    },
+    "mable-house-arts-and-events": {
+      "operator": {
+        "en": "Cobb County PARKS / Mable House",
+        "es": "Cobb County PARKS / Mable House"
+      },
+      "authority": {
+        "en": "Cobb County PARKS / Mable House",
+        "es": "Cobb County PARKS / Mable House"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "check-city-limits-and-council-district": {
+      "operator": {
+        "en": "City of Mableton",
+        "es": "City of Mableton"
+      },
+      "authority": {
+        "en": "City of Mableton",
+        "es": "City of Mableton"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": "city"
+    },
+    "contact-city-departments": {
+      "operator": {
+        "en": "City of Mableton",
+        "es": "City of Mableton"
+      },
+      "authority": {
+        "en": "City of Mableton",
+        "es": "City of Mableton"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": "city"
+    },
+    "mayor-and-city-council": {
+      "operator": {
+        "en": "City of Mableton",
+        "es": "City of Mableton"
+      },
+      "authority": {
+        "en": "City of Mableton",
+        "es": "City of Mableton"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "city-meeting-agendas-and-minutes": {
+      "operator": {
+        "en": "City of Mableton / CivicClerk",
+        "es": "City of Mableton / CivicClerk"
+      },
+      "authority": {
+        "en": "City of Mableton / CivicClerk",
+        "es": "City of Mableton / CivicClerk"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "request-city-public-records": {
+      "operator": {
+        "en": "City of Mableton",
+        "es": "City of Mableton"
+      },
+      "authority": {
+        "en": "City of Mableton",
+        "es": "City of Mableton"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "city-ordinances": {
+      "operator": {
+        "en": "City of Mableton",
+        "es": "City of Mableton"
+      },
+      "authority": {
+        "en": "City of Mableton",
+        "es": "City of Mableton"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "my-voter-page": {
+      "operator": {
+        "en": "Georgia Secretary of State",
+        "es": "Georgia Secretary of State"
+      },
+      "authority": {
+        "en": "Georgia Secretary of State",
+        "es": "Georgia Secretary of State"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "cobb-voting-information": {
+      "operator": {
+        "en": "Cobb County Elections & Registration",
+        "es": "Cobb County Elections & Registration"
+      },
+      "authority": {
+        "en": "Cobb County Elections & Registration",
+        "es": "Cobb County Elections & Registration"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "register-or-update-voter-registration": {
+      "operator": {
+        "en": "Cobb County Elections & Registration",
+        "es": "Cobb County Elections & Registration"
+      },
+      "authority": {
+        "en": "Cobb County Elections & Registration",
+        "es": "Cobb County Elections & Registration"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "mableton-municipal-court": {
+      "operator": {
+        "en": "City of Mableton",
+        "es": "City of Mableton"
+      },
+      "authority": {
+        "en": "City of Mableton",
+        "es": "City of Mableton"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "pay-a-mableton-court-citation": {
+      "operator": {
+        "en": "Mableton Municipal Court / JusticeONE",
+        "es": "Mableton Municipal Court / JusticeONE"
+      },
+      "authority": {
+        "en": "Mableton Municipal Court / JusticeONE",
+        "es": "Mableton Municipal Court / JusticeONE"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "cobb-county-courts": {
+      "operator": {
+        "en": "Cobb County Judicial System",
+        "es": "Cobb County Judicial System"
+      },
+      "authority": {
+        "en": "Cobb County Judicial System",
+        "es": "Cobb County Judicial System"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "probate-court-services": {
+      "operator": {
+        "en": "Cobb County Probate Court",
+        "es": "Cobb County Probate Court"
+      },
+      "authority": {
+        "en": "Cobb County Probate Court",
+        "es": "Cobb County Probate Court"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "law-library-and-self-help-resources": {
+      "operator": {
+        "en": "Cobb County Law Library",
+        "es": "Cobb County Law Library"
+      },
+      "authority": {
+        "en": "Cobb County Law Library",
+        "es": "Cobb County Law Library"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "career-help-and-job-training": {
+      "operator": {
+        "en": "WorkSource Cobb",
+        "es": "WorkSource Cobb"
+      },
+      "authority": {
+        "en": "WorkSource Cobb",
+        "es": "WorkSource Cobb"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "city-of-mableton-jobs": {
+      "operator": {
+        "en": "City of Mableton Human Resources",
+        "es": "City of Mableton Human Resources"
+      },
+      "authority": {
+        "en": "City of Mableton Human Resources",
+        "es": "City of Mableton Human Resources"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "cobb-county-jobs": {
+      "operator": {
+        "en": "Cobb County Human Resources / GovernmentJobs",
+        "es": "Cobb County Human Resources / GovernmentJobs"
+      },
+      "authority": {
+        "en": "Cobb County Human Resources / GovernmentJobs",
+        "es": "Cobb County Human Resources / GovernmentJobs"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "unemployment-and-job-seeker-services": {
+      "operator": {
+        "en": "Georgia Department of Labor",
+        "es": "Georgia Department of Labor"
+      },
+      "authority": {
+        "en": "Georgia Department of Labor",
+        "es": "Georgia Department of Labor"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    },
+    "city-bids-and-contracting-opportunities": {
+      "operator": {
+        "en": "City of Mableton Procurement",
+        "es": "City of Mableton Procurement"
+      },
+      "authority": {
+        "en": "City of Mableton Procurement",
+        "es": "City of Mableton Procurement"
+      },
+      "next": {
+        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
+        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+      },
+      "prepare": {
+        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
+        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+      },
+      "phone": null
+    }
+  },
+  "journeys": [
+    {
+      "id": "trash",
+      "icon": "trash",
+      "title": {
+        "en": "Trash pickup",
+        "es": "Recolección de basura"
+      },
+      "description": {
+        "en": "Missed pickup, a new provider or a large item.",
+        "es": "Recolección pendiente, nueva empresa u objetos grandes."
+      },
+      "start": "need",
+      "steps": {
+        "need": {
+          "question": {
+            "en": "What do you need?",
+            "es": "¿Qué necesita?"
+          },
+          "choices": [
+            {
+              "label": {
+                "en": "My regular pickup was missed",
+                "es": "No recogieron mi basura habitual"
+              },
+              "next": "provider"
+            },
+            {
+              "label": {
+                "en": "I need a trash company",
+                "es": "Necesito una empresa de recolección"
+              },
+              "outcome": "new"
+            },
+            {
+              "label": {
+                "en": "I have furniture or a large item",
+                "es": "Tengo muebles u objetos grandes"
+              },
+              "outcome": "bulky"
+            }
+          ]
+        },
+        "provider": {
+          "question": {
+            "en": "Do you know who collects your trash?",
+            "es": "¿Sabe quién recoge su basura?"
+          },
+          "choices": [
+            {
+              "label": {
+                "en": "Yes, I know my company",
+                "es": "Sí, conozco mi empresa"
+              },
+              "outcome": "missed"
+            },
+            {
+              "label": {
+                "en": "My HOA or property manager arranges it",
+                "es": "Mi asociación o administrador lo organiza"
+              },
+              "outcome": "hoa"
+            },
+            {
+              "label": {
+                "en": "I am not sure",
+                "es": "No estoy seguro"
+              },
+              "outcome": "unknown"
+            }
+          ]
+        }
+      },
+      "outcomes": {
+        "missed": {
+          "title": {
+            "en": "Contact your trash company",
+            "es": "Contacte a su empresa de basura"
+          },
+          "service_ids": [
+            "find-an-approved-trash-hauler"
+          ],
+          "instruction": {
+            "en": "Report the missed collection to the provider on your bill. The city does not operate the collection route.",
+            "es": "Reporte la recolección pendiente a la empresa de su factura. La ciudad no opera la ruta."
+          }
+        },
+        "hoa": {
+          "title": {
+            "en": "Ask your HOA or property manager",
+            "es": "Consulte a su asociación o administrador"
+          },
+          "service_ids": [
+            "find-an-approved-trash-hauler"
+          ],
+          "instruction": {
+            "en": "Ask which company handles your property and how it receives missed-pickup reports.",
+            "es": "Pregunte qué empresa atiende su propiedad y cómo recibe reportes de recolecciones pendientes."
+          }
+        },
+        "unknown": {
+          "title": {
+            "en": "Identify your existing provider first",
+            "es": "Identifique primero a su empresa"
+          },
+          "service_ids": [
+            "find-an-approved-trash-hauler"
+          ],
+          "instruction": {
+            "en": "Look at your bill or cart label, or ask your property manager. The approved list is not an address-to-provider lookup.",
+            "es": "Revise su factura o contenedor, o pregunte al administrador. La lista aprobada no identifica la empresa de cada dirección."
+          }
+        },
+        "new": {
+          "title": {
+            "en": "Choose an approved provider",
+            "es": "Elija una empresa aprobada"
+          },
+          "service_ids": [
+            "find-an-approved-trash-hauler"
+          ],
+          "instruction": {
+            "en": "Confirm that the hauler serves your address and ask about price and schedule before agreeing to service.",
+            "es": "Confirme que atienda su dirección y pregunte por precio y horario antes de contratar."
+          }
+        },
+        "bulky": {
+          "title": {
+            "en": "Arrange large-item disposal",
+            "es": "Organice la eliminación de objetos grandes"
+          },
+          "service_ids": [
+            "dispose-of-furniture-and-bulky-items",
+            "waste-disposal-facilities"
+          ],
+          "instruction": {
+            "en": "Do not assume large items are included in regular pickup. Confirm accepted items and any charges.",
+            "es": "No suponga que los objetos grandes están incluidos en la recolección habitual. Confirme materiales y cargos."
+          }
+        }
+      }
+    },
+    {
+      "id": "dumping",
+      "icon": "road",
+      "title": {
+        "en": "Dumped waste or a property concern",
+        "es": "Basura abandonada o problemas de una propiedad"
+      },
+      "description": {
+        "en": "Find the right reporting route.",
+        "es": "Encuentre dónde reportar el problema."
+      },
+      "start": "danger",
+      "steps": {
+        "danger": {
+          "question": {
+            "en": "Is someone in immediate danger?",
+            "es": "¿Hay alguien en peligro inmediato?"
+          },
+          "choices": [
+            {
+              "label": {
+                "en": "Yes — immediate danger",
+                "es": "Sí: peligro inmediato"
+              },
+              "outcome": "emergency"
+            },
+            {
+              "label": {
+                "en": "No — it is a routine concern",
+                "es": "No: es un problema no urgente"
+              },
+              "next": "location"
+            }
+          ]
+        },
+        "location": {
+          "question": {
+            "en": "Where is the problem?",
+            "es": "¿Dónde está el problema?"
+          },
+          "choices": [
+            {
+              "label": {
+                "en": "On a road or in the public right-of-way",
+                "es": "En una vía o espacio público de la vía"
+              },
+              "outcome": "road"
+            },
+            {
+              "label": {
+                "en": "On a property inside Mableton city limits",
+                "es": "En una propiedad dentro de Mableton"
+              },
+              "outcome": "property"
+            },
+            {
+              "label": {
+                "en": "I do not know the city boundary",
+                "es": "No sé si está dentro de la ciudad"
+              },
+              "outcome": "boundary"
+            }
+          ]
+        }
+      },
+      "outcomes": {
+        "emergency": {
+          "title": {
+            "en": "Call 911 for immediate danger",
+            "es": "Llame al 911 si hay peligro inmediato"
+          },
+          "service_ids": [],
+          "instruction": {
+            "en": "MabletonLink cannot send help. Move away from danger if you can do so safely.",
+            "es": "MabletonLink no puede enviar ayuda. Aléjese del peligro si puede hacerlo de forma segura."
+          }
+        },
+        "road": {
+          "title": {
+            "en": "Report a routine road concern",
+            "es": "Reporte un problema no urgente de la vía"
+          },
+          "service_ids": [
+            "report-a-road-or-neighborhood-problem"
+          ],
+          "instruction": {
+            "en": "Road responsibility can vary. Confirm the location and receiving agency in the official tool.",
+            "es": "La responsabilidad de la vía puede variar. Confirme la ubicación y la agencia receptora en la herramienta oficial."
+          }
+        },
+        "property": {
+          "title": {
+            "en": "Contact city Code Enforcement",
+            "es": "Contacte al departamento de normas municipales"
+          },
+          "service_ids": [
+            "report-a-code-violation"
+          ],
+          "instruction": {
+            "en": "Describe the concern factually. The department decides whether it is a code violation.",
+            "es": "Describa los hechos. El departamento decide si hay una infracción."
+          }
+        },
+        "boundary": {
+          "title": {
+            "en": "Check the city boundary first",
+            "es": "Compruebe primero el límite de la ciudad"
+          },
+          "service_ids": [
+            "check-city-limits-and-council-district",
+            "contact-city-departments"
+          ],
+          "instruction": {
+            "en": "A Mableton postal address is not proof of city jurisdiction. Use the official map or ask the city.",
+            "es": "Una dirección postal de Mableton no prueba la jurisdicción. Use el mapa oficial o pregunte a la ciudad."
+          }
+        }
+      }
+    },
+    {
+      "id": "housing",
+      "icon": "home",
+      "title": {
+        "en": "Housing or help with bills",
+        "es": "Vivienda o ayuda con facturas"
+      },
+      "description": {
+        "en": "Choose financial help, a rental search or a property concern.",
+        "es": "Elija ayuda económica, buscar alquiler o un problema de vivienda."
+      },
+      "start": "need",
+      "steps": {
+        "need": {
+          "question": {
+            "en": "What kind of help do you need?",
+            "es": "¿Qué tipo de ayuda necesita?"
+          },
+          "choices": [
+            {
+              "label": {
+                "en": "Help with rent, food or other essential costs",
+                "es": "Ayuda con alquiler, comida u otros gastos esenciales"
+              },
+              "outcome": "assistance"
+            },
+            {
+              "label": {
+                "en": "Help with an energy bill",
+                "es": "Ayuda con una factura de energía"
+              },
+              "outcome": "energy"
+            },
+            {
+              "label": {
+                "en": "Find a place to rent",
+                "es": "Buscar una vivienda de alquiler"
+              },
+              "outcome": "rental"
+            },
+            {
+              "label": {
+                "en": "An unsafe or poorly maintained property",
+                "es": "Una propiedad insegura o mal mantenida"
+              },
+              "next": "safety"
+            }
+          ]
+        },
+        "safety": {
+          "question": {
+            "en": "Is there immediate danger?",
+            "es": "¿Hay peligro inmediato?"
+          },
+          "choices": [
+            {
+              "label": {
+                "en": "Yes — immediate danger",
+                "es": "Sí: peligro inmediato"
+              },
+              "outcome": "emergency"
+            },
+            {
+              "label": {
+                "en": "No — I need to report a property concern",
+                "es": "No: necesito reportar un problema de la propiedad"
+              },
+              "outcome": "condition"
+            }
+          ]
+        }
+      },
+      "outcomes": {
+        "assistance": {
+          "title": {
+            "en": "Find an assistance organization",
+            "es": "Busque una organización de ayuda"
+          },
+          "service_ids": [
+            "find-food-housing-and-other-help"
+          ],
+          "instruction": {
+            "en": "Contact organizations to confirm availability. MabletonLink cannot determine eligibility or reserve funds.",
+            "es": "Confirme la disponibilidad con las organizaciones. MabletonLink no determina elegibilidad ni reserva fondos."
+          }
+        },
+        "energy": {
+          "title": {
+            "en": "Check energy assistance options",
+            "es": "Consulte opciones de ayuda de energía"
+          },
+          "service_ids": [
+            "help-with-energy-bills"
+          ],
+          "instruction": {
+            "en": "Ask the administering agency about current applications and funds. If a shutoff is pending, also contact the utility named on your bill.",
+            "es": "Pregunte a la agencia por solicitudes y fondos actuales. Si tiene aviso de corte, contacte también a la empresa de su factura."
+          }
+        },
+        "rental": {
+          "title": {
+            "en": "Search rental listings",
+            "es": "Busque anuncios de alquiler"
+          },
+          "service_ids": [
+            "find-rental-housing"
+          ],
+          "instruction": {
+            "en": "Contact the listing provider. Rental search and financial assistance are different services.",
+            "es": "Contacte al proveedor del anuncio. Buscar alquiler y solicitar ayuda económica son servicios distintos."
+          }
+        },
+        "condition": {
+          "title": {
+            "en": "Check jurisdiction and report the concern",
+            "es": "Compruebe la jurisdicción y reporte el problema"
+          },
+          "service_ids": [
+            "check-city-limits-and-council-district",
+            "report-a-code-violation"
+          ],
+          "instruction": {
+            "en": "For routine concerns within Mableton, contact Code Enforcement. This is service navigation, not legal advice or a guarantee of an inspection.",
+            "es": "Para problemas no urgentes dentro de Mableton, contacte al departamento de normas. Esta orientación no es asesoría legal ni garantiza una inspección."
+          }
+        },
+        "emergency": {
+          "title": {
+            "en": "Call 911 for immediate danger",
+            "es": "Llame al 911 si hay peligro inmediato"
+          },
+          "service_ids": [],
+          "instruction": {
+            "en": "MabletonLink cannot contact emergency services.",
+            "es": "MabletonLink no puede contactar a los servicios de emergencia."
+          }
+        }
+      }
+    },
+    {
+      "id": "transport",
+      "icon": "bus",
+      "title": {
+        "en": "Get around without a car",
+        "es": "Viajar sin automóvil"
+      },
+      "description": {
+        "en": "Bus routes, on-demand rides or accessible transit.",
+        "es": "Autobuses, viajes a demanda o transporte accesible."
+      },
+      "start": "need",
+      "steps": {
+        "need": {
+          "question": {
+            "en": "Which service would you like to check?",
+            "es": "¿Qué servicio desea consultar?"
+          },
+          "choices": [
+            {
+              "label": {
+                "en": "A regular bus route",
+                "es": "Una ruta regular de autobús"
+              },
+              "outcome": "bus"
+            },
+            {
+              "label": {
+                "en": "CobbLinc Go on-demand rides",
+                "es": "Viajes a demanda de CobbLinc Go"
+              },
+              "outcome": "go"
+            },
+            {
+              "label": {
+                "en": "Paratransit or disability access",
+                "es": "Paratránsito o accesibilidad por discapacidad"
+              },
+              "outcome": "paratransit"
+            },
+            {
+              "label": {
+                "en": "I am not sure which option fits",
+                "es": "No sé qué opción me conviene"
+              },
+              "outcome": "advice"
+            }
+          ]
+        }
+      },
+      "outcomes": {
+        "bus": {
+          "title": {
+            "en": "Check a route for your trip",
+            "es": "Consulte una ruta para su viaje"
+          },
+          "service_ids": [
+            "cobblinc-transit-services",
+            "live-bus-tracking"
+          ],
+          "instruction": {
+            "en": "Use the current schedule. Live tracking is only available when the provider system is working.",
+            "es": "Use el horario actual. El seguimiento en vivo depende del sistema del proveedor."
+          }
+        },
+        "go": {
+          "title": {
+            "en": "Confirm Go covers both trip endpoints",
+            "es": "Confirme que Go cubra origen y destino"
+          },
+          "service_ids": [
+            "cobblinc-go-on-demand-rides"
+          ],
+          "instruction": {
+            "en": "Ask CobbLinc about current operation and coverage before planning a trip. The service is not guaranteed throughout Mableton.",
+            "es": "Pregunte a CobbLinc por funcionamiento y cobertura actuales antes de planificar. No se garantiza servicio en todo Mableton."
+          }
+        },
+        "paratransit": {
+          "title": {
+            "en": "Check certification and service area",
+            "es": "Compruebe certificación y zona de servicio"
+          },
+          "service_ids": [
+            "paratransit"
+          ],
+          "instruction": {
+            "en": "Paratransit requires certification and eligible trip endpoints. Disability alone does not confirm eligibility.",
+            "es": "El paratránsito requiere certificación y puntos de viaje elegibles. Tener una discapacidad no confirma por sí solo la elegibilidad."
+          }
+        },
+        "advice": {
+          "title": {
+            "en": "Ask CobbLinc about your trip",
+            "es": "Consulte a CobbLinc sobre su viaje"
+          },
+          "service_ids": [
+            "cobblinc-transit-services"
+          ],
+          "instruction": {
+            "en": "Describe the starting area, destination, day and access needs. Ask which options are currently available.",
+            "es": "Describa origen, destino, día y necesidades de acceso. Pregunte qué opciones están disponibles."
+          }
+        }
+      }
+    },
+    {
+      "id": "access",
+      "icon": "building",
+      "title": {
+        "en": "Help using online services",
+        "es": "Ayuda para usar servicios en línea"
+      },
+      "description": {
+        "en": "Computers, printing, phone help or language support.",
+        "es": "Computadoras, impresión, ayuda telefónica o de idioma."
+      },
+      "start": "need",
+      "steps": {
+        "need": {
+          "question": {
+            "en": "What would help you use the service?",
+            "es": "¿Qué le ayudaría a usar el servicio?"
+          },
+          "choices": [
+            {
+              "label": {
+                "en": "A computer or internet access",
+                "es": "Una computadora o acceso a internet"
+              },
+              "outcome": "computer"
+            },
+            {
+              "label": {
+                "en": "Printing or scanning documents",
+                "es": "Imprimir o escanear documentos"
+              },
+              "outcome": "print"
+            },
+            {
+              "label": {
+                "en": "Speaking with someone by phone",
+                "es": "Hablar con alguien por teléfono"
+              },
+              "outcome": "phone"
+            },
+            {
+              "label": {
+                "en": "Help in Spanish or another language",
+                "es": "Ayuda en español u otro idioma"
+              },
+              "outcome": "language"
+            }
+          ]
+        }
+      },
+      "outcomes": {
+        "computer": {
+          "title": {
+            "en": "Ask the library about computer access",
+            "es": "Pregunte a la biblioteca por computadoras"
+          },
+          "service_ids": [
+            "south-cobb-regional-library"
+          ],
+          "instruction": {
+            "en": "Confirm hours, sign-up requirements and what staff assistance is available before visiting.",
+            "es": "Antes de ir, confirme horarios, requisitos de uso y qué ayuda puede ofrecer el personal."
+          }
+        },
+        "print": {
+          "title": {
+            "en": "Ask about printing and scanning",
+            "es": "Pregunte por impresión y escaneo"
+          },
+          "service_ids": [
+            "south-cobb-regional-library"
+          ],
+          "instruction": {
+            "en": "Check fees, file formats and scanning options. Do not assume printing is free.",
+            "es": "Confirme cargos, formatos y opciones de escaneo. No suponga que imprimir sea gratuito."
+          }
+        },
+        "phone": {
+          "title": {
+            "en": "Find the right person to call",
+            "es": "Encuentre a quién llamar"
+          },
+          "service_ids": [
+            "contact-city-departments",
+            "south-cobb-regional-library"
+          ],
+          "instruction": {
+            "en": "Use the provider phone shown on a service card when available. City staff can help identify a department; the library can answer questions about its access services.",
+            "es": "Use el teléfono de la entidad que aparezca en la ficha. La ciudad puede orientar sobre departamentos; la biblioteca informa sobre sus propios servicios de acceso."
+          }
+        },
+        "language": {
+          "title": {
+            "en": "Ask the provider about language assistance",
+            "es": "Pregunte a la entidad por ayuda de idioma"
+          },
+          "service_ids": [
+            "contact-city-departments"
+          ],
+          "instruction": {
+            "en": "You can say: “I prefer Spanish. Is an interpreter or translated form available?” Availability varies. External websites may be English-only.",
+            "es": "Puede decir: «Prefiero español. ¿Hay un intérprete o formulario traducido disponible?» La disponibilidad varía. Los sitios externos pueden estar solo en inglés."
+          }
+        }
+      }
+    }
+  ]
+}

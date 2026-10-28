@@ -1,0 +1,447 @@
+{
+  "emergency-and-non-emergency-assistance": {
+    "title": "Asistencia de emergencia y no urgente",
+    "description": "Consulte los contactos y las instrucciones para pedir ayuda. En una emergencia, llame al 911.",
+    "applicability": "Para residentes y visitantes que necesitan asistencia local."
+  },
+  "police-services": {
+    "title": "Servicios de policía",
+    "description": "Busque contactos, comisarías y servicios de policía.",
+    "applicability": "Las preguntas frecuentes de la ciudad remiten actualmente a la Policía del Condado de Cobb durante la transición."
+  },
+  "fire-and-rescue-services": {
+    "title": "Bomberos y rescate",
+    "description": "Consulte contactos, prevención, informes e inspecciones.",
+    "applicability": "En una emergencia, llame al 911."
+  },
+  "emergency-alerts-and-weather-warnings": {
+    "title": "Alertas de emergencia y del tiempo",
+    "description": "Encuentre canales oficiales de aviso, alertas móviles y la suscripción a CobbLine.",
+    "applicability": "Durante un incidente, siga las alertas oficiales actuales."
+  },
+  "city-news-and-notifications": {
+    "title": "Noticias y avisos de la ciudad",
+    "description": "Suscríbase por correo electrónico o mensaje de texto a noticias, calendarios y avisos disponibles.",
+    "applicability": "Administre sus preferencias en el sitio de la ciudad."
+  },
+  "mableton-public-safety-transition": {
+    "title": "Transición de seguridad pública de Mableton",
+    "description": "Consulte información actual sobre la cobertura policial y los planes de seguridad pública.",
+    "applicability": "Revise esta información cuando cambien las responsabilidades del servicio."
+  },
+  "outdoor-burning-information": {
+    "title": "Quema al aire libre",
+    "description": "Consulte las restricciones actuales y las instrucciones del departamento.",
+    "applicability": "Compruebe las reglas y restricciones de temporada antes de quemar."
+  },
+  "report-a-code-violation": {
+    "title": "Reportar un problema de normas municipales",
+    "description": "Reporte problemas de mantenimiento de propiedades y otras posibles infracciones mediante el formulario oficial.",
+    "applicability": "Para asuntos no urgentes dentro de los límites de Mableton."
+  },
+  "report-a-road-or-neighborhood-problem": {
+    "title": "Reportar un problema en una calle o vecindario",
+    "description": "Reporte baches, señales dañadas o escombros en la vía pública.",
+    "applicability": "La guía de Mableton enlaza este servicio; la agencia responsable depende del problema y de la vía."
+  },
+  "get-a-police-incident-or-accident-report": {
+    "title": "Obtener un informe policial o de accidente",
+    "description": "Consulte cómo solicitar informes de incidentes o accidentes.",
+    "applicability": "Para documentos que conserva la Policía del Condado de Cobb."
+  },
+  "animal-services-and-complaints": {
+    "title": "Servicios y quejas sobre animales",
+    "description": "Busque contactos de control de animales, quejas, refugios y adopciones.",
+    "applicability": "Siga las instrucciones de la agencia para problemas urgentes."
+  },
+  "lost-and-found-pets": {
+    "title": "Mascotas perdidas y encontradas",
+    "description": "Consulte refugios y recursos para reportar una mascota perdida o encontrada.",
+    "applicability": "Compruebe el procedimiento actual del refugio para recuperar una mascota."
+  },
+  "pay-a-water-bill": {
+    "title": "Pagar la factura del agua",
+    "description": "Consulte las opciones oficiales de pago y el servicio de pagos del condado.",
+    "applicability": "Para clientes de Cobb County Water System."
+  },
+  "start-stop-or-transfer-water-service": {
+    "title": "Iniciar, suspender o transferir el agua",
+    "description": "Encuentre pasos y formularios para iniciar, cambiar o terminar el servicio de agua.",
+    "applicability": "Confirme que Cobb County Water System atienda la propiedad."
+  },
+  "water-and-sewer-customer-support": {
+    "title": "Ayuda con agua y alcantarillado",
+    "description": "Busque contactos, reporte problemas y obtenga ayuda con su cuenta.",
+    "applicability": "Para problemas urgentes, use el contacto de emergencia que indique la empresa."
+  },
+  "water-outage-map": {
+    "title": "Mapa de cortes de agua",
+    "description": "Consulte el mapa oficial de interrupciones del servicio de agua.",
+    "applicability": "Es un mapa interactivo; use los contactos de la empresa para reportar un problema urgente."
+  },
+  "georgia-power-account-and-service": {
+    "title": "Cuenta y servicio de Georgia Power",
+    "description": "Acceda a pagos, administración de cuenta y opciones para iniciar, suspender o transferir el servicio.",
+    "applicability": "Solo para direcciones atendidas por Georgia Power."
+  },
+  "georgia-power-outage-map": {
+    "title": "Mapa de cortes de Georgia Power",
+    "description": "Consulte cortes de electricidad e información disponible sobre el restablecimiento.",
+    "applicability": "Solo para la red de Georgia Power."
+  },
+  "cobb-emc-account-and-billing": {
+    "title": "Cuenta y facturación de Cobb EMC",
+    "description": "Consulte su cuenta, opciones de pago y ayuda con facturación.",
+    "applicability": "Solo para miembros de Cobb EMC; confirme qué empresa atiende su dirección."
+  },
+  "cobb-emc-outage-and-storm-center": {
+    "title": "Cortes y tormentas de Cobb EMC",
+    "description": "Encuentre cómo reportar cortes y consultar avisos de la empresa.",
+    "applicability": "Solo para la red de Cobb EMC."
+  },
+  "austell-gas-account-and-service": {
+    "title": "Cuenta y servicio de Austell Gas",
+    "description": "Acceda a pagos, solicitudes, atención al cliente e información de seguridad del gas.",
+    "applicability": "Solo para propiedades atendidas por Austell Gas System."
+  },
+  "atlanta-gas-light-service-information": {
+    "title": "Información de Atlanta Gas Light",
+    "description": "Consulte distribución de gas, contactos de seguridad e instrucciones para iniciar el servicio.",
+    "applicability": "En su zona de servicio, la factura la gestiona el comercializador de gas que haya elegido."
+  },
+  "find-an-approved-trash-hauler": {
+    "title": "Buscar una empresa de recolección de basura",
+    "description": "Encuentre empresas aprobadas por la ciudad y orientación sobre residuos.",
+    "applicability": "La ciudad no recoge la basura directamente. Confirme el servicio y el horario con su empresa o asociación de propietarios."
+  },
+  "dispose-of-furniture-and-bulky-items": {
+    "title": "Desechar muebles y objetos grandes",
+    "description": "Consulte opciones de recolección, eliminación y donación de objetos voluminosos.",
+    "applicability": "Acuerde la recolección y confirme los cargos con su empresa actual."
+  },
+  "waste-disposal-facilities": {
+    "title": "Instalaciones para desechar residuos",
+    "description": "Consulte ubicaciones, materiales aceptados, funcionamiento y cargos.",
+    "applicability": "Confirme las reglas de la instalación y del material antes de ir."
+  },
+  "recycling-drop-off-locations": {
+    "title": "Puntos de reciclaje",
+    "description": "Encuentre puntos de entrega de reciclaje y avisos de cierres.",
+    "applicability": "Confirme que estén abiertos y qué materiales aceptan antes de ir."
+  },
+  "city-payments-and-fees": {
+    "title": "Pagos y cargos de la ciudad",
+    "description": "Elija el sistema correcto para facturas de distritos, multas, permisos o licencias.",
+    "applicability": "La ciudad y el condado usan sistemas distintos. Siga las instrucciones de su factura."
+  },
+  "public-safety-special-service-district-bill": {
+    "title": "Factura del distrito especial de seguridad pública",
+    "description": "Consulte información de la factura Public Safety SSD y cómo pagarla.",
+    "applicability": "Para propiedades afectadas dentro de Mableton; es distinta de los impuestos del condado."
+  },
+  "county-property-taxes": {
+    "title": "Impuestos sobre la propiedad del condado",
+    "description": "Consulte información y el portal oficial de búsqueda y pago.",
+    "applicability": "Para facturas administradas por el Comisionado de Impuestos del Condado de Cobb."
+  },
+  "homestead-and-property-tax-exemptions": {
+    "title": "Exenciones de impuestos sobre la propiedad",
+    "description": "Revise los tipos de exención, requisitos, instrucciones y solicitudes.",
+    "applicability": "Los requisitos y las fechas dependen de la exención y del año fiscal."
+  },
+  "property-assessments-and-parcel-records": {
+    "title": "Tasaciones y registros de propiedades",
+    "description": "Acceda a información de tasaciones, parcelas y procedimientos relacionados.",
+    "applicability": "Para preguntas sobre tasaciones; el Comisionado de Impuestos gestiona los pagos."
+  },
+  "permit-and-licensing-portal": {
+    "title": "Portal de permisos y licencias",
+    "description": "Acceda al sistema de solicitudes, documentos, estados y pagos de la ciudad.",
+    "applicability": "Para permisos y licencias de la ciudad; el sitio externo puede requerir una cuenta."
+  },
+  "building-permits-and-requirements": {
+    "title": "Permisos y requisitos de construcción",
+    "description": "Encuentre información, formularios, requisitos y contactos.",
+    "applicability": "Confirme la jurisdicción de la ciudad y los requisitos para su obra."
+  },
+  "schedule-a-building-inspection": {
+    "title": "Programar una inspección de construcción",
+    "description": "Consulte las instrucciones y solicite una inspección mediante Cloudpermit.",
+    "applicability": "Consulte los plazos actuales en la página de inspecciones."
+  },
+  "planning-and-zoning": {
+    "title": "Planificación y zonificación",
+    "description": "Consulte zonificación, solicitudes de uso del suelo e información de planificación.",
+    "applicability": "Para propiedades dentro de los límites de Mableton."
+  },
+  "site-development-and-land-disturbance": {
+    "title": "Desarrollo de terrenos y movimiento de tierra",
+    "description": "Busque contactos sobre planos, permisos de movimiento de tierra y drenaje de proyectos.",
+    "applicability": "Para proyectos de desarrollo; los problemas habituales de drenaje pueden corresponder a otra agencia."
+  },
+  "business-licenses": {
+    "title": "Licencias comerciales",
+    "description": "Encuentre solicitudes, renovaciones e información sobre licencias de negocios.",
+    "applicability": "Para negocios sujetos a los requisitos de Mableton."
+  },
+  "cobblinc-transit-services": {
+    "title": "Servicios de transporte CobbLinc",
+    "description": "Consulte contactos, tarifas, avisos, pases e información de accesibilidad.",
+    "applicability": "Confirme la ruta, el horario y la zona para su viaje."
+  },
+  "live-bus-tracking": {
+    "title": "Seguimiento de autobuses",
+    "description": "Consulte autobuses, paradas e información disponible de llegadas de CobbLinc.",
+    "applicability": "La información en tiempo real depende de la disponibilidad del sistema."
+  },
+  "cobblinc-go-on-demand-rides": {
+    "title": "Viajes a demanda de CobbLinc Go",
+    "description": "Compruebe la zona de servicio, las reservas y la información del programa.",
+    "applicability": "Confirme que esté en funcionamiento y que cubra el origen y destino. No cubre necesariamente todo Mableton."
+  },
+  "paratransit": {
+    "title": "Transporte adaptado: paratránsito",
+    "description": "Consulte requisitos, zonas de servicio, certificación y contactos para reservas.",
+    "applicability": "Se aplican requisitos de elegibilidad y límites geográficos."
+  },
+  "georgia-traffic-and-road-conditions": {
+    "title": "Tráfico y condiciones de carreteras de Georgia",
+    "description": "Consulte tráfico, incidentes, cámaras y avisos de viaje.",
+    "applicability": "Servicio interactivo para todo el estado."
+  },
+  "driver-s-license-and-state-id": {
+    "title": "Licencia de conducir e identificación estatal",
+    "description": "Busque renovaciones, cambios de dirección, citas y centros de atención.",
+    "applicability": "DDS gestiona documentos de conductores; el registro de vehículos se tramita por separado."
+  },
+  "vehicle-registration-and-tags": {
+    "title": "Registro y placas de vehículos",
+    "description": "Consulte registros, renovaciones, títulos, emisiones y estacionamiento accesible.",
+    "applicability": "Compruebe los requisitos del condado y el trámite que necesita."
+  },
+  "enroll-a-student": {
+    "title": "Inscribir a un estudiante",
+    "description": "Encuentre pasos, documentos necesarios y recursos de inscripción.",
+    "applicability": "La escuela asignada depende de la dirección y de las reglas del distrito."
+  },
+  "school-attendance-zones": {
+    "title": "Zonas de asistencia escolar",
+    "description": "Consulte mapas y recursos oficiales de asignación de escuelas.",
+    "applicability": "Confirme la escuela de su dirección con el distrito; los mapas publicados son orientativos."
+  },
+  "school-bus-route-finder": {
+    "title": "Buscar la ruta del autobús escolar",
+    "description": "Busque la ruta regular según la dirección y el programa del estudiante.",
+    "applicability": "El transporte de educación especial tiene instrucciones separadas."
+  },
+  "parentvue-grades-and-attendance": {
+    "title": "ParentVUE: notas y asistencia",
+    "description": "Acceda al portal del distrito para consultar notas, asistencia y otros registros.",
+    "applicability": "Requiere una cuenta escolar autorizada."
+  },
+  "ctls-parent-communications": {
+    "title": "CTLS Parent: comunicación escolar",
+    "description": "Abra el servicio de comunicación para familias enlazado por el distrito.",
+    "applicability": "Requiere una cuenta escolar autorizada."
+  },
+  "school-calendar": {
+    "title": "Calendario escolar",
+    "description": "Consulte días de clases, vacaciones y actualizaciones del distrito.",
+    "applicability": "Use el año escolar actual y los avisos de su escuela."
+  },
+  "school-menus-and-meal-assistance": {
+    "title": "Menús y ayuda para comidas escolares",
+    "description": "Consulte menús, solicitudes, nutrición y contactos de alimentación escolar.",
+    "applicability": "Compruebe los requisitos actuales y la información de la escuela de su hijo."
+  },
+  "pay-for-school-meals": {
+    "title": "Pagar comidas escolares",
+    "description": "Consulte cómo añadir fondos a la cuenta de comidas del estudiante.",
+    "applicability": "Use el servicio de pagos indicado por el distrito."
+  },
+  "after-school-program-registration": {
+    "title": "Inscripción a programas después de clases",
+    "description": "Inscríbase al programa de primaria y administre la cuenta o los pagos.",
+    "applicability": "Se aplican reglas de inscripción, disponibilidad por escuela y cargos."
+  },
+  "childcare-financial-assistance": {
+    "title": "Ayuda para pagar el cuidado infantil",
+    "description": "Revise requisitos, solicitudes y opciones para gestionar su caso.",
+    "applicability": "Depende de los requisitos del programa y de los fondos disponibles."
+  },
+  "public-health-services": {
+    "title": "Servicios de salud pública",
+    "description": "Encuentre clínicas, vacunas, pruebas de detección y programas de salud.",
+    "applicability": "Confirme la disponibilidad y si necesita una cita."
+  },
+  "find-a-public-health-location": {
+    "title": "Buscar un centro de salud pública",
+    "description": "Encuentre centros, incluido South Cobb, y sus servicios.",
+    "applicability": "Los servicios y horarios varían según el centro."
+  },
+  "birth-and-death-certificates": {
+    "title": "Certificados de nacimiento y defunción",
+    "description": "Consulte cómo solicitar los documentos que puede obtener.",
+    "applicability": "Se aplican requisitos de identificación, elegibilidad, cargos y disponibilidad."
+  },
+  "wic-nutrition-support": {
+    "title": "Apoyo de nutrición WIC",
+    "description": "Consulte información, requisitos y contactos de inscripción de WIC.",
+    "applicability": "Siga el proceso actual de solicitud del programa."
+  },
+  "find-food-housing-and-other-help": {
+    "title": "Buscar alimentos, vivienda y otras ayudas",
+    "description": "Busque apoyo de alimentos, vivienda, salud y otros recursos en el directorio enlazado por el condado.",
+    "applicability": "Cada organización establece su disponibilidad y requisitos."
+  },
+  "apply-for-or-manage-state-benefits": {
+    "title": "Solicitar o gestionar beneficios estatales",
+    "description": "Acceda a Georgia Gateway para solicitudes, renovaciones, documentos y actualizaciones.",
+    "applicability": "Cada programa tiene reglas propias; puede requerir una cuenta."
+  },
+  "help-with-energy-bills": {
+    "title": "Ayuda con facturas de energía",
+    "description": "Consulte LIHEAP y cómo contactar a la agencia local que administra el programa.",
+    "applicability": "Las temporadas de solicitud, requisitos y fondos varían."
+  },
+  "senior-services": {
+    "title": "Servicios para personas mayores",
+    "description": "Consulte centros, actividades, comidas, transporte y apoyo.",
+    "applicability": "Pueden aplicarse requisitos de edad, residencia, evaluación y disponibilidad."
+  },
+  "find-rental-housing": {
+    "title": "Buscar vivienda de alquiler",
+    "description": "Acceda al buscador gratuito de viviendas del estado.",
+    "applicability": "La búsqueda no confirma elegibilidad para ayuda ni garantiza una vivienda disponible."
+  },
+  "veterans-benefits-assistance": {
+    "title": "Ayuda con beneficios para veteranos",
+    "description": "Encuentre oficinas y ayuda para comprender beneficios y servicios.",
+    "applicability": "Los requisitos dependen del programa."
+  },
+  "cobb-parks-and-recreation": {
+    "title": "Parques y recreación de Cobb",
+    "description": "Encuentre parques, instalaciones, programas y actividades.",
+    "applicability": "Confirme la instalación, la entidad que organiza el programa y la disponibilidad."
+  },
+  "register-for-recreation-programs": {
+    "title": "Inscribirse a programas recreativos",
+    "description": "Busque e inscríbase a actividades disponibles del condado.",
+    "applicability": "Puede requerir cuenta, pago o requisitos de edad o residencia."
+  },
+  "mableton-parks-department": {
+    "title": "Departamento de Parques de Mableton",
+    "description": "Consulte información y contactos del departamento municipal.",
+    "applicability": "Los programas e inscripciones del condado tienen enlaces separados."
+  },
+  "library-card-and-account-help": {
+    "title": "Tarjeta y cuenta de biblioteca",
+    "description": "Consulte requisitos, inscripción, préstamos y ayuda con su cuenta.",
+    "applicability": "Se aplican las reglas de identificación y préstamos de la biblioteca."
+  },
+  "south-cobb-regional-library": {
+    "title": "Biblioteca Regional de South Cobb",
+    "description": "Encuentre información de la sucursal, eventos, catálogo y recursos de acceso digital.",
+    "applicability": "Confirme horarios, registro de eventos y requisitos para usar los servicios."
+  },
+  "mable-house-arts-and-events": {
+    "title": "Arte y eventos de Mable House",
+    "description": "Consulte el centro de artes, anfiteatro, casa histórica, clases y eventos.",
+    "applicability": "Los horarios, inscripciones y entradas dependen de la actividad."
+  },
+  "check-city-limits-and-council-district": {
+    "title": "Consultar límites de la ciudad y distrito",
+    "description": "Use el mapa municipal para comprobar si una dirección está en Mableton y encontrar su distrito.",
+    "applicability": "Una dirección postal de Mableton no confirma por sí sola que esté dentro de la ciudad."
+  },
+  "contact-city-departments": {
+    "title": "Contactar departamentos de la ciudad",
+    "description": "Encuentre contactos de departamentos y personal.",
+    "applicability": "Elija el departamento responsable del servicio."
+  },
+  "mayor-and-city-council": {
+    "title": "Alcalde y Concejo Municipal",
+    "description": "Encuentre representantes electos y sus contactos.",
+    "applicability": "Use el mapa de distritos para identificar a su representante."
+  },
+  "city-meeting-agendas-and-minutes": {
+    "title": "Agendas y actas de reuniones municipales",
+    "description": "Acceda al portal de agendas y actas enlazado por la ciudad.",
+    "applicability": "Es un portal externo designado por la ciudad."
+  },
+  "request-city-public-records": {
+    "title": "Solicitar documentos públicos de la ciudad",
+    "description": "Consulte cómo solicitar documentos que conserva la ciudad.",
+    "applicability": "El condado, las escuelas y otras agencias conservan sus propios documentos."
+  },
+  "city-ordinances": {
+    "title": "Ordenanzas municipales",
+    "description": "Consulte la colección de ordenanzas enlazada por la ciudad.",
+    "applicability": "Use los documentos y las modificaciones oficiales actuales."
+  },
+  "my-voter-page": {
+    "title": "My Voter Page: información del votante",
+    "description": "Consulte su registro, lugar de votación e información electoral disponible.",
+    "applicability": "Algunas funciones dependen del ciclo electoral."
+  },
+  "cobb-voting-information": {
+    "title": "Información electoral de Cobb",
+    "description": "Encuentre instrucciones oficiales, voto ausente y recursos electorales.",
+    "applicability": "Los lugares de votación anticipada pueden ser distintos de los del día de las elecciones."
+  },
+  "register-or-update-voter-registration": {
+    "title": "Registrarse para votar o actualizar el registro",
+    "description": "Consulte registro, cambio de dirección, requisitos y fechas límite.",
+    "applicability": "Compruebe los plazos y requisitos oficiales actuales."
+  },
+  "mableton-municipal-court": {
+    "title": "Tribunal Municipal de Mableton",
+    "description": "Consulte contactos, calendarios e información para usuarios del tribunal.",
+    "applicability": "Compruebe qué tribunal figura en su citación o aviso."
+  },
+  "pay-a-mableton-court-citation": {
+    "title": "Pagar una multa del Tribunal de Mableton",
+    "description": "Abra el portal de búsqueda y pago enlazado por la ciudad.",
+    "applicability": "Para citaciones del Tribunal Municipal; las opciones dependen del caso."
+  },
+  "cobb-county-courts": {
+    "title": "Tribunales del Condado de Cobb",
+    "description": "Encuentre el tribunal correcto, servicio de jurado y recursos relacionados.",
+    "applicability": "Los casos del condado y de la ciudad usan tribunales y sistemas distintos."
+  },
+  "probate-court-services": {
+    "title": "Servicios del Tribunal de Sucesiones",
+    "description": "Consulte licencias matrimoniales, herencias, tutelas y otros servicios.",
+    "applicability": "Compruebe las instrucciones actuales de solicitud y citas."
+  },
+  "law-library-and-self-help-resources": {
+    "title": "Biblioteca jurídica y recursos de autoayuda",
+    "description": "Encuentre recursos de investigación, información de formularios y ayuda de biblioteca.",
+    "applicability": "Confirme con el tribunal de su caso qué formularios y procedimientos requiere."
+  },
+  "career-help-and-job-training": {
+    "title": "Ayuda para buscar empleo y capacitación",
+    "description": "Encuentre apoyo para buscar trabajo, formación y contactos locales.",
+    "applicability": "Los requisitos y la disponibilidad de capacitación varían."
+  },
+  "city-of-mableton-jobs": {
+    "title": "Empleos de la Ciudad de Mableton",
+    "description": "Consulte información de empleo y el acceso oficial a las solicitudes.",
+    "applicability": "Las vacantes cambian; consulte los anuncios actuales enlazados por la ciudad."
+  },
+  "cobb-county-jobs": {
+    "title": "Empleos del Condado de Cobb",
+    "description": "Busque vacantes del gobierno del condado y presente solicitudes.",
+    "applicability": "Portal externo de contratación designado por el condado."
+  },
+  "unemployment-and-job-seeker-services": {
+    "title": "Desempleo y servicios para buscar trabajo",
+    "description": "Consulte recursos de solicitudes de desempleo, búsqueda de empleo e información laboral.",
+    "applicability": "El estado determina los requisitos y la elegibilidad."
+  },
+  "city-bids-and-contracting-opportunities": {
+    "title": "Licitaciones y contratos de la ciudad",
+    "description": "Consulte cómo encontrar licitaciones en el registro de compras de Georgia.",
+    "applicability": "Seleccione MABLETON, CITY OF; cada licitación tiene sus propios plazos y requisitos."
+  }
+}

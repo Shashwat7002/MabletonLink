@@ -28,3 +28,17 @@ Run `python3 scripts/export-standalone.py` for the offline directory export. Off
 The assistant selects approved records; it does not answer arbitrary questions, invent policy details, access accounts or take actions. Model relevance is probabilistic and needs real-key evaluation. User questions are not persisted by the application.
 
 `ACCESSIBILITY-REVIEW.md` records prior keyboard/AX/zoom checks and the limits of native VoiceOver verification. `DESIGN-CONTRACT.md` records the simple monochrome design.
+
+## Bilingual guided-service implementation (2026-10-28)
+
+The app now includes English/Spanish navigation and 89 translated service records, five guided journeys with 22 outcomes, consistent provider/authority/next-step cards, access-help alternatives, local saved plans and printing. No SSO. No form submission or ticket tracking is implied.
+
+- `public/guidance.json`: paired action metadata, verified contacts and journey graph.
+- `public/services.es.json` and `public/i18n.mjs`: service and interface translations.
+- `public/routing.mjs`: conservative deterministic routing/search fallback.
+- `docs/`: two-page brief, sources, maintenance, demo and evaluation handoffs.
+- `GATES.md`: Unlazy completion ledger and external validation limits.
+
+Run `node scripts/verify-directory.mjs`, `node scripts/verify-routing.mjs`, `node scripts/verify-build.mjs`, and `node scripts/verify-handoff.mjs`. Generate the standalone directory with `python3 scripts/export-standalone.py` (output in ignored `artifacts/`). A fresh offline visit to the hosted Site is not supported; the exported file includes its data.
+
+Active working copy: `/Users/shashwatchoudhary/Developer/MabletonLink`. The original Documents checkout was preserved because cloud-backed files repeatedly timed out. Do not edit both copies concurrently.

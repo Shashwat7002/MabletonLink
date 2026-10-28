@@ -1,4 +1,6 @@
 import {SYSTEM_INSTRUCTION, decisionSchema} from './policy.mjs';
+import {routeQuestion} from '../public/routing.mjs';
+import {translate} from '../public/i18n.mjs';
 
 const DEFAULT_MODEL = 'gemini-2.5-flash';
 const STATUSES = new Set(['match', 'clarify', 'out_of_scope', 'not_found', 'emergency']);
@@ -33,11 +35,13 @@ function validQuestion(value) {
   return typeof value === 'string' && value.trim().length > 0 && value.length <= 500;
 }
 export function validateInput(value, ids) {
-  if (!exactKeys(value, ['question', 'previous_question', 'previous_service_ids'])) return null;
+  const names = ['question', 'previous_question', 'previous_service_ids'];
+  if (value && Object.hasOwn(value, 'locale')) names.push('locale');
+  if (!exactKeys(value, names) || (value.locale !== undefined && !['en', 'es'].includes(value.locale))) return null;
   if (!validQuestion(value.question) || typeof value.previous_question !== 'string' || value.previous_question.length > 500) return null;
   if (!Array.isArray(value.previous_service_ids) || value.previous_service_ids.length > 3
     || value.previous_service_ids.some(id => !ids.has(id)) || new Set(value.previous_service_ids).size !== value.previous_service_ids.length) return null;
-  return {question: value.question.trim(), previous_question: value.previous_question.trim(), previous_service_ids: value.previous_service_ids};
+  return {question: value.question.trim(), previous_question: value.previous_question.trim(), previous_service_ids: value.previous_service_ids, locale: value.locale || 'en'};
 }
 export function validateDecision(value, ids) {
   if (!exactKeys(value, ['status', 'service_ids', 'clarification_id']) || !STATUSES.has(value.status)) return null;
@@ -47,11 +51,11 @@ export function validateDecision(value, ids) {
   if (value.status === 'clarify' ? !Object.hasOwn(CLARIFICATIONS, value.clarification_id) : value.clarification_id !== 'none') return null;
   return value;
 }
-export function renderDecision(decision, directory) {
+export function renderDecision(decision, directory, locale = 'en') {
   const entries = new Map(directory.entries.map(e => [e.id, e]));
   return {
     status: decision.status,
-    message: decision.status === 'clarify' ? CLARIFICATIONS[decision.clarification_id] : MESSAGES[decision.status],
+    message: locale === 'es' ? translate(decision.status === 'emergency' ? 'emergencyAnswer' : decision.status, locale) : decision.status === 'clarify' ? CLARIFICATIONS[decision.clarification_id] : MESSAGES[decision.status],
     services: decision.service_ids.map(id => {
       const e = entries.get(id);
       return {id: e.id, title: e.title, agency: e.agency, description: e.description,
@@ -124,9 +128,13 @@ export function createAssistant({directory, getEnv, fetchImpl = fetch, now = Dat
     try { input = validateInput(await boundedJSON(request.body, 8192), ids); }
     catch { return failure('invalid_request', 400, 'Please enter a question of up to 500 characters. No personal information is needed.'); }
     if (!input) return failure('invalid_request', 400, 'Please enter a question of up to 500 characters. No personal information is needed.');
-    // Immediate-danger language gets the approved notice even during an outage.
-    if (/\b(?:can[’']?t breathe|cannot breathe|gas leak|immediate danger|house is on fire)\b/i.test(input.question)) {
-      return json(renderDecision({status: 'emergency', service_ids: [], clarification_id: 'none'}, directory));
+    // Deterministic emergency and obvious-sensitive-data checks apply before any third-party request.
+    const preliminary = routeQuestion(input.question);
+    if (preliminary.status === 'emergency') {
+      return json(renderDecision({status: 'emergency', service_ids: [], clarification_id: 'none'}, directory, input.locale));
+    }
+    if (preliminary.status === 'sensitive' || routeQuestion(input.previous_question).status === 'sensitive') {
+      return json({status: 'sensitive', message: translate('sensitive', input.locale), services: []});
     }
     const env = getEnv();
     if (env.ASSISTANT_ENABLED === 'false' || !env.GEMINI_API_KEY || !env.DB) return failure('not_configured', 503);
@@ -172,7 +180,7 @@ export function createAssistant({directory, getEnv, fetchImpl = fetch, now = Dat
       const text = parts.filter(p => !p.thought).map(p => p.text).join('');
       const decision = validateDecision(JSON.parse(text), ids);
       if (!decision) return failure('unverified_response', 503, UNAVAILABLE, extra);
-      return json(renderDecision(decision, directory), 200, extra);
+      return json(renderDecision(decision, directory, input.locale), 200, extra);
     } catch { return failure('provider_unavailable', 503, UNAVAILABLE, extra); }
     finally { clearTimeout(timer); }
   };

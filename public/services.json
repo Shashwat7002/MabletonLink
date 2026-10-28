@@ -776,7 +776,7 @@
       "source_url": "https://www.cobbcounty.gov/transportation/cobb-transit-service-cobblinc/routes-schedules/cobblinc-go",
       "reviewed_on": "2026-10-28",
       "verification_status": "public_page_reviewed",
-      "verification_note": "Official page still describes a two-year pilot starting October 29, 2024. Confirm continuation, current zone, and availability before publishing the tile; no conclusion about closure is inferred.",
+      "verification_note": "Reviewed October 28, 2026. Official pages contain inconsistent Go reservation numbers and dated rollout language. Use general CobbLinc customer service to confirm current operation, both trip endpoints and booking details.",
       "featured": false,
       "action_label": "",
       "action_url": ""
@@ -1263,7 +1263,7 @@
       "title": "South Cobb Regional Library",
       "agency": "Cobb County Public Library",
       "official_url": "https://www.cobbcounty.gov/library/library-locations/south-cobb-regional-library",
-      "description": "Find local branch information, events, catalog access, and account links.",
+      "description": "Find the branch, public computers, Wi-Fi, printing and scanning, and library services.",
       "applicability": "Check current hours and event registration requirements.",
       "category_id": "parks-libraries-arts",
       "source_url": "https://www.cobbcounty.gov/library/library-locations/south-cobb-regional-library",
@@ -1616,4 +1616,3 @@
     }
   ]
 }
-

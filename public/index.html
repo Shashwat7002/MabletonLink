@@ -1,65 +1,27 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#ffffff">
-  <meta name="description" content="Find local services for your home, family, and community in Mableton. Search official links and save your favorites, without an account.">
-  <title>MabletonLink — Local services, all together</title>
-  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="./styles.css">
-  <script type="module" src="./app.js"></script>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#ffffff">
+<meta name="description" content="Find the right Mableton service and your next step, in English or Spanish. Search, guided help and printable plans. No account required.">
+<title>MabletonLink — Local services</title><link rel="icon" href="./favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="./styles.css"><script type="module" src="./app.js"></script>
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to services</a>
-  <header class="site-header">
-    <div class="header-inner">
-      <a href="#home" class="brand" aria-label="MabletonLink home"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span>Mableton<span class="brand-accent">Link</span></span></a>
-      <nav class="main-nav" aria-label="Main navigation">
-        <a href="#home" data-view="home" class="nav-link active" aria-current="page"><span data-icon="home"></span><span>Home</span></a>
-        <a href="#all" data-view="all" class="nav-link"><span data-icon="grid"></span><span>All services</span></a>
-        <a href="#favorites" data-view="favorites" class="nav-link"><span data-icon="star"></span><span>Favorites <span id="favorites-count" class="nav-count" hidden>0</span></span></a>
-      </nav>
-      <button class="header-help" type="button" data-open-assistant><span>Help</span></button>
-    </div>
-  </header>
-  <aside class="utility-bar" aria-label="Location and emergency assistance"><span><span data-icon="pin"></span>Mableton, Georgia</span><a href="tel:911">Emergency? Call <strong>911</strong></a></aside>
-  <main id="main" tabindex="-1">
-    <section class="hero" aria-labelledby="page-title">
-      <h1 id="page-title" tabindex="-1">What do you need today?</h1>
-      <p id="page-description">Local services for your home, family, and community.</p>
-      <label class="search-label" for="service-search">Search services</label>
-      <form id="search-form" class="search-form" role="search" aria-label="Local services">
-        <span data-icon="search"></span>
-        <input id="service-search" type="search" placeholder="e.g. water bill" autocomplete="off" spellcheck="false" maxlength="200" aria-describedby="search-instructions">
-        <button type="button" id="clear-search" class="icon-button" aria-label="Clear search" hidden><span data-icon="x"></span></button>
-        <button class="search-submit" type="submit">Search</button>
-      </form>
-      <p id="search-instructions" class="input-help">Results update as you type. Choose Search to go to the results.</p>
-      <div id="search-help" class="search-examples"><span>Try:</span><button type="button" data-search="water bill">Water bill</button><button type="button" data-search="trash pickup">Trash pickup</button><button type="button" data-search="school bus">School bus</button></div>
-    </section>
-    <p id="results-announcement" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></p>
-    <div id="directory-content"><div class="loading-state" role="status">Loading local services…</div></div>
-    <section class="help-banner" aria-labelledby="help-title">
-
-      <div><h2 id="help-title">Need help finding a service?</h2><p>Tell us what you need. Find official services for Mableton residents.</p></div>
-      <button type="button" class="primary-button" data-open-assistant>Ask MabletonLink <span data-icon="arrow-right"></span></button>
-    </section>
-    <footer class="site-footer">
-      <p>MabletonLink is an independent resident prototype.<br>Official service websites open in a new tab.</p>
-      <div><button id="about-button" type="button">About MabletonLink</button><a href="https://www.mableton.gov/1247/Find-My-District" target="_blank" rel="noopener noreferrer">Find my city district <span data-icon="external"></span><span class="sr-only"> (opens in a new tab)</span></a></div>
-    </footer>
-  </main>
-  <dialog id="assistant-dialog" class="assistant-sheet" aria-labelledby="assistant-title">
-    <div class="sheet-header"><div><h2 id="assistant-title">Ask MabletonLink</h2><p>Find local services</p></div><button class="icon-button close-button" id="close-assistant" type="button" aria-label="Close assistant"><span>Close</span><span data-icon="x"></span></button></div>
-    <div class="assistant-disclosure"><span data-icon="info"></span><p><strong>Help finding Mableton services.</strong> AI selects suggestions from our approved directory. It cannot contact an agency, complete a request, or access your accounts.</p></div>
-    <div id="assistant-welcome" class="assistant-intro"><h3>What can we help you find?</h3><p>Choose a question, or write your own below.</p><div class="prompt-list"><button type="button" data-prompt="Who collects my trash?">Who collects my trash? <span data-icon="arrow-right"></span></button><button type="button" data-prompt="How do I pay my water bill?">How do I pay my water bill? <span data-icon="arrow-right"></span></button><button type="button" data-prompt="Find my child's school">Find my child’s school <span data-icon="arrow-right"></span></button></div></div>
-    <div id="conversation" class="conversation" role="region" aria-label="Questions and suggested services" hidden></div>
-    <div class="assistant-composer"><button id="reset-chat" type="button" hidden><span data-icon="refresh"></span>Start a new question</button><form id="assistant-form" novalidate><label for="assistant-input">Your question</label><div><textarea id="assistant-input" rows="2" maxlength="500" aria-describedby="assistant-input-help assistant-error" placeholder="For example, how do I report a pothole?" required></textarea><button class="primary-button" type="submit" aria-label="Send question">Send <span data-icon="arrow-up"></span></button></div><p id="assistant-input-help" class="input-help">Up to 500 characters. For adults 18 and older. Sending shares your question and limited follow-up context with Google Gemini. Please leave out personal or sensitive details.</p><p id="assistant-error" class="field-error" role="alert" aria-atomic="true"></p></form><p id="assistant-status" role="status" aria-atomic="true"></p></div>
-  </dialog>
-  <dialog id="detail-dialog" aria-labelledby="detail-title"><button class="dialog-close icon-button close-button" type="button" aria-label="Close information"><span>Close</span><span data-icon="x"></span></button><div id="detail-content"></div><p id="detail-status" role="status" aria-atomic="true"></p></dialog>
-  <p id="action-announcement" class="sr-only" role="status" aria-atomic="true"></p>
-  <div id="toast" class="toast" aria-hidden="true"></div>
-  <noscript><p class="noscript">JavaScript is needed to search and save services. You can visit <a href="https://www.mableton.gov/1212/Resident-Resource-Guide">Mableton’s official resident guide</a> for service links.</p></noscript>
-</body>
-</html>
+<a class="skip-link" href="#main" data-t="skip">Skip to services</a>
+<header class="site-header"><div class="header-inner">
+<a href="#home" class="brand">Mableton<span class="brand-accent">Link</span></a>
+<nav class="main-nav" aria-label="Main navigation" data-label="mainNav"><a class="nav-link" href="#home" data-view="home" data-t="home">Home</a><a class="nav-link" href="#all" data-view="all" data-t="all">All services</a><a class="nav-link" href="#favorites" data-view="favorites" data-t="favorites">Favorites</a></nav>
+<div class="header-tools"><label for="language" class="sr-only">Language / Idioma</label><select id="language" aria-label="Language / Idioma"><option value="en" lang="en">English</option><option value="es" lang="es">Español</option></select><button type="button" class="header-help" data-open-assistant data-t="help">Help</button></div>
+</div></header>
+<aside class="utility-bar"><span>Mableton, Georgia</span><a href="tel:911" data-t="emergency">Emergency? Call 911</a></aside>
+<main id="main" tabindex="-1">
+<section class="hero" aria-labelledby="page-title"><h1 id="page-title" tabindex="-1">What do you need today?</h1><p id="page-description"></p>
+<div id="search-area"><label class="search-label" for="service-search" data-t="searchLabel">Search services</label><form id="search-form" class="search-form" role="search" aria-label="Search services" data-label="searchLabel"><input id="service-search" type="search" autocomplete="off" maxlength="200" aria-describedby="search-instructions"><button type="button" class="icon-button" id="clear-search" aria-label="Clear search" data-label="clear" hidden>×</button><button class="search-submit" type="submit" data-t="search">Search</button></form><p id="search-instructions" class="input-help" data-t="searchHelp">Results update as you type. Choose Search to go to the results.</p></div></section>
+<p id="results-announcement" class="sr-only" role="status" aria-atomic="true"></p><div id="directory-content"><p role="status">Loading local services…</p></div>
+<section class="help-banner" aria-labelledby="help-title"><div><h2 id="help-title" data-t="ask">Ask MabletonLink</h2><p data-t="askText">Describe the service you need.</p></div><button class="primary-button" type="button" data-open-assistant data-t="ask">Ask MabletonLink</button></section>
+<footer class="site-footer"><p data-t="independent">MabletonLink is an independent resident prototype.</p><div><button type="button" data-about data-t="about">About and privacy</button><a href="#guide?journey=access" data-t="access">Help using online services</a><a href="#favorites" data-t="plans">Saved next-step plans</a></div></footer>
+</main>
+<dialog id="detail-dialog" aria-labelledby="detail-title"><button type="button" class="dialog-close close-button" data-close="detail-dialog" data-t="close">Close</button><div id="detail-content"></div><p id="detail-status" role="status" aria-atomic="true"></p></dialog>
+<dialog id="assistant-dialog" class="assistant-sheet" aria-labelledby="assistant-title"><div class="sheet-header"><div><h2 id="assistant-title" data-t="ask">Ask MabletonLink</h2><p data-t="assistantIntro">Find a service for Mableton</p></div><button type="button" class="close-button" data-close="assistant-dialog" data-t="close">Close</button></div><div class="assistant-disclosure"><p data-t="assistantPrivacy"></p></div><div class="assistant-intro"><a class="text-link" href="#home" data-leave-assistant data-t="guided">Let’s find your next step</a></div><div id="conversation" class="conversation" role="region" aria-label="Suggested services"></div><div class="assistant-composer"><form id="assistant-form" novalidate><label for="assistant-input" data-t="question">Your question</label><div><textarea id="assistant-input" rows="2" maxlength="500" aria-describedby="assistant-input-help assistant-error" required></textarea><button type="submit" class="primary-button" data-t="send">Send question</button></div><p id="assistant-input-help" class="input-help" data-t="questionPrivacy"></p><p id="assistant-error" class="field-error" role="alert"></p></form><p id="assistant-status" role="status" aria-atomic="true"></p><button class="text-link" type="button" id="reset-chat" data-t="newQuestion">Start a new question</button></div></dialog>
+<p id="action-announcement" class="sr-only" role="status" aria-atomic="true"></p><div id="print-area"></div>
+<noscript><p class="noscript">JavaScript is needed for search and saved plans. / Se necesita JavaScript para buscar y guardar planes. <a href="https://www.mableton.gov/1212/Resident-Resource-Guide">Official resident guide / Guía oficial para residentes</a></p></noscript>
+</body></html>

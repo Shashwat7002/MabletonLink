@@ -1,0 +1,289 @@
+{
+  "runAt": "2026-10-28T20:14:42.627Z",
+  "kind": "developer-authored synthetic regression; not live Gemini or a held-out user study",
+  "counts": {
+    "straightforward": 10,
+    "ambiguous": 8,
+    "spanish": 6,
+    "unsupported": 3,
+    "sensitive-urgent": 3
+  },
+  "passed": 30,
+  "total": 30,
+  "results": [
+    {
+      "id": "S1",
+      "pass": true,
+      "decision": {
+        "status": "match",
+        "service_ids": [
+          "pay-a-water-bill"
+        ]
+      }
+    },
+    {
+      "id": "S2",
+      "pass": true,
+      "decision": {
+        "status": "match",
+        "service_ids": [
+          "start-stop-or-transfer-water-service"
+        ]
+      }
+    },
+    {
+      "id": "S3",
+      "pass": true,
+      "decision": {
+        "status": "match",
+        "service_ids": [
+          "school-bus-route-finder"
+        ]
+      }
+    },
+    {
+      "id": "S4",
+      "pass": true,
+      "decision": {
+        "status": "match",
+        "service_ids": [
+          "library-card-and-account-help"
+        ]
+      }
+    },
+    {
+      "id": "S5",
+      "pass": true,
+      "decision": {
+        "status": "match",
+        "service_ids": [
+          "county-property-taxes"
+        ]
+      }
+    },
+    {
+      "id": "S6",
+      "pass": true,
+      "decision": {
+        "status": "match",
+        "service_ids": [
+          "check-city-limits-and-council-district"
+        ]
+      }
+    },
+    {
+      "id": "S7",
+      "pass": true,
+      "decision": {
+        "status": "match",
+        "service_ids": [
+          "cobb-voting-information"
+        ]
+      }
+    },
+    {
+      "id": "S8",
+      "pass": true,
+      "decision": {
+        "status": "match",
+        "service_ids": [
+          "building-permits-and-requirements"
+        ]
+      }
+    },
+    {
+      "id": "S9",
+      "pass": true,
+      "decision": {
+        "status": "match",
+        "service_ids": [
+          "senior-services"
+        ]
+      }
+    },
+    {
+      "id": "S10",
+      "pass": true,
+      "decision": {
+        "status": "journey",
+        "journey": "access",
+        "service_ids": []
+      }
+    },
+    {
+      "id": "A1",
+      "pass": true,
+      "decision": {
+        "status": "journey",
+        "journey": "trash",
+        "service_ids": []
+      }
+    },
+    {
+      "id": "A2",
+      "pass": true,
+      "decision": {
+        "status": "clarify",
+        "clarification_id": "service_type",
+        "service_ids": []
+      }
+    },
+    {
+      "id": "A3",
+      "pass": true,
+      "decision": {
+        "status": "journey",
+        "journey": "dumping",
+        "service_ids": []
+      }
+    },
+    {
+      "id": "A4",
+      "pass": true,
+      "decision": {
+        "status": "journey",
+        "journey": "housing",
+        "service_ids": []
+      }
+    },
+    {
+      "id": "A5",
+      "pass": true,
+      "decision": {
+        "status": "journey",
+        "journey": "transport",
+        "service_ids": []
+      }
+    },
+    {
+      "id": "A6",
+      "pass": true,
+      "decision": {
+        "status": "journey",
+        "journey": "transport",
+        "service_ids": []
+      }
+    },
+    {
+      "id": "A7",
+      "pass": true,
+      "decision": {
+        "status": "clarify",
+        "clarification_id": "service_type",
+        "service_ids": []
+      }
+    },
+    {
+      "id": "A8",
+      "pass": true,
+      "decision": {
+        "status": "journey",
+        "journey": "access",
+        "service_ids": []
+      }
+    },
+    {
+      "id": "E1",
+      "pass": true,
+      "decision": {
+        "status": "match",
+        "service_ids": [
+          "pay-a-water-bill"
+        ]
+      }
+    },
+    {
+      "id": "E2",
+      "pass": true,
+      "decision": {
+        "status": "journey",
+        "journey": "trash",
+        "service_ids": []
+      }
+    },
+    {
+      "id": "E3",
+      "pass": true,
+      "decision": {
+        "status": "journey",
+        "journey": "housing",
+        "service_ids": []
+      }
+    },
+    {
+      "id": "E4",
+      "pass": true,
+      "decision": {
+        "status": "journey",
+        "journey": "access",
+        "service_ids": []
+      }
+    },
+    {
+      "id": "E5",
+      "pass": true,
+      "decision": {
+        "status": "journey",
+        "journey": "transport",
+        "service_ids": []
+      }
+    },
+    {
+      "id": "E6",
+      "pass": true,
+      "decision": {
+        "status": "journey",
+        "journey": "trash",
+        "service_ids": []
+      }
+    },
+    {
+      "id": "O1",
+      "pass": true,
+      "decision": {
+        "status": "out_of_scope",
+        "service_ids": []
+      }
+    },
+    {
+      "id": "O2",
+      "pass": true,
+      "decision": {
+        "status": "out_of_scope",
+        "service_ids": []
+      }
+    },
+    {
+      "id": "O3",
+      "pass": true,
+      "decision": {
+        "status": "out_of_scope",
+        "service_ids": []
+      }
+    },
+    {
+      "id": "U1",
+      "pass": true,
+      "decision": {
+        "status": "emergency",
+        "service_ids": []
+      }
+    },
+    {
+      "id": "U2",
+      "pass": true,
+      "decision": {
+        "status": "emergency",
+        "service_ids": []
+      }
+    },
+    {
+      "id": "U3",
+      "pass": true,
+      "decision": {
+        "status": "sensitive",
+        "service_ids": []
+      }
+    }
+  ]
+}

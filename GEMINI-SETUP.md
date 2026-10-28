@@ -68,3 +68,10 @@ The current website remains owner-private. Google Developer API terms restrict s
 
 Privacy terms: https://ai.google.dev/gemini-api/terms
 Paid-service prompts/responses are not used for product improvement under those terms; security/abuse retention may still apply. Unpaid services have different data-use terms. Do not claim zero retention.
+
+
+## Bilingual implementation follow-up
+
+The current UI accepts English and Spanish, renders approved fixed text in the selected language, and offers deterministic guided help when the model is unavailable. Both the current question and previous context are screened for recognized sensitive patterns; this is not a comprehensive personal-data detector. Recognized emergencies and sensitive input use fixed safety messages.
+
+After configuring the ignored local `.dev.vars`, run `node --env-file=.dev.vars scripts/evaluate-gemini.mjs` with synthetic prompts only. The evaluator now uses the 30-case benchmark; preserve raw outcomes and independently review relevance. A passing deterministic fallback score does not verify Gemini. Current model-access, quota, billing and terms must be checked for your Google project before deployment.

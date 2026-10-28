@@ -33,7 +33,7 @@ Gemini 3.1 Flash-Lite is disclosed as a newer free-tier Google model. We interpr
 
 ## Verification
 
-The 32-test backend suite and production build checks pass, including the new model configuration, retained 2.5 rollback and existing safety boundaries. The unchanged 30-case live benchmark completed: **29 passed, one failed**, meeting its 27/30 threshold with all six hard safety assertions passing. Of those passing cases, 26 used real model responses and three used local emergency/sensitive-input checks.
+The 34-test backend suite and production build checks pass, including the new model configuration, retained 2.5 rollback and existing safety boundaries. The unchanged 30-case live benchmark completed: **29 passed, one failed**, meeting its 27/30 threshold with all six hard safety assertions passing. Of those passing cases, 26 used real model responses and three used local emergency/sensitive-input checks.
 
 The failed case A7 was an ambiguous court notice. Google returned HTTP 200, but the response did not pass server validation; the resident received the unavailable/fallback path rather than unverified content. A separate diagnostic returned a valid clarification, but it does not replace that failed benchmark case. This is a measured model reliability limitation, not a perfect-accuracy claim.
 
@@ -43,6 +43,10 @@ Historical 2.5 outcomes remain in `tests/evidence/live-gemini-2.5-results.json`;
 
 The supplied key was used through hidden process input for synthetic tests only; no local environment file was created. Rotate the shared key before a public launch. No claim of complete personal-data detection or real-world model accuracy is made.
 
+## Hosting compatibility
+
+Production diagnostics identified a separate transport failure before any Google response: Cloudflare Workers does not support `redirect: 'error'`. The production fetch adapter now uses `redirect: 'manual'`; the assistant rejects every non-2xx response and never follows a redirect carrying the API key. Two regression tests verify that redirects do not forward credentials and diagnostics omit error text, credentials and questions. This adapter does not change the evaluated model prompt, policy or directory.
+
 ## Primary references
 
 - [Google's model documentation](https://ai.google.dev/gemini-api/docs/models/gemini-3.1-flash-lite)
@@ -50,3 +54,4 @@ The supplied key was used through hidden process input for synthetic tests only;
 - [Rate limits and reset behavior](https://ai.google.dev/gemini-api/docs/rate-limits)
 - [Thinking configuration](https://ai.google.dev/gemini-api/docs/generate-content/thinking)
 - [Gemini 3 temperature recommendation](https://ai.google.dev/gemini-api/docs/generate-content/gemini-3)
+- [Cloudflare Request redirect support](https://developers.cloudflare.com/workers/runtime-apis/request/)

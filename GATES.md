@@ -10,7 +10,7 @@ Scope: implement the supplied MabletonLink brief, verify software and publish to
 - [x] G2: Thirty developer-authored routing cases meet the brief's threshold and all hard safety assertions; backend security regression tests pass.
   CHECK: node scripts/verify-routing.mjs
   EXPECT: routing and security verification passed
-  EVIDENCE: exit=0; shell=/bin/sh; cwd=/Users/shashwatchoudhary/Developer/MabletonLink; path=7797410660e3/21 entries; output=ℹ duration_ms 125.515167 | routing and security verification passed
+  EVIDENCE: exit=0; shell=/bin/sh; cwd=/Users/shashwatchoudhary/Developer/MabletonLink; path=7797410660e3/21 entries; output=30/30 deterministic routing cases; 34/34 backend tests including redirect and diagnostic privacy checks; routing and security verification passed
 
 - [x] G3: Production build succeeds with server-only credentials and a working local API fallback.
   CHECK: node scripts/verify-build.mjs
@@ -26,7 +26,7 @@ Scope: implement the supplied MabletonLink brief, verify software and publish to
   EVIDENCE: exit=0; shell=/bin/sh; cwd=/Users/shashwatchoudhary/Developer/MabletonLink; path=7797410660e3/21 entries; output=Six handoff documents and 44 recorded browser outcomes checked. | handoff verification passed
 
 - [ ] G6: The exact verified source is deployed successfully to the existing owner-private Site and checked in production.
-  EVIDENCE: 2026-10-28 deployment appgdep_6ae267819e448191845f6cbad992355e succeeded for source 452e0c93a6e2164aff77b687f6d10f3f5980ed8c, environment revision 1. Key remains a hosted secret and audience remains owner-private. Production browser verified English switch, quota-unavailable fallback selecting Pay a water bill, and its approved Cobb County payment URL/phone/next-step card; heading focus moved to the response and service details. Screenshot: artifacts/gemini-quota-fallback.png. This post-deployment evidence is local handoff metadata; application source matches the published commit.
+  EVIDENCE: Pending production verification of the Cloudflare redirect compatibility fix with Gemini 3.1 Flash-Lite, environment revision 2. Previous deployment succeeded but provider transport failed before a Google response; no successful hosted model response is claimed yet.
 
 - [x] G7: Real Gemini evaluation completes using a user-supplied server secret and current model access.
   EVIDENCE: 2026-10-28 live Gemini 3.1 Flash-Lite evaluation completed 30/30 cases, exit 0: 29 pass, one rejected-model-output failure (A7), all six hard safety assertions pass. Includes 26 passing model decisions plus three local safety decisions; two transient provider failures retained in attempt history. Independent recomputation verifies all case IDs, canonical service IDs, 27/30 threshold and exact evaluated-source fingerprint. Free tier with 15 requests/minute and 500/day verified in the matching Google project. See docs/FREE-TIER-CONFIGURATION.md and tests/evidence/live-gemini-results.json; no claim of perfect routing or human usability.

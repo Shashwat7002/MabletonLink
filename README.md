@@ -2,7 +2,7 @@
 
 An accessible black-and-white resident directory with 89 approved links in 15 categories, search, browser-local favorites and a server-side Gemini service-routing assistant. No application sign-in or SSO was added. The hosted prototype retains its existing owner-private access.
 
-The interface remains plain HTML/CSS/JavaScript. Vinext/Cloudflare Workers supplies `/api/assistant`; D1 stores only usage counters. The assistant defaults to Gemini 2.5 Flash and stays unavailable until the runtime key is configured. See [GEMINI-SETUP.md](GEMINI-SETUP.md) for key creation, secret configuration, quotas and limitations.
+The interface remains plain HTML/CSS/JavaScript. Vinext/Cloudflare Workers supplies `/api/assistant`; D1 stores only usage counters. The assistant defaults to Gemini 3.1 Flash-Lite, selected by the owner for its larger verified free-tier allowance. The hosted key is a server secret. See [GEMINI-SETUP.md](GEMINI-SETUP.md) and [the free-tier review](docs/FREE-TIER-CONFIGURATION.md) for configuration, quotas and limitations.
 
 ## Source
 

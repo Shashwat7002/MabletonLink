@@ -1,6 +1,6 @@
 # Four-minute demonstration
 
-Use synthetic questions only. Start at Home with English selected. Keep the approved source dates visible when relevant. Use GEMINI-ACTIVATION.md to distinguish successful live Gemini responses from quota/unavailable fallbacks.
+Use synthetic questions only. Start at Home with English selected. Keep the approved source dates visible when relevant. Use FREE-TIER-CONFIGURATION.md to distinguish successful live Gemini responses from quota/unavailable fallbacks. Disclose Gemini 3.1 Flash-Lite, a free-tier Google model, and its actual quota.
 
 **0:00–0:30 — Resident problem.** “Mableton services are provided by different organizations. This page helps a resident find who to contact, what to prepare and what to do next. It is an independent prototype.” Show five topics, readable text, search and the language control.
 

@@ -1,5 +1,7 @@
 # Gemini activation — 2026-10-28
 
+Historical Gemini 2.5 activation record. The owner subsequently selected Gemini 3.1 Flash-Lite; current configuration and evaluation are in FREE-TIER-CONFIGURATION.md. The original 2.5 checkpoint is preserved as tests/evidence/live-gemini-2.5-results.json. Resume instructions below apply to the original model/source, not the newer checkpoint.
+
 The supplied key is configured as the hosted `GEMINI_API_KEY` secret. It is not stored in a local environment file, application source, frontend bundle or this report. The Site remains owner-private, with `gemini-2.5-flash` and a 200-attempt application daily cap. Billing and Google quota settings were not changed.
 
 ## Compatibility fix

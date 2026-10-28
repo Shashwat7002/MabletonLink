@@ -1,6 +1,6 @@
 # Gates: bilingual resident service guidance
 
-Scope: implement the supplied MabletonLink brief, verify software and publish to the existing private Site, with explicit handoffs for external validation.
+Scope: implement the supplied MabletonLink brief, verify software and publish to the existing private Site, with explicit handoffs for external validation. Follow-up on 2026-10-28: user selected free-tier Gemini 3.1 Flash-Lite after dashboard verification of 500 requests/day and 15/minute; preserve billing-disabled Google project and approved-directory guardrails.
 
 - [x] G1: Every approved service has English and Spanish navigation and action metadata; five guided journeys resolve only approved service IDs.
   CHECK: node scripts/verify-directory.mjs
@@ -10,7 +10,7 @@ Scope: implement the supplied MabletonLink brief, verify software and publish to
 - [x] G2: Thirty developer-authored routing cases meet the brief's threshold and all hard safety assertions; backend security regression tests pass.
   CHECK: node scripts/verify-routing.mjs
   EXPECT: routing and security verification passed
-  EVIDENCE: exit=0; shell=/bin/sh; cwd=/Users/shashwatchoudhary/Developer/MabletonLink; path=7797410660e3/21 entries; output=ℹ duration_ms 106.622292 | routing and security verification passed
+  EVIDENCE: exit=0; shell=/bin/sh; cwd=/Users/shashwatchoudhary/Developer/MabletonLink; path=7797410660e3/21 entries; output=ℹ duration_ms 125.515167 | routing and security verification passed
 
 - [x] G3: Production build succeeds with server-only credentials and a working local API fallback.
   CHECK: node scripts/verify-build.mjs
@@ -26,14 +26,12 @@ Scope: implement the supplied MabletonLink brief, verify software and publish to
   EVIDENCE: exit=0; shell=/bin/sh; cwd=/Users/shashwatchoudhary/Developer/MabletonLink; path=7797410660e3/21 entries; output=Six handoff documents and 44 recorded browser outcomes checked. | handoff verification passed
 
 - [ ] G6: The exact verified source is deployed successfully to the existing owner-private Site and checked in production.
-  EVIDENCE: 2026-10-28 deployment appgdep_6ae258133bbc81918fa0f796e64c2393 succeeded for source 7612eb97afe838603f0cd9fca9b835a136f06747, environment revision 0. Production browser verified English missed-pickup journey, Spanish language switch and no-key access-help fallback. Existing owner-private audience preserved. This post-deployment evidence is local handoff metadata; application source matches the published commit.
+  EVIDENCE: 2026-10-28 deployment appgdep_6ae267819e448191845f6cbad992355e succeeded for source 452e0c93a6e2164aff77b687f6d10f3f5980ed8c, environment revision 1. Key remains a hosted secret and audience remains owner-private. Production browser verified English switch, quota-unavailable fallback selecting Pay a water bill, and its approved Cobb County payment URL/phone/next-step card; heading focus moved to the response and service details. Screenshot: artifacts/gemini-quota-fallback.png. This post-deployment evidence is local handoff metadata; application source matches the published commit.
 
-- [ ] G7: Real Gemini evaluation completes using a user-supplied server secret and current model access.
-  EVIDENCE: Key configured as a hosted secret; real Gemini 2.5 requests succeed after schema compatibility fix. Paced suite stopped after 10/30 cases: nine pass, one unavailable, 20 unrun. Google diagnostic confirms 429 RESOURCE_EXHAUSTED with 20 requests/day free quota. Checkpoint and original outcomes preserved; --check-resume validates nine retained and 21 remaining cases without API use. See docs/GEMINI-ACTIVATION.md.
+- [x] G7: Real Gemini evaluation completes using a user-supplied server secret and current model access.
+  EVIDENCE: 2026-10-28 live Gemini 3.1 Flash-Lite evaluation completed 30/30 cases, exit 0: 29 pass, one rejected-model-output failure (A7), all six hard safety assertions pass. Includes 26 passing model decisions plus three local safety decisions; two transient provider failures retained in attempt history. Independent recomputation verifies all case IDs, canonical service IDs, 27/30 threshold and exact evaluated-source fingerprint. Free tier with 15 requests/minute and 500/day verified in the matching Google project. See docs/FREE-TIER-CONFIGURATION.md and tests/evidence/live-gemini-results.json; no claim of perfect routing or human usability.
 
 - [ ] G8: Five to eight resident sessions, independent Spanish review and spoken screen-reader validation are completed; competition no-card/free-tier and public-demo eligibility are verified against the participant guide.
   EVIDENCE: pending
 
-ABANDON: G8 No residents or independent translator participated; spoken screen-reader validation is not established by automated tests. The participant-guide link yielded only a sign-in page, so competition/free-tier/public-demo eligibility cannot be verified. Handoff: docs/EVALUATION-KIT.md and docs/SOURCES.md; arrange human sessions/review and provide the actual participant guide before making these claims.
-
-ABANDON: G7 The supplied Google project's confirmed 20-request daily free quota is exhausted. Full live evaluation cannot finish this turn without waiting for a quota reset or changing the user's billing/quota configuration. No billing changes were authorized or made. Handoff: resume the checkpoint after midnight Pacific using the private key; nine successful decisions are retained and 21 cases remain, including three local safety cases. This is partial live validation, not a full benchmark pass.
+ABANDON: G8 No residents or independent translator participated; spoken screen-reader validation is not established by automated tests. The actual participant guide was supplied and reviewed on 2026-10-28: pages 13 and 17 require free tiers/no card and allow other free tools when disclosed. Final competition acceptance and free reproduction of hosting remain unverified; existing Site remains owner-private. Handoff: docs/EVALUATION-KIT.md and docs/SOURCES.md; arrange human sessions/review and confirm judge access and hosting reproduction before claiming full competition compliance.

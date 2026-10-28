@@ -1,0 +1,37 @@
+{
+  "reviewedAt": "2026-10-28T21:32:58.168Z",
+  "source": "Authenticated Google AI Studio Rate Limit and API Keys pages; matching project confirmed with the supplied key",
+  "tier": "Free",
+  "billingEnabled": false,
+  "billingChanged": false,
+  "models": [
+    {
+      "model": "gemini-2.5-flash",
+      "requestsPerMinute": 5,
+      "inputTokensPerMinute": 250000,
+      "requestsPerDay": 20
+    },
+    {
+      "model": "gemini-2.5-flash-lite",
+      "requestsPerMinute": 10,
+      "inputTokensPerMinute": 250000,
+      "requestsPerDay": 20
+    },
+    {
+      "model": "gemini-3.1-flash-lite",
+      "requestsPerMinute": 15,
+      "inputTokensPerMinute": 250000,
+      "requestsPerDay": 500
+    }
+  ],
+  "selectedByUser": "gemini-3.1-flash-lite",
+  "scope": "Observed project allowances, shared by keys and other applications; not guaranteed remaining capacity",
+  "guide": {
+    "filename": "[Participant Guide] Georgia 311 Challenge 2026 -1.pdf",
+    "pagesReviewed": 20,
+    "freeToolPolicyPage": 13,
+    "rulesPage": 17,
+    "unlimitedPromiseFound": false,
+    "creditRedemptionInstructionsFound": false
+  }
+}

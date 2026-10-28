@@ -47,16 +47,25 @@ test('server renders only canonical directory records and fixed prose', async ()
   assert.equal(body.services[0].description, directory.entries.find(e => e.id === 'pay-a-water-bill').description);
   assert.match(response.headers.get('set-cookie'), /HttpOnly; SameSite=Strict; Max-Age=86400; Secure/);
   assert.equal(response.headers.get('cache-control'), 'no-store');
-  assert.match(upstream.url, /models\/gemini-2.5-flash:generateContent$/);
+  assert.match(upstream.url, /models\/gemini-3.1-flash-lite:generateContent$/);
   assert.ok(!upstream.url.includes('test-key'));
   assert.equal(upstream.options.headers['x-goog-api-key'], 'test-key-never-a-real-key');
   assert.equal(upstream.options.redirect, 'error');
   assert.equal(upstream.body.tools, undefined);
   assert.equal(upstream.body.generationConfig.candidateCount, 1);
-  assert.equal(upstream.body.generationConfig.thinkingConfig.thinkingBudget, 0);
+  assert.deepEqual(upstream.body.generationConfig.thinkingConfig, {thinkingLevel: 'minimal'});
+  assert.equal(upstream.body.generationConfig.temperature, 1);
   assert.equal(JSON.parse(upstream.body.contents[0].parts[0].text).approved_directory.length, 89);
   assert.ok(!JSON.stringify(DB.sql.prepare('SELECT * FROM assistant_usage').all()).includes('192.0.2.1'));
   assert.ok(!JSON.stringify(DB.sql.prepare('SELECT * FROM assistant_usage').all()).includes('water bill'));
+});
+test('explicit Gemini 2.5 rollback retains its compatible thinking configuration', async () => {
+  let upstream;
+  const {handle} = setup(async (url, options) => {upstream = {url, body: JSON.parse(options.body)}; return provider();}, {GEMINI_MODEL: 'gemini-2.5-flash'});
+  assert.equal((await handle(request())).status, 200);
+  assert.match(upstream.url, /models\/gemini-2.5-flash:generateContent$/);
+  assert.deepEqual(upstream.body.generationConfig.thinkingConfig, {thinkingBudget: 0});
+  assert.equal(upstream.body.generationConfig.temperature, 0);
 });
 for (const [label, decision] of [
   ['invented ID', {...match, service_ids: ['evil-link']}],

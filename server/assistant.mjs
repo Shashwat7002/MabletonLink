@@ -2,7 +2,7 @@ import {SYSTEM_INSTRUCTION, decisionSchema} from './policy.mjs';
 import {routeQuestion} from '../public/routing.mjs';
 import {translate} from '../public/i18n.mjs';
 
-const DEFAULT_MODEL = 'gemini-2.5-flash';
+const DEFAULT_MODEL = 'gemini-3.1-flash-lite';
 const STATUSES = new Set(['match', 'clarify', 'out_of_scope', 'not_found', 'emergency']);
 const CLARIFICATIONS = {
   service_type: 'Which local service do you need help with? For example, water, trash, taxes or schools.',
@@ -163,9 +163,10 @@ export function createAssistant({directory, getEnv, fetchImpl = fetch, now = Dat
         body: JSON.stringify({
           systemInstruction: {parts: [{text: SYSTEM_INSTRUCTION}]},
           contents: [{role: 'user', parts: [{text: JSON.stringify({approved_directory: approved, resident_request: input})}]}],
-          generationConfig: {temperature: 0, candidateCount: 1, maxOutputTokens: 1024,
+          generationConfig: {temperature: model === 'gemini-3.1-flash-lite' ? 1 : 0, candidateCount: 1, maxOutputTokens: 1024,
             responseMimeType: 'application/json', responseSchema: decisionSchema(),
-            ...(model.startsWith('gemini-2.5-flash') ? {thinkingConfig: {thinkingBudget: 0}} : {})},
+            ...(model === 'gemini-3.1-flash-lite' ? {thinkingConfig: {thinkingLevel: 'minimal'}}
+              : model.startsWith('gemini-2.5-flash') ? {thinkingConfig: {thinkingBudget: 0}} : {})},
           safetySettings: ['HARM_CATEGORY_HARASSMENT', 'HARM_CATEGORY_HATE_SPEECH', 'HARM_CATEGORY_SEXUALLY_EXPLICIT', 'HARM_CATEGORY_DANGEROUS_CONTENT']
             .map(category => ({category, threshold: 'BLOCK_MEDIUM_AND_ABOVE'})),
         }),

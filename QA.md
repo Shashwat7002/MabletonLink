@@ -53,3 +53,8 @@ Preview screenshots are saved locally in the ignored `artifacts/` directory.
 - At 320×568, the assistant scrolls as one document. New answer starts at y≈130, below the sticky Close control. The question field and Send action were reached and submitted through the UI; a water-bill resource was returned.
 - The source directory is byte-identical to the canonical research JSON: all 89 entries retained.
 - This pass did not run a live screen reader or actual 200% browser zoom. Narrow reflow and semantic/status inspection are evidence, not full WCAG certification. Physical-device and older-resident usability testing remain useful next steps.
+
+
+## Accessibility follow-up — October 28, 2026
+
+See [ACCESSIBILITY-REVIEW.md](ACCESSIBILITY-REVIEW.md) for the current scope, findings, fixes, and evidence. This follow-up adds 19 axe-core scan states, native Safari 200% zoom, keyboard focus and modal checks, 320px reflow, text-spacing checks, storage and network recovery tests. All automated scans have zero violations; explicitly listed contrast incompletes received visual review. Actual VoiceOver speech/caption verification remains incomplete because the automation tools could not access its caption window. Browser accessibility trees are not represented as a full screen-reader pass. The earlier limitation about untested 200% zoom is superseded by this follow-up.

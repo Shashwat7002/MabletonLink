@@ -1,0 +1,160 @@
+[
+  {
+    "label": "Home",
+    "incomplete": [],
+    "passes": 40,
+    "version": "4.14.0",
+    "violations": []
+  },
+  {
+    "label": "Favorites saved",
+    "incomplete": [],
+    "passes": 41,
+    "version": "4.14.0",
+    "violations": []
+  },
+  {
+    "label": "Favorites empty",
+    "incomplete": [],
+    "passes": 41,
+    "version": "4.14.0",
+    "violations": []
+  },
+  {
+    "label": "Water bill search",
+    "incomplete": [],
+    "passes": 41,
+    "version": "4.14.0",
+    "violations": []
+  },
+  {
+    "label": "Service information dialog",
+    "incomplete": [],
+    "passes": 23,
+    "version": "4.14.0",
+    "violations": []
+  },
+  {
+    "label": "No search results",
+    "incomplete": [],
+    "passes": 41,
+    "version": "4.14.0",
+    "violations": []
+  },
+  {
+    "label": "All services after load more",
+    "incomplete": [],
+    "passes": 41,
+    "version": "4.14.0",
+    "violations": []
+  },
+  {
+    "label": "Assistant welcome",
+    "incomplete": [],
+    "passes": 25,
+    "version": "4.14.0",
+    "violations": []
+  },
+  {
+    "label": "Assistant suggested reply",
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": 2
+      }
+    ],
+    "passes": 28,
+    "version": "4.14.0",
+    "violations": []
+  },
+  {
+    "label": "Assistant validation error",
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": 2
+      }
+    ],
+    "passes": 25,
+    "version": "4.14.0",
+    "violations": []
+  },
+  {
+    "label": "Assistant typed reply",
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": 2
+      }
+    ],
+    "passes": 28,
+    "version": "4.14.0",
+    "violations": []
+  },
+  {
+    "label": "Schools category",
+    "incomplete": [],
+    "passes": 41,
+    "version": "4.14.0",
+    "violations": []
+  },
+  {
+    "label": "320px Home",
+    "incomplete": [],
+    "passes": 40,
+    "version": "4.14.0",
+    "violations": []
+  },
+  {
+    "label": "320px Assistant reply",
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": 2
+      }
+    ],
+    "passes": 28,
+    "version": "4.14.0",
+    "violations": []
+  },
+  {
+    "label": "320px increased text spacing reply",
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": 4
+      }
+    ],
+    "passes": 29,
+    "version": "4.14.0",
+    "violations": []
+  },
+  {
+    "label": "Directory load failure",
+    "incomplete": [],
+    "passes": 40,
+    "version": "4.14.0",
+    "violations": []
+  },
+  {
+    "label": "Category directory",
+    "incomplete": [],
+    "passes": 41,
+    "version": "4.14.0",
+    "violations": []
+  },
+  {
+    "label": "About dialog",
+    "incomplete": [],
+    "passes": 23,
+    "version": "4.14.0",
+    "violations": []
+  },
+  {
+    "label": "Final Home after focus-clearance fix",
+    "incomplete": [],
+    "passes": 41,
+    "version": "4.14.0",
+    "violations": []
+  }
+]

@@ -41,3 +41,15 @@ Preview screenshots are saved locally in the ignored `artifacts/` directory.
 - No console errors or warnings in the normal preview. The separate failure test deliberately generated a 503.
 - UI Designer and UI Finish-Gate Reviewer reviewed actual screenshots and source. Prototype gate passed. Their category-discovery, wrapping, and favorites-search-scope refinements were incorporated.
 - No formal screen-reader audit, real-device testing, or full accessibility conformance claim. Narrow reflow was checked; 200% browser zoom was not separately exercised.
+
+## Black-and-white update — October 28, 2026
+
+- Verified at 1440×1050, 768×1024, 390×844, and 320×568 in the in-app browser. No horizontal overflow observed in home, results, and assistant states tested.
+- CSS palette contains only #000 and #fff; resolved text colors inspected in the tablet results are black or white. No gradients, shadow effects, or backdrop filters. Foreground/background contrast for the two colors is 21:1.
+- Body type is 18px; provider labels are 16px. At 390px: mobile navigation targets are approximately 115×65px, Search 90×50px, Save 98×48px, More information 128×48px. Clear search is 48×48px at 320px.
+- Visible search label and explicit Open website, Save/Saved, Close, and Send text verified in the accessibility tree.
+- Search for water bill returned one match and updated the persistent polite result announcement. Saving survived reload; removal restored the empty-favorites state. An unmatched query showed recovery; clearing search restored results. Schools filtering produced 10 services.
+- Keyboard Tab in service details produced a visible 3px focus outline. Escape closed details and restored More information focus. Escape also closed the assistant.
+- At 320×568, the assistant scrolls as one document. New answer starts at y≈130, below the sticky Close control. The question field and Send action were reached and submitted through the UI; a water-bill resource was returned.
+- The source directory is byte-identical to the canonical research JSON: all 89 entries retained.
+- This pass did not run a live screen reader or actual 200% browser zoom. Narrow reflow and semantic/status inspection are evidence, not full WCAG certification. Physical-device and older-resident usability testing remain useful next steps.

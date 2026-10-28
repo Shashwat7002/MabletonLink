@@ -1,25 +1,19 @@
-# MabletonLink redesign contract
+# MabletonLink monochrome interface
 
-Audience: residents who may have little technical experience. Their primary task is to recognize a service, understand which organization provides it, and open the correct official website. This is an Apple-inspired resident app, not an official Apple or City of Mableton product.
+User direction: a very simple black-and-white interface, inspired by Apple’s minimalism, prioritizing understanding and usability for nontechnical and older residents.
 
 ## Visual thesis
 
-A familiar home screen for everyday life in Mableton. Use clear system typography, white surfaces on a quiet gray canvas, generous targets, and blue actions. Colorful rounded-square service icons provide the signature; decorative headlines and competing sidebars are removed.
+A readable service directory with a single obvious next step. White is the only surface color and black the only ink/action color. No gradients, shadows, translucent panels, colored icons, faint text, or decorative motion. Spacing, type size, line borders, underlines, and explicit words establish hierarchy. Selected navigation and saved favorites reverse to white on black; their words and programmatic states also identify the change.
 
-Tokens: canvas #F5F5F7, surface #FFFFFF, ink #1D1D1F, secondary #515154, action #0066CC, border #D2D2D7. System sans typography, 44px desktop / 32px mobile heading, 18–20px service titles, 16px body, 14px secondary text. An 8px spacing foundation; 44px minimum interaction targets.
+System fonts; 18px body text, 16px provider and secondary text, 22px service names, 48px desktop and 34px phone page heading. Main controls target 48–52px; mobile navigation labels remain 14–15px. No fixed card heights, text clipping, or disabled zoom. Search has a persistent visible label. Service links say Open website. Save/Saved, More information, Close, and Send are visible labels.
 
-## Interaction contract
+## Structure and behavior
 
-- Home, All services, and Favorites are always recognizable. Use top navigation on desktop and labeled bottom navigation on phones.
-- Search and a real service are visible in the first phone viewport. Categories are one clear action away; the home page also includes all 15 categories.
-- Preserve all 89 entries and existing IDs, official URLs, and browser-local favorites.
-- Every service shows its actual provider in readable sentence case, an Open service action, More information, and visible Save / Saved state. Never label Georgia Power as the state government.
-- Use compact rows for full-directory and search results, and larger cards for common tasks.
-- The assistant is an on-demand sheet. Before typing, explain that this demo suggests directory links and cannot contact agencies or complete requests. Do not imply a live AI model or access to resident accounts.
-- Keep emergency access visible and label external website behavior. No application accounts or SSO.
+Home prioritizes search, common service cards, direct category access, favorites, and the category directory. Desktop uses two service columns and three category columns; phone uses a single reading column. Home, All services, Favorites, and Help remain predictable.
 
-## Finish gate
+All 89 services, provider names, source URLs, applicability notes, and existing local favorites remain intact. No application login or SSO. Assistant is explicitly a directory demo and cannot act on residents’ behalf. Dialogs scroll naturally at short heights; the Close control stays visible. New answers scroll to their beginning. Result counts announce through a persistent polite live region.
 
-Verify desktop 1440px, tablet 768px, and phone 390px plus narrow reflow. No clipped names, hidden providers, horizontal overflow, or overlapping navigation. Verify search, category filters, no results, saved/empty favorites, persistence, details, assistant, Escape, focus restoration, and error recovery. Main controls must be at least 44×44px. Measure text/control contrast; do not claim full accessibility conformance without assistive-technology testing.
+## Verification boundary
 
-UI Designer and UI Finish-Gate Reviewer are advisory and independent review roles. Root owns implementation and publication.
+Check desktop and phone layouts, 320px reflow, large/zoomed text, visible focus and keyboard dialog behavior, search/category filtering, saved states, and assistant reading order. Black/white foreground contrast is 21:1. Automated and visual checks are evidence, not a claim of full WCAG conformance or tested screen-reader usability. A live screen-reader and older-resident usability study remain follow-up validation.

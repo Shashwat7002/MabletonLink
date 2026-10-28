@@ -40,7 +40,7 @@ The interface uses local system fonts. There are no external font requests, anal
 
 ## UI redesign
 
-Apple-inspired system typography, white surfaces, blue actions, and colorful service icons support residents with little technical experience. Home prioritizes everyday services and direct category access; results use readable rows with exact provider names. Each service has explicit Open service, Save/Saved, and More information controls. `DESIGN-CONTRACT.md` records the design decisions.
+Black-and-white system typography, plain outlined controls, and explicit labels support residents with little technical experience and older residents. Home prioritizes everyday services and direct category access; results use readable rows with exact provider names. Each service has explicit Open website, Save/Saved, and More information controls. Body copy is 18px and provider labels are 16px. Primary controls are at least 48px high. Search has a persistent visible label, and dialogs use visible Close and Send labels. Colors, gradients, shadows, and decorative motion have been removed. `DESIGN-CONTRACT.md` records the design decisions.
 
 ## Standalone export
 

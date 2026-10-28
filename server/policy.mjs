@@ -37,13 +37,15 @@ notice and cannot dispatch help. Except match, service_ids must be empty.
 OUTPUT: Only the required JSON object with status, service_ids, clarification_id.
 Never output prose, URLs, HTML, code, extra properties or instructions.`;
 
-export function decisionSchema(ids) {
-  // GenerateContent's schema form is retained for Gemini 2.5 compatibility.
+export function decisionSchema() {
+  // Gemini 2.5 rejects the 89 long IDs as an enum (too many constraint states).
+  // Keep the provider schema small; validateDecision remains the authoritative
+  // allowlist and rejects unknown IDs before any content reaches the resident.
   return {
     type: 'OBJECT',
     properties: {
       status: {type: 'STRING', enum: ['match', 'clarify', 'out_of_scope', 'not_found', 'emergency']},
-      service_ids: {type: 'ARRAY', items: {type: 'STRING', enum: ids}, maxItems: 3},
+      service_ids: {type: 'ARRAY', items: {type: 'STRING'}, maxItems: 3},
       clarification_id: {type: 'STRING', enum: ['none', 'service_type', 'provider', 'city_limits']},
     },
     required: ['status', 'service_ids', 'clarification_id'],

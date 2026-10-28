@@ -1,6 +1,6 @@
 # Connect Gemini to MabletonLink
 
-The integration is implemented. Without a runtime key it safely returns an unavailable message while search, categories and favorites keep working. No key is embedded in the site. No live Gemini inference has been verified yet.
+The integration is implemented. Without a runtime key it safely returns an unavailable message while search, categories and favorites keep working. No key is embedded in the site. Live Gemini 2.5 inference was verified on 2026-10-28. The hosted key is stored as a secret; it is not in the repository. See docs/GEMINI-ACTIVATION.md for evaluation results and quota limits.
 
 ## Get or find your key
 
@@ -55,14 +55,14 @@ Apply that migration only once to a fresh local database. Hosted publishing appl
 - Requests are same-origin JSON, limited to 8 KiB, with a 500-character question and at most one previous question / three previous service IDs. Extra fields are rejected.
 - D1 enforces 20 attempts per session/hour, 60 per network/hour and 200 site-wide/day by default. The global cap is configurable from 1 to 5000. Counters are atomic and shared across Worker instances. Provider failures consume a reservation; there is no automatic retry.
 - Signed HttpOnly, SameSite=Strict session cookies; Secure on HTTPS. Rotating browser cookies does not remove network/global limits. Without a platform IP, a conservative shared network bucket is used. No claim that CORS is authentication.
-- Provider timeout 12 seconds, browser timeout 16 seconds, bounded response size and 1024 maximum output tokens. No model selection from client input. The Gemini 2.5 GenerateContent schema fields are used for compatibility, even though Google now marks responseSchema deprecated in favor of responseFormat.
+- Provider timeout 12 seconds, browser timeout 15 seconds, bounded response size and 1024 maximum output tokens. No model selection from client input. The Gemini 2.5 GenerateContent schema fields are used for compatibility, even though Google now marks responseSchema deprecated in favor of responseFormat.
 - Quotas are request caps, not a currency guarantee. Set provider budgets/alerts and account quotas too; Google budget alerts are not necessarily hard spending stops.
 - No application logging of prompts, answers, raw IPs or keys. D1 holds usage counters, signed-session identifiers and a daily HMAC of the network address, not conversation content. Expired counters are purged on later configured requests after two days; if traffic stops, expired rows remain until the next request. Hosting/provider logs have their own policies.
 - Google receives the current question, limited follow-up context, approved directory and policy. Favorites are not sent. Conversation text stays in page memory and is cleared by “Start a new question” or reloading.
 
 ## Before enabling for residents
 
-Run `npm test`, then run `node --env-file=.dev.vars scripts/evaluate-gemini.mjs` with your configured key. This makes 12 real provider requests with synthetic questions (subject to normal API charges); it prints only decision summaries. Cases in `tests/gemini-evaluation.json` also support manual review. Confirm the resulting official links, not just valid JSON. Include water bills, trash, school assignment, vague questions, unsupported fees, unrelated requests, prompt injection and follow-up ambiguity. Inspect blocked/model-unavailable failures in AI Studio without logging residents' private text.
+Run `npm test`, then run `node --env-file=.dev.vars scripts/evaluate-gemini.mjs` with your configured key. This runs the 30-case synthetic benchmark, with 27 potential provider requests and three local safety decisions. It prints decision summaries and writes credential-free evidence. Calls are paced 13.5 seconds apart by default to respect the observed free-tier limit of five requests per minute; `GEMINI_EVAL_DELAY_MS` can override this for a verified project quota. This project also has a 20-request daily free quota, so the benchmark needs more than one quota day. The evaluator stops on unavailable responses and never counts unrun cases as passes. After quota recovery, append `--resume` to retain completed responses and retry only unavailable/unrun cases; changed model or evaluation inputs invalidate the checkpoint. Use `--check-resume` without a key to inspect the checkpoint. The current checkpoint contains nine completed model decisions. Legacy cases in `tests/gemini-evaluation.json` remain available for additional manual review. Confirm the resulting official links, not just valid JSON. Include water bills, trash, school assignment, vague questions, unsupported fees, unrelated requests, prompt injection and follow-up ambiguity. Inspect blocked/model-unavailable failures in AI Studio without logging residents' private text.
 
 The current website remains owner-private. Google Developer API terms restrict services directed toward or likely accessed by people under 18; the interface identifies the assistant as 18+. A label alone is not an age-verification control. Resolve the audience/terms requirement before a public launch, or choose an appropriate provider arrangement. No public access was enabled here.
 
@@ -75,3 +75,8 @@ Paid-service prompts/responses are not used for product improvement under those 
 The current UI accepts English and Spanish, renders approved fixed text in the selected language, and offers deterministic guided help when the model is unavailable. Both the current question and previous context are screened for recognized sensitive patterns; this is not a comprehensive personal-data detector. Recognized emergencies and sensitive input use fixed safety messages.
 
 After configuring the ignored local `.dev.vars`, run `node --env-file=.dev.vars scripts/evaluate-gemini.mjs` with synthetic prompts only. The evaluator now uses the 30-case benchmark; preserve raw outcomes and independently review relevance. A passing deterministic fallback score does not verify Gemini. Current model-access, quota, billing and terms must be checked for your Google project before deployment.
+
+
+## Provider-schema compatibility
+
+Gemini 2.5 rejected a response schema containing all 89 long service IDs as an enum: its constrained decoder reported too many states. The provider schema now constrains shape, statuses and list length. The server still validates every selected ID against the approved directory and rejects invented IDs, URLs, extra fields and invalid combinations before rendering.

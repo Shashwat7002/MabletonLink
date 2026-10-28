@@ -1,5 +1,7 @@
 # Implementation evidence — 2026-10-28
 
+This is the original pre-activation report. See GEMINI-ACTIVATION.md for subsequent key configuration, the live-discovered schema fix, the 31-test security suite and real-model evaluation evidence.
+
 This report covers the bilingual guided-service implementation, superseding earlier interface-specific assertions in the historical root accessibility report. It is not WCAG certification, an independent translation review or a resident study.
 
 ## Automated checks

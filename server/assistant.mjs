@@ -164,7 +164,7 @@ export function createAssistant({directory, getEnv, fetchImpl = fetch, now = Dat
           systemInstruction: {parts: [{text: SYSTEM_INSTRUCTION}]},
           contents: [{role: 'user', parts: [{text: JSON.stringify({approved_directory: approved, resident_request: input})}]}],
           generationConfig: {temperature: 0, candidateCount: 1, maxOutputTokens: 1024,
-            responseMimeType: 'application/json', responseSchema: decisionSchema([...ids]),
+            responseMimeType: 'application/json', responseSchema: decisionSchema(),
             ...(model.startsWith('gemini-2.5-flash') ? {thinkingConfig: {thinkingBudget: 0}} : {})},
           safetySettings: ['HARM_CATEGORY_HARASSMENT', 'HARM_CATEGORY_HATE_SPEECH', 'HARM_CATEGORY_SEXUALLY_EXPLICIT', 'HARM_CATEGORY_DANGEROUS_CONTENT']
             .map(category => ({category, threshold: 'BLOCK_MEDIUM_AND_ABOVE'})),

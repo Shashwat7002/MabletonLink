@@ -1,6 +1,6 @@
 # Four-minute demonstration
 
-Use synthetic questions only. Start at Home with English selected. Keep the approved source dates visible when relevant. Do not describe the current no-key fallback as a live Gemini answer.
+Use synthetic questions only. Start at Home with English selected. Keep the approved source dates visible when relevant. Use GEMINI-ACTIVATION.md to distinguish successful live Gemini responses from quota/unavailable fallbacks.
 
 **0:00–0:30 — Resident problem.** “Mableton services are provided by different organizations. This page helps a resident find who to contact, what to prepare and what to do next. It is an independent prototype.” Show five topics, readable text, search and the language control.
 
@@ -10,7 +10,7 @@ Use synthetic questions only. Start at Home with English selected. Keep the appr
 
 **2:10–2:40 — Save and print.** Save that plan, open Favorites / Favoritos, and reopen it. Show Print or save as PDF. “This is a plan, not proof that an agency received a request.” The plan contains official sources and no resident question or personal details.
 
-**2:40–3:20 — Assistant and resilience.** Ask “Can I use CobbLinc Go from my neighborhood?” Without a key, show the explicitly labeled directory fallback and follow the guided coverage check. If a key has been configured and evaluated, identify that mode accurately. Show that a general bill question gets clarification instead of a guessed provider.
+**2:40–3:20 — Assistant and resilience.** Ask “Can I use CobbLinc Go from my neighborhood?” When quota is available, show the live suggestion and follow the guided coverage check. If the provider is unavailable, identify the explicitly labeled directory fallback accurately. Show that a general bill question gets clarification instead of a guessed provider.
 
 **3:20–4:00 — Evidence and limits.** Show the saved routing report: 30 synthetic cases and backend security checks. Explain that developer-authored regression results do not establish resident usability or live-model accuracy. Show the evaluation kit, maintenance owner proposal and key setup instructions. State that the current deployment is private; public-access and competition requirements still require verification.
 

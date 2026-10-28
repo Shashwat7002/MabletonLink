@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {DatabaseSync} from 'node:sqlite';
 import {createAssistant, validateDecision, reserveUsage} from '../server/assistant.mjs';
+import {decisionSchema} from '../server/policy.mjs';
 
 const directory = JSON.parse(readFileSync(new URL('../public/services.json', import.meta.url)));
 const ids = new Set(directory.entries.map(e => e.id));
@@ -162,3 +163,12 @@ test('only en and es locales accepted, fixed Spanish answer with approved record
  assert.equal(body.status,'match');assert.match(body.message,/Confirme/);assert.equal(body.services[0].id,'pay-a-water-bill');
 });
 test('sensitive previous context is not forwarded upstream',async()=>{let calls=0;const {handle}=setup(async()=>{calls++;return provider();});const body=await (await handle(request({previous_question:'My password is private'}))).json();assert.equal(body.status,'sensitive');assert.equal(calls,0);});
+
+// Live Gemini rejected the long-ID enum before inference. The server still fails closed.
+test('provider schema stays small while server enforces approved service IDs',()=>{
+ const schema=decisionSchema();assert.deepEqual(schema.properties.service_ids.items,{type:'STRING'});
+ assert.equal(schema.properties.service_ids.maxItems,3);
+ assert.equal(validateDecision({...match,service_ids:['https://evil.example']},ids),null);
+ assert.equal(validateDecision({...match,service_ids:['nonexistent-service']},ids),null);
+ assert.deepEqual(validateDecision(match,ids),match);
+});

@@ -1,0 +1,376 @@
+{
+  "runAt": "2026-10-28T21:33:02.920Z",
+  "startedAt": "2026-10-28T21:27:58.221Z",
+  "model": "gemini-3.1-flash-lite",
+  "suiteFingerprint": "0ff510311fbf7fa99a51744c34b8d663eed822ed560a5b0a8bbc4a2770ea877b",
+  "kind": "Live Gemini with synthetic prompts; urgent/sensitive cases handled before provider",
+  "total": 30,
+  "completed": 30,
+  "passed": 29,
+  "hardFailures": 0,
+  "providerCalls": 29,
+  "delayMs": 4500,
+  "unavailableAttempts": [
+    {
+      "case": "S10",
+      "result": "FAIL",
+      "http": 503,
+      "status": "unavailable",
+      "code": "provider_unavailable",
+      "service_ids": [],
+      "expected_status": "journey",
+      "review": "Review ambiguity and provider relevance; the UI also offers deterministic guided choices.",
+      "runAt": "2026-10-28T21:27:58.221Z"
+    },
+    {
+      "case": "A7",
+      "result": "FAIL",
+      "http": 503,
+      "status": "unavailable",
+      "code": "provider_unavailable",
+      "service_ids": [],
+      "expected_status": "clarify",
+      "runAt": "2026-10-28T21:30:00.557Z"
+    }
+  ],
+  "results": [
+    {
+      "case": "S1",
+      "result": "PASS",
+      "http": 200,
+      "status": "match",
+      "service_ids": [
+        "pay-a-water-bill"
+      ],
+      "expected_status": "match"
+    },
+    {
+      "case": "S2",
+      "result": "PASS",
+      "http": 200,
+      "status": "match",
+      "service_ids": [
+        "start-stop-or-transfer-water-service"
+      ],
+      "expected_status": "match"
+    },
+    {
+      "case": "S3",
+      "result": "PASS",
+      "http": 200,
+      "status": "match",
+      "service_ids": [
+        "school-bus-route-finder"
+      ],
+      "expected_status": "match"
+    },
+    {
+      "case": "S4",
+      "result": "PASS",
+      "http": 200,
+      "status": "match",
+      "service_ids": [
+        "library-card-and-account-help"
+      ],
+      "expected_status": "match"
+    },
+    {
+      "case": "S5",
+      "result": "PASS",
+      "http": 200,
+      "status": "match",
+      "service_ids": [
+        "county-property-taxes"
+      ],
+      "expected_status": "match"
+    },
+    {
+      "case": "S6",
+      "result": "PASS",
+      "http": 200,
+      "status": "match",
+      "service_ids": [
+        "check-city-limits-and-council-district"
+      ],
+      "expected_status": "match"
+    },
+    {
+      "case": "S7",
+      "result": "PASS",
+      "http": 200,
+      "status": "match",
+      "service_ids": [
+        "cobb-voting-information",
+        "my-voter-page"
+      ],
+      "expected_status": "match"
+    },
+    {
+      "case": "S8",
+      "result": "PASS",
+      "http": 200,
+      "status": "match",
+      "service_ids": [
+        "building-permits-and-requirements"
+      ],
+      "expected_status": "match"
+    },
+    {
+      "case": "S9",
+      "result": "PASS",
+      "http": 200,
+      "status": "match",
+      "service_ids": [
+        "senior-services"
+      ],
+      "expected_status": "match"
+    },
+    {
+      "case": "S10",
+      "result": "PASS",
+      "http": 200,
+      "status": "match",
+      "service_ids": [
+        "south-cobb-regional-library"
+      ],
+      "expected_status": "journey",
+      "review": "Review ambiguity and provider relevance; the UI also offers deterministic guided choices."
+    },
+    {
+      "case": "A1",
+      "result": "PASS",
+      "http": 200,
+      "status": "clarify",
+      "service_ids": [],
+      "expected_status": "journey",
+      "review": "Review ambiguity and provider relevance; the UI also offers deterministic guided choices."
+    },
+    {
+      "case": "A2",
+      "result": "PASS",
+      "http": 200,
+      "status": "clarify",
+      "service_ids": [],
+      "expected_status": "clarify"
+    },
+    {
+      "case": "A3",
+      "result": "PASS",
+      "http": 200,
+      "status": "clarify",
+      "service_ids": [],
+      "expected_status": "journey",
+      "review": "Review ambiguity and provider relevance; the UI also offers deterministic guided choices."
+    },
+    {
+      "case": "A4",
+      "result": "PASS",
+      "http": 200,
+      "status": "clarify",
+      "service_ids": [],
+      "expected_status": "journey",
+      "review": "Review ambiguity and provider relevance; the UI also offers deterministic guided choices."
+    },
+    {
+      "case": "A5",
+      "result": "PASS",
+      "http": 200,
+      "status": "match",
+      "service_ids": [
+        "cobblinc-go-on-demand-rides"
+      ],
+      "expected_status": "journey",
+      "review": "Review ambiguity and provider relevance; the UI also offers deterministic guided choices."
+    },
+    {
+      "case": "A6",
+      "result": "PASS",
+      "http": 200,
+      "status": "match",
+      "service_ids": [
+        "paratransit",
+        "cobblinc-go-on-demand-rides"
+      ],
+      "expected_status": "journey",
+      "review": "Review ambiguity and provider relevance; the UI also offers deterministic guided choices."
+    },
+    {
+      "case": "A7",
+      "result": "FAIL",
+      "http": 503,
+      "status": "unavailable",
+      "code": "unverified_response",
+      "service_ids": [],
+      "expected_status": "clarify",
+      "upstream": {
+        "http": 200,
+        "elapsedMs": 2631
+      }
+    },
+    {
+      "case": "A8",
+      "result": "PASS",
+      "http": 200,
+      "status": "clarify",
+      "service_ids": [],
+      "expected_status": "journey",
+      "upstream": {
+        "http": 200,
+        "elapsedMs": 1830
+      },
+      "review": "Review ambiguity and provider relevance; the UI also offers deterministic guided choices."
+    },
+    {
+      "case": "E1",
+      "result": "PASS",
+      "http": 200,
+      "status": "match",
+      "service_ids": [
+        "pay-a-water-bill"
+      ],
+      "expected_status": "match",
+      "upstream": {
+        "http": 200,
+        "elapsedMs": 1853
+      }
+    },
+    {
+      "case": "E2",
+      "result": "PASS",
+      "http": 200,
+      "status": "match",
+      "service_ids": [
+        "find-an-approved-trash-hauler"
+      ],
+      "expected_status": "journey",
+      "upstream": {
+        "http": 200,
+        "elapsedMs": 1779
+      },
+      "review": "Review ambiguity and provider relevance; the UI also offers deterministic guided choices."
+    },
+    {
+      "case": "E3",
+      "result": "PASS",
+      "http": 200,
+      "status": "match",
+      "service_ids": [
+        "find-food-housing-and-other-help",
+        "apply-for-or-manage-state-benefits"
+      ],
+      "expected_status": "journey",
+      "upstream": {
+        "http": 200,
+        "elapsedMs": 1471
+      },
+      "review": "Review ambiguity and provider relevance; the UI also offers deterministic guided choices."
+    },
+    {
+      "case": "E4",
+      "result": "PASS",
+      "http": 200,
+      "status": "match",
+      "service_ids": [
+        "south-cobb-regional-library"
+      ],
+      "expected_status": "journey",
+      "upstream": {
+        "http": 200,
+        "elapsedMs": 2999
+      },
+      "review": "Review ambiguity and provider relevance; the UI also offers deterministic guided choices."
+    },
+    {
+      "case": "E5",
+      "result": "PASS",
+      "http": 200,
+      "status": "match",
+      "service_ids": [
+        "cobblinc-transit-services",
+        "cobblinc-go-on-demand-rides",
+        "paratransit"
+      ],
+      "expected_status": "journey",
+      "upstream": {
+        "http": 200,
+        "elapsedMs": 5251
+      },
+      "review": "Review ambiguity and provider relevance; the UI also offers deterministic guided choices."
+    },
+    {
+      "case": "E6",
+      "result": "PASS",
+      "http": 200,
+      "status": "match",
+      "service_ids": [
+        "dispose-of-furniture-and-bulky-items"
+      ],
+      "expected_status": "journey",
+      "upstream": {
+        "http": 200,
+        "elapsedMs": 3166
+      },
+      "review": "Review ambiguity and provider relevance; the UI also offers deterministic guided choices."
+    },
+    {
+      "case": "O1",
+      "result": "PASS",
+      "http": 200,
+      "status": "out_of_scope",
+      "service_ids": [],
+      "expected_status": "out_of_scope",
+      "upstream": {
+        "http": 200,
+        "elapsedMs": 4532
+      }
+    },
+    {
+      "case": "O2",
+      "result": "PASS",
+      "http": 200,
+      "status": "out_of_scope",
+      "service_ids": [],
+      "expected_status": "out_of_scope",
+      "upstream": {
+        "http": 200,
+        "elapsedMs": 4969
+      }
+    },
+    {
+      "case": "O3",
+      "result": "PASS",
+      "http": 200,
+      "status": "out_of_scope",
+      "service_ids": [],
+      "expected_status": "out_of_scope",
+      "upstream": {
+        "http": 200,
+        "elapsedMs": 3593
+      }
+    },
+    {
+      "case": "U1",
+      "result": "PASS",
+      "http": 200,
+      "status": "emergency",
+      "service_ids": [],
+      "expected_status": "emergency"
+    },
+    {
+      "case": "U2",
+      "result": "PASS",
+      "http": 200,
+      "status": "emergency",
+      "service_ids": [],
+      "expected_status": "emergency"
+    },
+    {
+      "case": "U3",
+      "result": "PASS",
+      "http": 200,
+      "status": "sensitive",
+      "service_ids": [],
+      "expected_status": "sensitive"
+    }
+  ]
+}

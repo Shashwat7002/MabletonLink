@@ -1,38 +1,15 @@
 {
-  "runAt": "2026-10-28T21:33:02.920Z",
-  "startedAt": "2026-10-28T21:27:58.221Z",
+  "runAt": "2026-10-28T21:49:47.562Z",
   "model": "gemini-3.1-flash-lite",
-  "suiteFingerprint": "0ff510311fbf7fa99a51744c34b8d663eed822ed560a5b0a8bbc4a2770ea877b",
+  "suiteFingerprint": "e3564e9053927f8c1ac669b2ffd6ef0a12a765e6363b27a971092e93d634f43c",
   "kind": "Live Gemini with synthetic prompts; urgent/sensitive cases handled before provider",
   "total": 30,
   "completed": 30,
   "passed": 29,
   "hardFailures": 0,
-  "providerCalls": 29,
+  "providerCalls": 27,
   "delayMs": 4500,
-  "unavailableAttempts": [
-    {
-      "case": "S10",
-      "result": "FAIL",
-      "http": 503,
-      "status": "unavailable",
-      "code": "provider_unavailable",
-      "service_ids": [],
-      "expected_status": "journey",
-      "review": "Review ambiguity and provider relevance; the UI also offers deterministic guided choices.",
-      "runAt": "2026-10-28T21:27:58.221Z"
-    },
-    {
-      "case": "A7",
-      "result": "FAIL",
-      "http": 503,
-      "status": "unavailable",
-      "code": "provider_unavailable",
-      "service_ids": [],
-      "expected_status": "clarify",
-      "runAt": "2026-10-28T21:30:00.557Z"
-    }
-  ],
+  "unavailableAttempts": [],
   "results": [
     {
       "case": "S1",
@@ -42,7 +19,11 @@
       "service_ids": [
         "pay-a-water-bill"
       ],
-      "expected_status": "match"
+      "expected_status": "match",
+      "upstream": {
+        "http": 200,
+        "elapsedMs": 1989
+      }
     },
     {
       "case": "S2",
@@ -52,7 +33,11 @@
       "service_ids": [
         "start-stop-or-transfer-water-service"
       ],
-      "expected_status": "match"
+      "expected_status": "match",
+      "upstream": {
+        "http": 200,
+        "elapsedMs": 1150
+      }
     },
     {
       "case": "S3",
@@ -62,7 +47,11 @@
       "service_ids": [
         "school-bus-route-finder"
       ],
-      "expected_status": "match"
+      "expected_status": "match",
+      "upstream": {
+        "http": 200,
+        "elapsedMs": 1010
+      }
     },
     {
       "case": "S4",
@@ -72,7 +61,11 @@
       "service_ids": [
         "library-card-and-account-help"
       ],
-      "expected_status": "match"
+      "expected_status": "match",
+      "upstream": {
+        "http": 200,
+        "elapsedMs": 1244
+      }
     },
     {
       "case": "S5",
@@ -82,7 +75,11 @@
       "service_ids": [
         "county-property-taxes"
       ],
-      "expected_status": "match"
+      "expected_status": "match",
+      "upstream": {
+        "http": 200,
+        "elapsedMs": 1000
+      }
     },
     {
       "case": "S6",
@@ -92,7 +89,11 @@
       "service_ids": [
         "check-city-limits-and-council-district"
       ],
-      "expected_status": "match"
+      "expected_status": "match",
+      "upstream": {
+        "http": 200,
+        "elapsedMs": 8725
+      }
     },
     {
       "case": "S7",
@@ -103,7 +104,11 @@
         "cobb-voting-information",
         "my-voter-page"
       ],
-      "expected_status": "match"
+      "expected_status": "match",
+      "upstream": {
+        "http": 200,
+        "elapsedMs": 4054
+      }
     },
     {
       "case": "S8",
@@ -113,7 +118,11 @@
       "service_ids": [
         "building-permits-and-requirements"
       ],
-      "expected_status": "match"
+      "expected_status": "match",
+      "upstream": {
+        "http": 200,
+        "elapsedMs": 3333
+      }
     },
     {
       "case": "S9",
@@ -123,7 +132,11 @@
       "service_ids": [
         "senior-services"
       ],
-      "expected_status": "match"
+      "expected_status": "match",
+      "upstream": {
+        "http": 200,
+        "elapsedMs": 2452
+      }
     },
     {
       "case": "S10",
@@ -134,15 +147,25 @@
         "south-cobb-regional-library"
       ],
       "expected_status": "journey",
+      "upstream": {
+        "http": 200,
+        "elapsedMs": 2053
+      },
       "review": "Review ambiguity and provider relevance; the UI also offers deterministic guided choices."
     },
     {
       "case": "A1",
       "result": "PASS",
       "http": 200,
-      "status": "clarify",
-      "service_ids": [],
+      "status": "match",
+      "service_ids": [
+        "find-an-approved-trash-hauler"
+      ],
       "expected_status": "journey",
+      "upstream": {
+        "http": 200,
+        "elapsedMs": 1716
+      },
       "review": "Review ambiguity and provider relevance; the UI also offers deterministic guided choices."
     },
     {
@@ -151,7 +174,11 @@
       "http": 200,
       "status": "clarify",
       "service_ids": [],
-      "expected_status": "clarify"
+      "expected_status": "clarify",
+      "upstream": {
+        "http": 200,
+        "elapsedMs": 1348
+      }
     },
     {
       "case": "A3",
@@ -160,15 +187,24 @@
       "status": "clarify",
       "service_ids": [],
       "expected_status": "journey",
+      "upstream": {
+        "http": 200,
+        "elapsedMs": 899
+      },
       "review": "Review ambiguity and provider relevance; the UI also offers deterministic guided choices."
     },
     {
       "case": "A4",
-      "result": "PASS",
-      "http": 200,
-      "status": "clarify",
+      "result": "FAIL",
+      "http": 503,
+      "status": "unavailable",
+      "code": "unverified_response",
       "service_ids": [],
       "expected_status": "journey",
+      "upstream": {
+        "http": 200,
+        "elapsedMs": 1141
+      },
       "review": "Review ambiguity and provider relevance; the UI also offers deterministic guided choices."
     },
     {
@@ -180,6 +216,10 @@
         "cobblinc-go-on-demand-rides"
       ],
       "expected_status": "journey",
+      "upstream": {
+        "http": 200,
+        "elapsedMs": 1465
+      },
       "review": "Review ambiguity and provider relevance; the UI also offers deterministic guided choices."
     },
     {
@@ -189,22 +229,26 @@
       "status": "match",
       "service_ids": [
         "paratransit",
+        "cobblinc-transit-services",
         "cobblinc-go-on-demand-rides"
       ],
       "expected_status": "journey",
+      "upstream": {
+        "http": 200,
+        "elapsedMs": 1028
+      },
       "review": "Review ambiguity and provider relevance; the UI also offers deterministic guided choices."
     },
     {
       "case": "A7",
-      "result": "FAIL",
-      "http": 503,
-      "status": "unavailable",
-      "code": "unverified_response",
+      "result": "PASS",
+      "http": 200,
+      "status": "clarify",
       "service_ids": [],
       "expected_status": "clarify",
       "upstream": {
         "http": 200,
-        "elapsedMs": 2631
+        "elapsedMs": 1113
       }
     },
     {
@@ -216,7 +260,7 @@
       "expected_status": "journey",
       "upstream": {
         "http": 200,
-        "elapsedMs": 1830
+        "elapsedMs": 10827
       },
       "review": "Review ambiguity and provider relevance; the UI also offers deterministic guided choices."
     },
@@ -231,7 +275,7 @@
       "expected_status": "match",
       "upstream": {
         "http": 200,
-        "elapsedMs": 1853
+        "elapsedMs": 1362
       }
     },
     {
@@ -245,7 +289,7 @@
       "expected_status": "journey",
       "upstream": {
         "http": 200,
-        "elapsedMs": 1779
+        "elapsedMs": 1215
       },
       "review": "Review ambiguity and provider relevance; the UI also offers deterministic guided choices."
     },
@@ -261,7 +305,7 @@
       "expected_status": "journey",
       "upstream": {
         "http": 200,
-        "elapsedMs": 1471
+        "elapsedMs": 4390
       },
       "review": "Review ambiguity and provider relevance; the UI also offers deterministic guided choices."
     },
@@ -276,7 +320,7 @@
       "expected_status": "journey",
       "upstream": {
         "http": 200,
-        "elapsedMs": 2999
+        "elapsedMs": 1817
       },
       "review": "Review ambiguity and provider relevance; the UI also offers deterministic guided choices."
     },
@@ -293,7 +337,7 @@
       "expected_status": "journey",
       "upstream": {
         "http": 200,
-        "elapsedMs": 5251
+        "elapsedMs": 1029
       },
       "review": "Review ambiguity and provider relevance; the UI also offers deterministic guided choices."
     },
@@ -308,7 +352,7 @@
       "expected_status": "journey",
       "upstream": {
         "http": 200,
-        "elapsedMs": 3166
+        "elapsedMs": 2514
       },
       "review": "Review ambiguity and provider relevance; the UI also offers deterministic guided choices."
     },
@@ -321,7 +365,7 @@
       "expected_status": "out_of_scope",
       "upstream": {
         "http": 200,
-        "elapsedMs": 4532
+        "elapsedMs": 2110
       }
     },
     {
@@ -333,7 +377,7 @@
       "expected_status": "out_of_scope",
       "upstream": {
         "http": 200,
-        "elapsedMs": 4969
+        "elapsedMs": 1076
       }
     },
     {
@@ -345,7 +389,7 @@
       "expected_status": "out_of_scope",
       "upstream": {
         "http": 200,
-        "elapsedMs": 3593
+        "elapsedMs": 1114
       }
     },
     {

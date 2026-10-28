@@ -1,0 +1,119 @@
+{
+  "runAt": "2026-10-28T21:47:02.896Z",
+  "kind": "Synthetic hosted Gemini checks; no resident participants; single cookie session, no automatic retries",
+  "model": "gemini-3.1-flash-lite",
+  "origin": "https://mabletonlink-launchpad.himanshu-k-cd.chatgpt.site",
+  "completed": 9,
+  "total": 10,
+  "passed": 8,
+  "results": [
+    {
+      "case": "D1",
+      "locale": "en",
+      "http": 200,
+      "status": "match",
+      "service_ids": [
+        "pay-a-water-bill"
+      ],
+      "message": "These services may help. Check the provider’s current instructions and whether the service applies to you. I cannot confirm fees, deadlines, eligibility, balances or live service status.",
+      "canonical": true,
+      "pass": true,
+      "elapsedMs": 2746
+    },
+    {
+      "case": "D2",
+      "locale": "es",
+      "http": 200,
+      "status": "match",
+      "service_ids": [
+        "pay-a-water-bill"
+      ],
+      "message": "Confirme la entidad y los requisitos actuales antes de continuar.",
+      "canonical": true,
+      "pass": true,
+      "elapsedMs": 3739
+    },
+    {
+      "case": "D3",
+      "locale": "en",
+      "http": 200,
+      "status": "clarify",
+      "service_ids": [],
+      "message": "Which local service do you need help with? For example, water, trash, taxes or schools.",
+      "canonical": true,
+      "pass": true,
+      "elapsedMs": 7457
+    },
+    {
+      "case": "D4",
+      "locale": "es",
+      "http": 200,
+      "status": "clarify",
+      "service_ids": [],
+      "message": "¿A qué servicio o entidad se refiere? Por ejemplo, agua, basura, vivienda o transporte. Comparta solo el nombre de la entidad, no los datos de su cuenta.",
+      "canonical": true,
+      "pass": true,
+      "elapsedMs": 3754
+    },
+    {
+      "case": "D5",
+      "locale": "en",
+      "http": 200,
+      "status": "match",
+      "service_ids": [
+        "find-an-approved-trash-hauler"
+      ],
+      "message": "These services may help. Check the provider’s current instructions and whether the service applies to you. I cannot confirm fees, deadlines, eligibility, balances or live service status.",
+      "canonical": true,
+      "pass": true,
+      "elapsedMs": 2766
+    },
+    {
+      "case": "D6",
+      "locale": "es",
+      "http": 200,
+      "status": "match",
+      "service_ids": [
+        "find-an-approved-trash-hauler"
+      ],
+      "message": "Confirme la entidad y los requisitos actuales antes de continuar.",
+      "canonical": true,
+      "pass": true,
+      "elapsedMs": 3419
+    },
+    {
+      "case": "D7",
+      "locale": "en",
+      "http": 200,
+      "status": "not_found",
+      "service_ids": [],
+      "message": "I couldn’t find a clear match in our approved directory. Try naming the service, or use All services to browse by category.",
+      "canonical": true,
+      "pass": true,
+      "elapsedMs": 3012
+    },
+    {
+      "case": "D8",
+      "locale": "es",
+      "http": 200,
+      "status": "not_found",
+      "service_ids": [],
+      "message": "No pude identificar un servicio claro. Pruebe con el nombre del servicio o elija la ayuda guiada.",
+      "canonical": true,
+      "pass": true,
+      "elapsedMs": 2346
+    },
+    {
+      "case": "D9",
+      "locale": "en",
+      "http": 503,
+      "status": "unavailable",
+      "code": "provider_unavailable",
+      "service_ids": [],
+      "message": "The assistant is unavailable right now. You can still use Search services or browse All services.",
+      "canonical": true,
+      "pass": false,
+      "elapsedMs": 13285
+    }
+  ]
+}

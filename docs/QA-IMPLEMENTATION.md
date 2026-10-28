@@ -1,6 +1,6 @@
 # Implementation evidence — 2026-10-28
 
-This is the original pre-activation report. See GEMINI-ACTIVATION.md for the historical 2.5 activation and schema fix; see FREE-TIER-CONFIGURATION.md for the subsequent 3.1 Flash-Lite selection, 32-test security suite, participant-guide review and current live evaluation.
+This is the original pre-activation report. See GEMINI-ACTIVATION.md for the historical 2.5 activation and schema fix; see FREE-TIER-CONFIGURATION.md for the subsequent 3.1 Flash-Lite selection, backend security suite, participant-guide review and current live evaluation.
 
 This report covers the bilingual guided-service implementation, superseding earlier interface-specific assertions in the historical root accessibility report. It is not WCAG certification, an independent translation review or a resident study.
 
@@ -30,3 +30,7 @@ Implementation pass added data, navigation, guidance, saved plans, printing and 
 ## External work still pending
 
 No real Gemini key or model invocation was used. Independent Spanish review and 5–8 resident sessions were not conducted. Actual spoken VoiceOver/NVDA validation remains pending; the accessibility tree and automated checks cannot establish pronunciation or real assistive-technology usability. The participant guide was inaccessible beyond a sign-in page, so competition and free-tier/no-card eligibility are unverified. The Site audience remains private.
+
+## Deadline follow-up
+
+See DEADLINE-READINESS.md for the newer language, focus, transport, model and judge-access work. This report remains the historical pre-activation snapshot; its private-access and pending-model statements do not describe the later release.

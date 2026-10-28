@@ -52,3 +52,6 @@ yarn-error.log*
 dist/
 
 !.env.example
+
+# Local review coordination
+/.unlazy/

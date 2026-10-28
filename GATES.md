@@ -1,16 +1,16 @@
 # Gates: bilingual resident service guidance
 
-Scope: implement the supplied MabletonLink brief, verify software and publish to the existing private Site, with explicit handoffs for external validation. Follow-up on 2026-10-28: user selected free-tier Gemini 3.1 Flash-Lite after dashboard verification of 500 requests/day and 15/minute; preserve billing-disabled Google project and approved-directory guardrails.
+Scope: implement the supplied MabletonLink brief, verify software and publish to the existing Site, with explicit handoffs for external validation. Follow-up on 2026-10-28: user selected free-tier Gemini 3.1 Flash-Lite after dashboard verification of 500 requests/day and 15/minute; preserve billing-disabled Google project and approved-directory guardrails.
 
 - [x] G1: Every approved service has English and Spanish navigation and action metadata; five guided journeys resolve only approved service IDs.
   CHECK: node scripts/verify-directory.mjs
   EXPECT: bilingual directory verification passed
-  EVIDENCE: exit=0; shell=/bin/sh; cwd=/Users/shashwatchoudhary/Developer/MabletonLink; path=7797410660e3/21 entries; output={"services":89,"journeys":5,"terminalPaths":22,"uiStrings":100,"negativeControls":2} | bilingual directory verification passed
+  EVIDENCE: exit=0; shell=/bin/sh; cwd=/Users/shashwatchoudhary/Developer/MabletonLink; path=7797410660e3/21 entries; output={"services":89,"journeys":5,"terminalPaths":22,"uiStrings":103,"negativeControls":2} | bilingual directory verification passed
 
 - [x] G2: Thirty developer-authored routing cases meet the brief's threshold and all hard safety assertions; backend security regression tests pass.
   CHECK: node scripts/verify-routing.mjs
   EXPECT: routing and security verification passed
-  EVIDENCE: exit=0; shell=/bin/sh; cwd=/Users/shashwatchoudhary/Developer/MabletonLink; path=7797410660e3/21 entries; output=30/30 deterministic routing cases; 34/34 backend tests including redirect and diagnostic privacy checks; routing and security verification passed
+  EVIDENCE: exit=0; shell=/bin/sh; cwd=/Users/shashwatchoudhary/Developer/MabletonLink; path=7797410660e3/21 entries; output=30/30 deterministic routing cases; 35/35 backend tests including redirect and diagnostic privacy checks; routing and security verification passed
 
 - [x] G3: Production build succeeds with server-only credentials and a working local API fallback.
   CHECK: node scripts/verify-build.mjs
@@ -25,13 +25,13 @@ Scope: implement the supplied MabletonLink brief, verify software and publish to
   EXPECT: handoff verification passed
   EVIDENCE: exit=0; shell=/bin/sh; cwd=/Users/shashwatchoudhary/Developer/MabletonLink; path=7797410660e3/21 entries; output=Six handoff documents and 44 recorded browser outcomes checked. | handoff verification passed
 
-- [ ] G6: The exact verified source is deployed successfully to the existing owner-private Site and checked in production.
-  EVIDENCE: Pending production verification of the Cloudflare redirect compatibility fix with Gemini 3.1 Flash-Lite, environment revision 2. Previous deployment succeeded but provider transport failed before a Google response; no successful hosted model response is claimed yet.
+- [ ] G6: The exact verified source is deployed successfully to the user-authorized public-sharing Site and checked in production.
+  EVIDENCE: Deadline improvements verified locally; final publication pending. Public sharing revision 2 is enabled by explicit user request, but unauthenticated access still returns 401. The no-account judge package is the alternative reproduction path.
 
 - [x] G7: Real Gemini evaluation completes using a user-supplied server secret and current model access.
-  EVIDENCE: 2026-10-28 live Gemini 3.1 Flash-Lite evaluation completed 30/30 cases, exit 0: 29 pass, one rejected-model-output failure (A7), all six hard safety assertions pass. Includes 26 passing model decisions plus three local safety decisions; two transient provider failures retained in attempt history. Independent recomputation verifies all case IDs, canonical service IDs, 27/30 threshold and exact evaluated-source fingerprint. Free tier with 15 requests/minute and 500/day verified in the matching Google project. See docs/FREE-TIER-CONFIGURATION.md and tests/evidence/live-gemini-results.json; no claim of perfect routing or human usability.
+  EVIDENCE: 2026-10-28 fresh deadline evaluation: 30/30 completed, 29 passed, A4 invalid model output rejected, all 6 hard safety cases passed; current model-source fingerprint verified. Additional hosted cases: 8/10 passed with two provider timeouts preserved. See docs/DEADLINE-READINESS.md and raw evidence. Previous benchmark retained separately. No human accuracy claim.
 
 - [ ] G8: Five to eight resident sessions, independent Spanish review and spoken screen-reader validation are completed; competition no-card/free-tier and public-demo eligibility are verified against the participant guide.
   EVIDENCE: pending
 
-ABANDON: G8 No residents or independent translator participated; spoken screen-reader validation is not established by automated tests. The actual participant guide was supplied and reviewed on 2026-10-28: pages 13 and 17 require free tiers/no card and allow other free tools when disclosed. Final competition acceptance and free reproduction of hosting remain unverified; existing Site remains owner-private. Handoff: docs/EVALUATION-KIT.md and docs/SOURCES.md; arrange human sessions/review and confirm judge access and hosting reproduction before claiming full competition compliance.
+ABANDON: G8 No residents or independent translator participated; spoken screen-reader validation is not established by automated tests. The actual participant guide was supplied and reviewed on 2026-10-28: pages 13 and 17 require free tiers/no card and allow other free tools when disclosed. Final competition acceptance and free reproduction of hosting remain unverified; public sharing is enabled but logged-out access remains blocked by platform sign-in. Handoff: docs/EVALUATION-KIT.md and docs/SOURCES.md; arrange human sessions/review and confirm judge access and hosting reproduction before claiming full competition compliance.

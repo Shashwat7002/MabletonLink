@@ -1,5 +1,7 @@
 # Free-tier configuration — 2026-10-28
 
+This records the initial model-switch verification. See DEADLINE-READINESS.md for the later public-sharing request, new live results, 35-test suite and judge package. The owner-private statements below describe the earlier snapshot.
+
 The owner chose Gemini 3.1 Flash-Lite after review of the actual Georgia 311 participant guide and their Google AI Studio dashboard. Free means no API charge within the free tier; it does not mean unlimited calls. No billing account was linked, no paid tier was enabled and no payment was made.
 
 ## Verified allowance

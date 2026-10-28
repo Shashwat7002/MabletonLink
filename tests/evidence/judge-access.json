@@ -1,0 +1,28 @@
+{
+  "runAt": "2026-10-28T21:45:11.227Z",
+  "kind": "Unauthenticated HTTP access check; no owner session or bearer token",
+  "url": "https://mabletonlink-launchpad.himanshu-k-cd.chatgpt.site",
+  "results": [
+    {
+      "path": "/",
+      "http": 401,
+      "expectedContent": false,
+      "cookiesSent": false,
+      "authorizationSent": false
+    },
+    {
+      "path": "/guidance.json",
+      "http": 401,
+      "expectedContent": false,
+      "cookiesSent": false,
+      "authorizationSent": false
+    },
+    {
+      "path": "/services.es.json",
+      "http": 401,
+      "expectedContent": false,
+      "cookiesSent": false,
+      "authorizationSent": false
+    }
+  ]
+}

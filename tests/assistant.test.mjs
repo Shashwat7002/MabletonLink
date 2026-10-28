@@ -181,3 +181,13 @@ test('provider schema stays small while server enforces approved service IDs',()
  assert.equal(validateDecision({...match,service_ids:['nonexistent-service']},ids),null);
  assert.deepEqual(validateDecision(match,ids),match);
 });
+
+test('each clarification preserves its safe ID and specific question in both languages', async () => {
+  const expected={provider:{en:/bill or letter/,es:/factura o carta/},city_limits:{en:/city limits/,es:/límites municipales/},service_type:{en:/local service/,es:/servicio local/}};
+  for(const [id,phrases] of Object.entries(expected))for(const locale of ['en','es']){
+    const {handle}=setup(async()=>provider({status:'clarify',service_ids:[],clarification_id:id}));
+    const response=await handle(request({question:'I need help with a service',locale}));
+    assert.equal(response.status,200);const body=await response.json();
+    assert.equal(body.clarification_id,id);assert.match(body.message,phrases[locale]);assert.deepEqual(body.services,[]);
+  }
+});

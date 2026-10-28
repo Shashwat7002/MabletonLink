@@ -55,7 +55,8 @@ export function renderDecision(decision, directory, locale = 'en') {
   const entries = new Map(directory.entries.map(e => [e.id, e]));
   return {
     status: decision.status,
-    message: locale === 'es' ? translate(decision.status === 'emergency' ? 'emergencyAnswer' : decision.status, locale) : decision.status === 'clarify' ? CLARIFICATIONS[decision.clarification_id] : MESSAGES[decision.status],
+    ...(decision.status === 'clarify' ? {clarification_id: decision.clarification_id} : {}),
+    message: decision.status === 'clarify' ? translate('clarify_' + decision.clarification_id, locale) : locale === 'es' ? translate(decision.status === 'emergency' ? 'emergencyAnswer' : decision.status, locale) : MESSAGES[decision.status],
     services: decision.service_ids.map(id => {
       const e = entries.get(id);
       return {id: e.id, title: e.title, agency: e.agency, description: e.description,

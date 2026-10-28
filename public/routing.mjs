@@ -17,6 +17,7 @@ export function routeQuestion(question) {
  [/\b(water|agua)\b/,'start-stop-or-transfer-water-service',/\b(start|stop|transfer|iniciar|suspender|transferir)\b/],
  [/\b(school|escolar)\b/,'school-bus-route-finder',/\b(bus|autobus)\b/],
  [/\b(library|biblioteca)\b/,'library-card-and-account-help',/\b(card|tarjeta)\b/],
+ [/\b(south cobb (regional )?library|biblioteca (regional )?(de )?south cobb)\b/,'south-cobb-regional-library',/\b(open|hours|abierta|abierto|horario|horarios)\b/],
  [/\b(property tax(?:es)?|impuestos.*propiedad)\b/,'county-property-taxes'],
  [/\b(city limits|district|limites.*ciudad|distrito)\b/,'check-city-limits-and-council-district'],
  [/\b(voter|voting|votar|votacion)\b/,'cobb-voting-information'],

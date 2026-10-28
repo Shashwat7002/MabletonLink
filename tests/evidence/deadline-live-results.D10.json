@@ -1,0 +1,23 @@
+{
+  "runAt": "2026-10-28T21:52:09.345Z",
+  "kind": "Synthetic hosted Gemini checks; no resident participants; single cookie session, no automatic retries",
+  "model": "gemini-3.1-flash-lite",
+  "origin": "https://mabletonlink-launchpad.himanshu-k-cd.chatgpt.site",
+  "completed": 1,
+  "total": 1,
+  "passed": 0,
+  "results": [
+    {
+      "case": "D10",
+      "locale": "es",
+      "http": 503,
+      "status": "unavailable",
+      "code": "provider_unavailable",
+      "service_ids": [],
+      "message": "The assistant is unavailable right now. You can still use Search services or browse All services.",
+      "canonical": true,
+      "pass": false,
+      "elapsedMs": 13338
+    }
+  ]
+}

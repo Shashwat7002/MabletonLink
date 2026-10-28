@@ -1,6 +1,6 @@
 # MabletonLink LaunchPad
 
-An accessible black-and-white resident directory with 89 approved links in 15 categories, search, browser-local favorites and a server-side Gemini service-routing assistant. No application sign-in or SSO was added. The hosted prototype retains its existing owner-private access.
+An accessible black-and-white resident directory with 89 approved links in 15 categories, search, browser-local favorites and a server-side Gemini service-routing assistant. No application sign-in or SSO was added. The owner enabled public sharing for judges on October 28, 2026; logged-out access is verified separately because the hosting platform may still require sign-in. Use the downloadable no-account reproduction path in docs/JUDGE-START-HERE.md.
 
 The interface remains plain HTML/CSS/JavaScript. Vinext/Cloudflare Workers supplies `/api/assistant`; D1 stores only usage counters. The assistant defaults to Gemini 3.1 Flash-Lite, selected by the owner for its larger verified free-tier allowance. The hosted key is a server secret. See [GEMINI-SETUP.md](GEMINI-SETUP.md) and [the free-tier review](docs/FREE-TIER-CONFIGURATION.md) for configuration, quotas and limitations.
 
@@ -13,7 +13,7 @@ The interface remains plain HTML/CSS/JavaScript. Vinext/Cloudflare Workers suppl
 - `app/api/assistant/route.ts`: backend route; `app/route.ts`: HTML response.
 - `db/schema.ts` and `drizzle/`: usage counter schema/migrations.
 - `tests/assistant.test.mjs`: deterministic security and failure-path tests.
-- `tests/gemini-evaluation.json`: real-model checks to run after adding a key.
+- `tests/routing-benchmark.json`: 30-case prepared live-model benchmark; `tests/deadline-live-cases.json`: additional bilingual hosted checks.
 - `.openai/hosting.json`: Site identity and runtime bindings. Secrets belong in runtime settings.
 - `dist/`: generated deployment output. Do not edit it.
 
@@ -42,3 +42,7 @@ The app now includes English/Spanish navigation and 89 translated service record
 Run `node scripts/verify-directory.mjs`, `node scripts/verify-routing.mjs`, `node scripts/verify-build.mjs`, and `node scripts/verify-handoff.mjs`. Generate the standalone directory with `python3 scripts/export-standalone.py` (output in ignored `artifacts/`). A fresh offline visit to the hosted Site is not supported; the exported file includes its data.
 
 Active working copy: `/Users/shashwatchoudhary/Developer/MabletonLink`. The original Documents checkout was preserved because cloud-backed files repeatedly timed out. Do not edit both copies concurrently.
+
+## Judge handoff
+
+See `docs/JUDGE-START-HERE.md` and `docs/DEADLINE-READINESS.md` for the tested free reproduction path, exact demonstration and honest evaluation limits. AI specialist reviews are documented separately from human participants.

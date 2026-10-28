@@ -1,0 +1,12 @@
+[
+ {"id":"D1","locale":"en","question":"Where do I pay my water bill?","statuses":["match"],"requiredAny":["pay-a-water-bill"]},
+ {"id":"D2","locale":"es","question":"¿Dónde pago la factura del agua?","statuses":["match"],"requiredAny":["pay-a-water-bill"]},
+ {"id":"D3","locale":"en","question":"I missed a payment. Who should I contact?","statuses":["clarify"]},
+ {"id":"D4","locale":"es","question":"No pagué una factura. ¿Con quién debo comunicarme?","statuses":["clarify"]},
+ {"id":"D5","locale":"en","question":"Nobody collected my trash and I do not know my collection company.","statuses":["clarify","match"],"allowedIfMatch":["find-an-approved-trash-hauler"]},
+ {"id":"D6","locale":"es","question":"No recogieron mi basura y no sé qué empresa la recoge.","statuses":["clarify","match"],"allowedIfMatch":["find-an-approved-trash-hauler"]},
+ {"id":"D7","locale":"en","question":"Where can I renew a US passport in Mableton?","statuses":["not_found"]},
+ {"id":"D8","locale":"es","question":"¿Dónde puedo renovar un pasaporte de Estados Unidos en Mableton?","statuses":["not_found"]},
+ {"id":"D9","locale":"en","question":"Is South Cobb Regional Library open right now?","statuses":["match"],"requiredAny":["south-cobb-regional-library"]},
+ {"id":"D10","locale":"es","question":"¿Está abierta ahora la biblioteca regional de South Cobb?","statuses":["match"],"requiredAny":["south-cobb-regional-library"]}
+]

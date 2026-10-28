@@ -770,12 +770,12 @@
         "es": "Servicios de transporte del Condado de Cobb"
       },
       "next": {
-        "en": "Check your starting point, destination, travel day and accessibility needs with CobbLinc. Go coverage is zone-specific; paratransit requires certification and eligible endpoints.",
-        "es": "Confirme con CobbLinc el origen, destino, día del viaje y necesidades de accesibilidad. Go depende de zonas; el paratránsito requiere certificación y puntos de viaje elegibles."
+        "en": "Check the bus route, stops and timetable with CobbLinc. Confirm your travel day, fare and accessibility needs before relying on the trip.",
+        "es": "Consulte con CobbLinc la ruta de autobús, las paradas y el horario. Confirme el día del viaje, la tarifa y sus necesidades de accesibilidad antes de planificarlo."
       },
       "prepare": {
-        "en": "General starting area, destination and travel time. Ask about both trip endpoints before booking.",
-        "es": "Zona de origen, destino y hora del viaje. Pregunte por ambos puntos antes de reservar."
+        "en": "Have your general starting area, destination and travel time ready. Ask whether the route serves both places.",
+        "es": "Tenga a mano la zona de origen, el destino y la hora del viaje. Pregunte si la ruta permite viajar entre esos lugares."
       },
       "phone": "transit"
     },
@@ -808,8 +808,8 @@
         "es": "Servicios de transporte del Condado de Cobb"
       },
       "next": {
-        "en": "Check your starting point, destination, travel day and accessibility needs with CobbLinc. Go coverage is zone-specific; paratransit requires certification and eligible endpoints.",
-        "es": "Confirme con CobbLinc el origen, destino, día del viaje y necesidades de accesibilidad. Go depende de zonas; el paratránsito requiere certificación y puntos de viaje elegibles."
+        "en": "CobbLinc Go only serves certain zones. Confirm that both your pickup and destination are covered, and check operating hours, fare and accessibility before arranging a ride.",
+        "es": "CobbLinc Go solo atiende ciertas zonas. Confirme que tanto el origen como el destino estén dentro de la zona de servicio. Consulte el horario, la tarifa y la accesibilidad antes de organizar el viaje."
       },
       "prepare": {
         "en": "General starting area, destination and travel time. Ask about both trip endpoints before booking.",
@@ -827,12 +827,12 @@
         "es": "Servicios de transporte del Condado de Cobb"
       },
       "next": {
-        "en": "Check your starting point, destination, travel day and accessibility needs with CobbLinc. Go coverage is zone-specific; paratransit requires certification and eligible endpoints.",
-        "es": "Confirme con CobbLinc el origen, destino, día del viaje y necesidades de accesibilidad. Go depende de zonas; el paratránsito requiere certificación y puntos de viaje elegibles."
+        "en": "Contact CobbLinc about certification before arranging a trip. Confirm that where you get on and off meets its service-area rules, and ask about your travel day and accessibility needs.",
+        "es": "Comuníquese con CobbLinc para preguntar por la certificación antes de organizar un viaje. Confirme que tanto el origen como el destino cumplan los requisitos de la zona de servicio. Pregunte por el día del viaje y sus necesidades de accesibilidad."
       },
       "prepare": {
-        "en": "General starting area, destination and travel time. Ask about both trip endpoints before booking.",
-        "es": "Zona de origen, destino y hora del viaje. Pregunte por ambos puntos antes de reservar."
+        "en": "Have your travel day, places where you will get on and off, and accessibility needs ready when speaking with CobbLinc. Do not enter medical records or personal details in this assistant.",
+        "es": "Al hablar con CobbLinc, tenga a mano el día del viaje, el lugar de origen, el destino y sus necesidades de accesibilidad. No escriba información médica ni datos personales en este asistente."
       },
       "phone": "certification"
     },
@@ -1397,12 +1397,12 @@
         "es": "City of Mableton"
       },
       "next": {
-        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
-        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+        "en": "Use the official city map to check whether the property is inside Mableton city limits and which council district applies. If the boundary is unclear, ask the city to confirm before choosing a department.",
+        "es": "Use el mapa oficial para verificar si la propiedad está dentro de los límites municipales de Mableton y a qué distrito del concejo pertenece. Si el límite no está claro, pida a la ciudad que lo confirme antes de elegir un departamento."
       },
       "prepare": {
-        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
-        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+        "en": "Have the property location ready for the official map. If the boundary is unclear, ask the city to confirm it. Do not enter your home address in the AI assistant.",
+        "es": "Tenga a mano la ubicación de la propiedad para buscarla en el mapa oficial. Si el límite no está claro, pida a la ciudad que lo confirme. No escriba su dirección en el asistente de IA."
       },
       "phone": "city"
     },
@@ -1416,12 +1416,12 @@
         "es": "City of Mableton"
       },
       "next": {
-        "en": "Open the official service page. Check the current instructions and contact the provider if anything is unclear.",
-        "es": "Abra la página oficial. Consulte las instrucciones actuales y contacte a la entidad si algo no está claro."
+        "en": "Choose the department that handles your service topic, or call the city to ask which department to contact. For a property concern, first confirm whether the location is inside city limits.",
+        "es": "Elija el departamento que atiende su consulta, o llame a la ciudad para preguntar con qué departamento debe comunicarse. Si se trata de una propiedad, primero confirme si está dentro de los límites municipales."
       },
       "prepare": {
-        "en": "Have the service name and any relevant notice ready. Give private information only to the official provider when required.",
-        "es": "Tenga a mano el nombre del servicio y cualquier aviso relacionado. Entregue información privada solo a la entidad oficial cuando sea necesario."
+        "en": "Have the service topic ready. For a boundary or property question, share the location directly with the city when asked; leave personal details out of the AI assistant.",
+        "es": "Tenga a mano el tema de su consulta. Si se trata de los límites municipales o de una propiedad, indique la ubicación directamente a la ciudad cuando se la pidan. Omita los datos personales en el asistente de IA."
       },
       "phone": "city"
     },
@@ -1759,7 +1759,7 @@
       },
       "description": {
         "en": "Missed pickup, a new provider or a large item.",
-        "es": "Recolección pendiente, nueva empresa u objetos grandes."
+        "es": "No recogieron la basura, necesita una empresa o quiere desechar un objeto grande."
       },
       "start": "need",
       "steps": {
@@ -1772,7 +1772,7 @@
             {
               "label": {
                 "en": "My regular pickup was missed",
-                "es": "No recogieron mi basura habitual"
+                "es": "No recogieron mi basura el día previsto"
               },
               "next": "provider"
             },
@@ -1808,14 +1808,14 @@
             {
               "label": {
                 "en": "My HOA or property manager arranges it",
-                "es": "Mi asociación o administrador lo organiza"
+                "es": "Mi asociación de propietarios (HOA) o el administrador de la propiedad organiza el servicio"
               },
               "outcome": "hoa"
             },
             {
               "label": {
                 "en": "I am not sure",
-                "es": "No estoy seguro"
+                "es": "No sé quién recoge mi basura"
               },
               "outcome": "unknown"
             }
@@ -1833,33 +1833,33 @@
           ],
           "instruction": {
             "en": "Report the missed collection to the provider on your bill. The city does not operate the collection route.",
-            "es": "Reporte la recolección pendiente a la empresa de su factura. La ciudad no opera la ruta."
+            "es": "Avise que no recogieron la basura a la empresa que aparece en su factura. La ciudad no presta el servicio de recolección."
           }
         },
         "hoa": {
           "title": {
             "en": "Ask your HOA or property manager",
-            "es": "Consulte a su asociación o administrador"
+            "es": "Consulte a su asociación de propietarios o al administrador de la propiedad"
           },
           "service_ids": [
             "find-an-approved-trash-hauler"
           ],
           "instruction": {
             "en": "Ask which company handles your property and how it receives missed-pickup reports.",
-            "es": "Pregunte qué empresa atiende su propiedad y cómo recibe reportes de recolecciones pendientes."
+            "es": "Pregunte qué empresa recoge la basura de su propiedad y cómo avisarle cuando no la recojan el día previsto."
           }
         },
         "unknown": {
           "title": {
             "en": "Identify your existing provider first",
-            "es": "Identifique primero a su empresa"
+            "es": "Identifique primero la empresa que recoge su basura"
           },
           "service_ids": [
             "find-an-approved-trash-hauler"
           ],
           "instruction": {
             "en": "Look at your bill or cart label, or ask your property manager. The approved list is not an address-to-provider lookup.",
-            "es": "Revise su factura o contenedor, o pregunte al administrador. La lista aprobada no identifica la empresa de cada dirección."
+            "es": "Revise el nombre de la empresa en su factura o en la etiqueta del contenedor, o pregunte al administrador de la propiedad. La lista de empresas aprobadas no permite buscar qué empresa atiende cada dirección."
           }
         },
         "new": {
@@ -1935,14 +1935,14 @@
             {
               "label": {
                 "en": "On a road or in the public right-of-way",
-                "es": "En una vía o espacio público de la vía"
+                "es": "En una calle, carretera o espacio público junto a la vía"
               },
               "outcome": "road"
             },
             {
               "label": {
                 "en": "On a property inside Mableton city limits",
-                "es": "En una propiedad dentro de Mableton"
+                "es": "En una propiedad dentro de los límites municipales de Mableton"
               },
               "outcome": "property"
             },
@@ -1984,7 +1984,7 @@
         "property": {
           "title": {
             "en": "Contact city Code Enforcement",
-            "es": "Contacte al departamento de normas municipales"
+            "es": "Contacte al departamento de normas municipales (Code Enforcement)"
           },
           "service_ids": [
             "report-a-code-violation"
@@ -2005,7 +2005,7 @@
           ],
           "instruction": {
             "en": "A Mableton postal address is not proof of city jurisdiction. Use the official map or ask the city.",
-            "es": "Una dirección postal de Mableton no prueba la jurisdicción. Use el mapa oficial o pregunte a la ciudad."
+            "es": "Que su dirección postal diga Mableton no confirma que esté dentro de los límites municipales. Use el mapa oficial o consulte a la ciudad."
           }
         }
       }
@@ -2093,7 +2093,7 @@
           ],
           "instruction": {
             "en": "Contact organizations to confirm availability. MabletonLink cannot determine eligibility or reserve funds.",
-            "es": "Confirme la disponibilidad con las organizaciones. MabletonLink no determina elegibilidad ni reserva fondos."
+            "es": "Confirme la disponibilidad con las organizaciones. MabletonLink no puede determinar si cumple los requisitos ni reservar fondos."
           }
         },
         "energy": {
@@ -2125,7 +2125,7 @@
         "condition": {
           "title": {
             "en": "Check jurisdiction and report the concern",
-            "es": "Compruebe la jurisdicción y reporte el problema"
+            "es": "Confirme qué entidad atiende la propiedad y reporte el problema"
           },
           "service_ids": [
             "check-city-limits-and-council-district",
@@ -2185,7 +2185,7 @@
             {
               "label": {
                 "en": "Paratransit or disability access",
-                "es": "Paratránsito o accesibilidad por discapacidad"
+                "es": "Transporte adaptado (paratránsito) o accesibilidad para personas con discapacidad"
               },
               "outcome": "paratransit"
             },
@@ -2236,8 +2236,8 @@
             "paratransit"
           ],
           "instruction": {
-            "en": "Paratransit requires certification and eligible trip endpoints. Disability alone does not confirm eligibility.",
-            "es": "El paratránsito requiere certificación y puntos de viaje elegibles. Tener una discapacidad no confirma por sí solo la elegibilidad."
+            "en": "CobbLinc paratransit requires certification. Where you get on and off must also meet its service-area rules. Having a disability does not automatically confirm eligibility.",
+            "es": "Para usar el transporte adaptado (paratránsito), necesita la certificación de CobbLinc. El origen y el destino también deben cumplir los requisitos de la zona de servicio. Tener una discapacidad no significa que cumpla automáticamente todos los requisitos."
           }
         },
         "advice": {
@@ -2264,7 +2264,7 @@
       },
       "description": {
         "en": "Computers, printing, phone help or language support.",
-        "es": "Computadoras, impresión, ayuda telefónica o de idioma."
+        "es": "Computadoras, impresión, ayuda por teléfono o en otro idioma."
       },
       "start": "need",
       "steps": {
@@ -2349,14 +2349,14 @@
         "language": {
           "title": {
             "en": "Ask the provider about language assistance",
-            "es": "Pregunte a la entidad por ayuda de idioma"
+            "es": "Pregunte a la entidad si ofrece ayuda en su idioma"
           },
           "service_ids": [
             "contact-city-departments"
           ],
           "instruction": {
             "en": "You can say: “I prefer Spanish. Is an interpreter or translated form available?” Availability varies. External websites may be English-only.",
-            "es": "Puede decir: «Prefiero español. ¿Hay un intérprete o formulario traducido disponible?» La disponibilidad varía. Los sitios externos pueden estar solo en inglés."
+            "es": "Puede decir: «Prefiero hablar en español. ¿Hay un intérprete o un formulario traducido disponible?» La disponibilidad varía. Los sitios externos pueden estar solo en inglés."
           }
         }
       }

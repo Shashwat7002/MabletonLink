@@ -1,0 +1,52 @@
+{
+  "kind": "AI developer browser checks, not human sessions",
+  "views": [
+    {
+      "focus": "page-title",
+      "lang": "es",
+      "noSubmission": true,
+      "overflow": false,
+      "route": "#guide?journey=trash&result=unknown",
+      "title": "Identifique primero la empresa que recoge su basura"
+    },
+    {
+      "focus": "page-title",
+      "lang": "es",
+      "noSubmission": true,
+      "overflow": false,
+      "route": "#guide?journey=dumping&result=boundary",
+      "title": "Compruebe primero el límite de la ciudad"
+    },
+    {
+      "focus": "page-title",
+      "lang": "es",
+      "noSubmission": true,
+      "overflow": false,
+      "route": "#guide?journey=housing&result=assistance",
+      "title": "Busque una organización de ayuda"
+    },
+    {
+      "focus": "page-title",
+      "lang": "es",
+      "noSubmission": true,
+      "overflow": false,
+      "route": "#guide?journey=transport&result=paratransit",
+      "title": "Compruebe certificación y zona de servicio"
+    },
+    {
+      "focus": "page-title",
+      "lang": "es",
+      "noSubmission": true,
+      "overflow": false,
+      "route": "#guide?journey=access&result=language",
+      "title": "Pregunte a la entidad si ofrece ayuda en su idioma"
+    }
+  ],
+  "story": {
+    "savedReopened": true,
+    "printPdfRendered": true,
+    "nativePrintDialogVerified": false,
+    "noAiTrashGuidance": true,
+    "noAiLibraryLink": true
+  }
+}

@@ -58,3 +58,7 @@ A follow-up caught and fixed “share your name” ambiguity by explicitly askin
 - SPANISH-EXPERT-REVIEW.md: linguistic findings and applied review.
 - REPRODUCTION-AUDIT.md: clean-install commands, source snapshot and limits.
 - EVALUATION-KIT.md: human study protocol; do not fill it with simulated metrics.
+
+## Post-release native print confirmation
+
+After the user unlocked the Mac, the public site was opened in Chrome and the actual Imprimir o guardar como PDF button was used without an interception. Chrome displayed two Spanish pages, Save as PDF, the provider distinction, official URLs and no-submission statement. The macOS Save dialog was reached. It closed during user interaction before a native file save was confirmed; no physical print job was sent. The independently rendered PDF remains the verified package artifact. This later evidence supersedes the earlier lock-related limitation above and is recorded in the ZIP’s RELEASE-CHECKS.json. Application source and deployed behavior are unchanged.

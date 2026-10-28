@@ -55,3 +55,5 @@ dist/
 
 # Local review coordination
 /.unlazy/
+/vercel-public/
+/.vercel/

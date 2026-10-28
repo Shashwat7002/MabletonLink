@@ -25,8 +25,8 @@ Scope: implement the supplied MabletonLink brief, verify software and publish to
   EXPECT: handoff verification passed
   EVIDENCE: exit=0; shell=/bin/sh; cwd=/Users/shashwatchoudhary/Developer/MabletonLink; path=7797410660e3/21 entries; output=Six handoff documents and 44 recorded browser outcomes checked. | handoff verification passed
 
-- [ ] G6: The exact verified source is deployed successfully to the user-authorized public-sharing Site and checked in production.
-  EVIDENCE: Deadline improvements verified locally; final publication pending. Public sharing revision 2 is enabled by explicit user request, but unauthenticated access still returns 401. The no-account judge package is the alternative reproduction path.
+- [x] G6: The exact verified source is deployed successfully to the user-authorized public-sharing Site and checked in production.
+  EVIDENCE: 2026-10-28 source7656cbb996d43876358534ab5ac7262df33ba68a published successfully as appgdep_6ae2704131b88191aa450783df852747, environment revision2. Public sharing revision2; anonymous root/guidance/Spanish requests return200. Live Spanish specific clarification verified with heading focus. Runtime archive hash matches the browser-tested previous deployment; final change was documentation only. Final package/public-API evidence is in artifacts/deadline-release.json. This is post-deployment handoff metadata.
 
 - [x] G7: Real Gemini evaluation completes using a user-supplied server secret and current model access.
   EVIDENCE: 2026-10-28 fresh deadline evaluation: 30/30 completed, 29 passed, A4 invalid model output rejected, all 6 hard safety cases passed; current model-source fingerprint verified. Additional hosted cases: 8/10 passed with two provider timeouts preserved. See docs/DEADLINE-READINESS.md and raw evidence. Previous benchmark retained separately. No human accuracy claim.

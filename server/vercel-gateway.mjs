@@ -45,8 +45,8 @@ export function createGateway(fetchImpl = fetch) {
       const result = JSON.parse(await boundedText(response.body, 32768));
       if (!result || typeof result.status !== 'string' || !Array.isArray(result.services)) return unavailable('unverified_response');
       const outputHeaders = {...JSON_HEADERS};
-      const setCookie = response.headers.get('set-cookie');
-      if (/^ml_assistant=[a-f0-9.-]+; Path=\/api\/assistant; HttpOnly; SameSite=Strict; Max-Age=86400; Secure$/.test(setCookie || '')) outputHeaders['Set-Cookie'] = setCookie;
+      const setCookie = response.headers.getSetCookie().find(value => /^ml_assistant=[a-f0-9.-]+; Path=\/api\/assistant; HttpOnly; SameSite=Strict; Max-Age=86400; Secure$/.test(value));
+      if (setCookie) outputHeaders['Set-Cookie'] = setCookie;
       const retryAfter = response.headers.get('retry-after');
       if (/^\d{1,6}$/.test(retryAfter || '')) outputHeaders['Retry-After'] = retryAfter;
       return Response.json(result, {status: response.status, headers: outputHeaders});

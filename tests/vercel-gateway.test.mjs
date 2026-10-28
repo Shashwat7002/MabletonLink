@@ -37,6 +37,15 @@ test('gateway preserves upstream quota rejection and safe retry metadata', async
   assert.equal(response.status, 429); assert.equal(response.headers.get('retry-after'), '3600');
   assert.equal((await response.json()).code, 'rate_limit');
 });
+test('gateway retains the assistant cookie when the upstream also sets platform cookies', async () => {
+  const headers = new Headers();
+  headers.append('Set-Cookie', cookie + '; Path=/api/assistant; HttpOnly; SameSite=Strict; Max-Age=86400; Secure');
+  headers.append('Set-Cookie', '__cf_bm=platform; HttpOnly; SameSite=None; Secure; Path=/; Domain=chatgpt.site');
+  const response = await createGateway(async () => Response.json(result, {headers}))(request());
+  assert.equal(response.headers.getSetCookie().length, 1);
+  assert.ok(response.headers.get('set-cookie').startsWith(cookie + ';'));
+  assert.ok(!response.headers.get('set-cookie').includes('__cf_bm'));
+});
 test('gateway hides upstream HTML, transport failures, malformed JSON and oversized responses', async () => {
   for (const upstream of [async () => {throw new Error('secret');}, async () => new Response('<h1>Login</h1>'), async () => Response.json({secret: 'hidden'}), async () => new Response('x'.repeat(32769), {headers: {'Content-Type': 'application/json'}})]) {
     const response = await createGateway(upstream)(request());

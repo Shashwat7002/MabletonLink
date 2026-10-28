@@ -1,6 +1,8 @@
 # MabletonLink LaunchPad
 
-Source repository: [Shashwat7002/MabletonLink](https://github.com/Shashwat7002/MabletonLink). The public Vercel deployment serves the directory and a same-origin assistant gateway. [Deployment architecture and instructions](docs/PUBLIC-DEPLOYMENT.md).
+**Public website: [mabletonlink.vercel.app](https://mabletonlink.vercel.app)** — no visitor login required.
+
+Source repository: [Shashwat7002/MabletonLink](https://github.com/Shashwat7002/MabletonLink) (private). The public Vercel deployment serves the directory and a same-origin assistant gateway. [Deployment architecture and instructions](docs/PUBLIC-DEPLOYMENT.md).
 
 An accessible black-and-white resident directory with 89 approved links in 15 categories, search, browser-local favorites and a server-side Gemini service-routing assistant. No application sign-in or SSO was added. The owner enabled public sharing for judges on October 28, 2026; logged-out homepage and directory access were verified after republication without cookies or authorization. Use the downloadable no-account reproduction path in docs/JUDGE-START-HERE.md.
 

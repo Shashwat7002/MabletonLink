@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#193d33">
+  <meta name="description" content="Find the Mableton services you need. Explore official links, save your favorites, and get a little help finding your next step.">
+  <title>MabletonLink — Your city. Within reach.</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to services</a>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="MabletonLink home">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        <span>mableton<span class="brand-light">link</span><small>YOUR RESIDENT LAUNCHPAD</small></span>
+      </a>
+      <div class="sidebar-location"><span data-icon="pin"></span> Mableton, Georgia</div>
+      <nav class="main-nav" aria-label="LaunchPad">
+        <a href="#home" data-view="home" class="nav-link active" aria-current="page"><span data-icon="grid"></span> LaunchPad</a>
+        <a href="#all" data-view="all" class="nav-link"><span data-icon="compass"></span> All services <span class="nav-count" id="service-total">89</span></a>
+        <a href="#favorites" data-view="favorites" class="nav-link"><span data-icon="star"></span> My favorites <span class="nav-count" id="favorites-count">0</span></a>
+      </nav>
+      <div class="sidebar-explore"><p class="eyebrow">A FEW PLACES TO START</p><nav id="quick-categories" aria-label="Popular categories"></nav></div>
+      <div class="sidebar-bottom">
+        <div class="local-note"><span data-icon="sprout"></span><strong>A little more connected.</strong><p>Your city, county, and everyday services. All in one place.</p></div>
+        <a href="https://www.cobbcounty.gov/911" class="emergency-link" target="_blank" rel="noopener noreferrer"><span data-icon="phone"></span> Emergency? Call <strong>911</strong><span data-icon="external"></span></a>
+      </div>
+    </aside>
+    <div class="workspace">
+      <header class="topbar">
+        <span class="topbar-label">LOCAL LINKS. LESS LOOKING.</span>
+        <span class="mobile-location"><span data-icon="pin"></span>Mableton, GA</span>
+        <a class="mobile-emergency" href="tel:911">Emergency? <strong>911</strong></a>
+        <div class="topbar-actions"><span class="prototype-badge"><span></span> Resident prototype</span><a href="https://www.mableton.gov/1247/Find-My-District" target="_blank" rel="noopener noreferrer">Find my district <span data-icon="arrow-up-right"></span></a></div>
+      </header>
+      <main id="main" tabindex="-1">
+        <section class="welcome" aria-labelledby="page-title">
+          <div class="welcome-copy"><p class="eyebrow" id="page-eyebrow">A GOOD PLACE TO BEGIN</p><h1 id="page-title">Your city. <em>Within reach.</em></h1><p id="page-description">Everyday services, useful shortcuts, and a little local help.</p></div>
+          <div class="welcome-stamp" aria-hidden="true"><span data-icon="sunrise"></span><span>AT HOME IN<br><strong>MABLETON</strong></span></div>
+        </section>
+        <form class="search-form" role="search" id="search-form">
+          <label class="sr-only" for="service-search">Search services</label>
+          <span data-icon="search"></span>
+          <input id="service-search" type="search" placeholder="What can we help you find?" autocomplete="off" spellcheck="false" aria-describedby="search-help">
+          <button type="button" class="clear-search icon-button" id="clear-search" aria-label="Clear search" hidden><span data-icon="x"></span></button>
+          <kbd id="search-shortcut" aria-hidden="true">/</kbd>
+          <button class="search-submit" type="submit">Search <span data-icon="arrow-right"></span></button>
+        </form>
+        <p class="search-help" id="search-help">Try <button type="button" data-search="water bill">water bill</button>, <button type="button" data-search="trash pickup">trash pickup</button>, or <button type="button" data-search="school bus">school bus</button>.</p>
+        <div class="content-layout">
+          <div class="directory-column">
+            <div id="directory-content"><div class="loading-state" role="status">Gathering your local links…</div></div>
+            <footer class="directory-footer"><span data-icon="external"></span><p>Official services open in a new tab.<br><span>Independent resident prototype · Directory reviewed October 28, 2026</span></p><button type="button" id="about-button">About these links</button></footer>
+          </div>
+          <aside id="assistant-home" class="assistant-column" aria-label="Resident assistant">
+            <section class="assistant-panel" id="assistant-panel" aria-labelledby="assistant-title">
+              <div class="assistant-header"><span class="assistant-symbol" data-icon="sparkles"></span><h2 id="assistant-title">Resident assistant</h2><span class="preview-label">PREVIEW</span><button type="button" class="assistant-close icon-button" aria-label="Close assistant"><span data-icon="x"></span></button></div>
+              <div id="assistant-welcome" class="assistant-intro"><div class="assistant-art" aria-hidden="true"><span data-icon="sparkles"></span><i></i><i></i></div><h3>A helpful place<br>to start.</h3><p>Not sure where to go? Tell me what you need, and I’ll help find the right service.</p><div class="prompt-list"><button type="button" data-prompt="Who collects my trash?">Who collects my trash? <span data-icon="arrow-up-right"></span></button><button type="button" data-prompt="How do I pay my water bill?">How do I pay my water bill? <span data-icon="arrow-up-right"></span></button><button type="button" data-prompt="Find my child's school">Find my child’s school <span data-icon="arrow-up-right"></span></button></div></div>
+              <div id="conversation" class="conversation" role="log" aria-live="polite" aria-label="Assistant conversation" hidden></div>
+              <div class="assistant-composer"><button id="reset-chat" type="button" hidden>Start a new question <span data-icon="refresh"></span></button><form id="assistant-form"><label class="sr-only" for="assistant-input">Ask the resident assistant</label><textarea id="assistant-input" rows="1" maxlength="500" placeholder="Ask about a local service…"></textarea><button type="submit" aria-label="Send question"><span data-icon="arrow-up"></span></button></form><p><span data-icon="info"></span>Directory demo. Live AI is not connected.</p></div>
+            </section>
+            <a class="district-note" href="https://www.mableton.gov/1247/Find-My-District" target="_blank" rel="noopener noreferrer"><span data-icon="map"></span><div><strong>New around here?</strong><p>Check your city limits and council district.</p></div><span data-icon="arrow-up-right"></span></a>
+          </aside>
+        </div>
+      </main>
+    </div>
+  </div>
+  <button type="button" class="mobile-assistant" id="open-assistant"><span data-icon="sparkles"></span> Ask MabletonLink</button>
+  <dialog id="assistant-dialog" aria-labelledby="assistant-title"></dialog>
+  <dialog id="detail-dialog" aria-labelledby="detail-title"><button class="dialog-close icon-button" type="button" aria-label="Close details"><span data-icon="x"></span></button><div id="detail-content"></div></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <noscript><p class="noscript">JavaScript is needed for search and favorites. Visit <a href="https://www.mableton.gov/1212/Resident-Resource-Guide">Mableton’s official resident resource guide</a> for service links.</p></noscript>
+</body>
+</html>

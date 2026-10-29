@@ -4,7 +4,7 @@ import base64,json,re
 root=Path(__file__).resolve().parents[1];assets=root/'public'
 html=(assets/'index.html').read_text();js=(assets/'app.js').read_text()
 js=re.sub(r'^import .*?;\n','',js,flags=re.M)
-modules='\n'.join((assets/name).read_text().replace('export ','') for name in ['icons.mjs','i18n.mjs','routing.mjs'])
+modules='\n'.join((assets/name).read_text().replace('export ','') for name in ['icons.mjs','i18n.mjs','routing.mjs','saved-items.mjs'])
 data={name:json.loads((assets/name).read_text()) for name in ['services.json','services.es.json','guidance.json']}
 start=js.index("await Promise.all(['services.json'");end=js.index(';[directory,spanish,guidance]=loaded',start)
 js=js[:start]+"['services.json','services.es.json','guidance.json'].map(name=>JSON.parse(document.getElementById('embedded-directory').textContent)[name])"+js[end:]

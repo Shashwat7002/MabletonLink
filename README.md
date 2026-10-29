@@ -35,7 +35,7 @@ The assistant selects approved records; it does not answer arbitrary questions, 
 
 ## Bilingual guided-service implementation (2026-10-28)
 
-The app now includes English/Spanish navigation and 89 translated service records, five guided journeys with 22 outcomes, consistent provider/authority/next-step cards, access-help alternatives, local saved plans and printing. No SSO. No form submission or ticket tracking is implied.
+The app now includes English/Spanish navigation and 89 translated service records, five guided journeys with 22 outcomes, consistent provider/authority/next-step cards, access-help alternatives, browser-local favorites for services and guided next steps, and printing. No SSO. No form submission or ticket tracking is implied.
 
 - `public/guidance.json`: paired action metadata, verified contacts and journey graph.
 - `public/services.es.json` and `public/i18n.mjs`: service and interface translations.
@@ -50,3 +50,7 @@ Active working copy: `/Users/shashwatchoudhary/Developer/MabletonLink`. The orig
 ## Judge handoff
 
 See `docs/JUDGE-START-HERE.md` and `docs/DEADLINE-READINESS.md` for the tested free reproduction path, exact demonstration and honest evaluation limits. AI specialist reviews are documented separately from human participants.
+
+## Resident feedback update (2026-10-29)
+
+Ask AI opens the assistant; Help explains how to use the app. The assistant puts the question before its answer and offers Reset. Home categories use a dropdown. Favorites now stores both services and tailored next steps, including previously saved plans, with one consistent action. Printing remains available. See [feedback changes and verification](docs/FEEDBACK-UPDATE.md).

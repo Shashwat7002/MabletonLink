@@ -85,7 +85,7 @@ main:focus { outline: none; }
 .save-button { min-height: 48px; min-width: 104px; display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 10px 15px; border: 1px solid var(--ink); border-radius: 8px; font-size: 16px; font-weight: 500; white-space: nowrap; }
 .save-button svg { width: 21px; height: 21px; }
 .save-button.is-saved { background: var(--ink); color: var(--paper); }
-.save-button.is-saved svg { fill: currentColor; }
+.save-button.is-saved svg { fill: none; stroke-width: 2.4; }
 .categories-section, .favorites-section { margin-top: 58px; }
 .category-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 16px; }
 .category-tile { display: grid; grid-template-columns: 34px minmax(0,1fr); align-content: center; column-gap: 14px; row-gap: 7px; min-height: 130px; padding: 22px; border: 1px solid var(--ink); border-radius: 10px; }
@@ -421,4 +421,28 @@ html { scroll-padding-top: var(--focus-top, 100px); scroll-padding-bottom: var(-
  #print-area a { color:#000; background:#fff; border:0; padding:0; min-height:0; text-decoration:underline; }
  #print-area dt,#print-area h3,#print-area h4 { break-after:avoid; }
  #print-area dd,#print-area p { orphans:3; widows:3; }
+}
+
+/* Resident feedback: distinct app help, input before results, and one Favorites flow. */
+.home-category-form { margin-top:24px; justify-content:flex-start; align-items:flex-end; }
+.home-category-form label { flex:1; max-width:560px; }
+.home-category-form select { width:100%; max-width:none; }
+.help-guide { clear:both; padding-top:18px; }
+.help-guide h3 { margin-top:28px; font-size:21px; }
+.help-guide p { font-size:18px; }
+.help-guide .primary-button { margin-top:8px; }
+.assistant-composer { border-top:0; }
+.conversation:not([hidden]) { border-top:1px solid var(--ink); }
+.reset-row { display:flex; gap:16px; align-items:center; margin-top:12px; }
+.reset-row #reset-chat { margin:0; flex-shrink:0; }
+.reset-row .input-help { margin:0; }
+#assistant-dialog .assistant-intro { padding-bottom:20px; }
+#conversation h3 { scroll-margin-top:16px; }
+@media(max-width:700px) {
+ .main-nav { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); }
+ .nav-link { min-width:0; }
+ .home-category-form { align-items:stretch; }
+ .home-category-form label { max-width:none; }
+ .reset-row { align-items:flex-start; }
+ .sheet-header h2 { overflow-wrap:anywhere; }
 }
